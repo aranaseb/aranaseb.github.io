@@ -1,0 +1,55 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+svg {
+	background: #cfe8ff;
+}
+
+.prefecture {
+    stroke: #222;
+    stroke-width: 0.3px;
+	stroke-linecap: round;
+    pointer-events: all;
+    transition: stroke 0.15s, stroke-width 0.15s, fill 0.2s ease-out;
+  }
+
+  .prefecture:hover {
+	  stroke: "#ffffff";
+	  stroke-width: 0.7;
+  }
+
+  .selected {
+    fill: #ffd27f;
+	stroke: "#ff8800";
+	stroke-width: 1;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    position: absolute;
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease-out;
+  }
+
+  /* Reset button */
+  #reset-zoom {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  #reset-zoom:hover {
+    background: #f0f0f0;
+  }

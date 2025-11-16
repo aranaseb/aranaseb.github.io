@@ -1,0 +1,1099 @@
+{
+  "Aichi": [
+    {
+      "pokemon": "Aichi - Toyohashi PokéLid",
+      "lat": 34.76261111111111,
+      "lng": 137.38297222222224,
+      "dms": "34°45'45.4\"N 137°22'58.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/aichi/4.png",
+      "image_local": "images/Aichi/4.png"
+    },
+    {
+      "pokemon": "Aichi - Nagoya PokéLid",
+      "lat": 34.76261111111111,
+      "lng": 137.38297222222224,
+      "dms": "34°45'45.4\"N 137°22'58.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/aichi/5.png",
+      "image_local": "images/Aichi/5.png"
+    },
+    {
+      "pokemon": "Aichi - Nishio PokéLid",
+      "lat": 34.76261111111111,
+      "lng": 137.38297222222224,
+      "dms": "34°45'45.4\"N 137°22'58.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/aichi/9.png",
+      "image_local": "images/Aichi/9.png"
+    }
+  ],
+  "Akita": [
+    {
+      "pokemon": "Akita - Senboku PokéLid",
+      "lat": 39.699999999999996,
+      "lng": 140.6626388888889,
+      "dms": "39°41'60.0\"N 140°39'45.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/akita/1.png",
+      "image_local": "images/Akita/1.png"
+    },
+    {
+      "pokemon": "Akita - Akita PokéLid",
+      "lat": 39.699999999999996,
+      "lng": 140.6626388888889,
+      "dms": "39°41'60.0\"N 140°39'45.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/akita/5.png",
+      "image_local": "images/Akita/5.png"
+    }
+  ],
+  "Aomori": [
+    {
+      "pokemon": "Aomori - Hacinohe PokéLid",
+      "lat": 40.53794444444444,
+      "lng": 141.5580277777778,
+      "dms": "40°32'16.6\"N 141°33'28.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/aomori/2.png",
+      "image_local": "images/Aomori/2.png"
+    }
+  ],
+  "Chiba": [
+    {
+      "pokemon": "Chiba - Katori PokéLid",
+      "lat": 35.894416666666665,
+      "lng": 140.49391666666665,
+      "dms": "35°53'39.9\"N 140°29'38.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/chiba/4.png",
+      "image_local": "images/Chiba/4.png"
+    }
+  ],
+  "Ehime": [
+    {
+      "pokemon": "Ehime - Matsuyama PokéLid",
+      "lat": 33.841055555555556,
+      "lng": 132.77025,
+      "dms": "33°50'27.8\"N 132°46'12.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/ehime/1.png",
+      "image_local": "images/Ehime/1.png"
+    }
+  ],
+  "Fukui": [
+    {
+      "pokemon": "Fukui - Mihama PokéLid",
+      "lat": 35.6045,
+      "lng": 135.9368888888889,
+      "dms": "35°36'16.2\"N 135°56'12.8\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukui/1.png",
+      "image_local": "images/Fukui/1.png"
+    },
+    {
+      "pokemon": "Fukui - Awara PokéLid",
+      "lat": 35.6045,
+      "lng": 135.9368888888889,
+      "dms": "35°36'16.2\"N 135°56'12.8\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukui/5.png",
+      "image_local": "images/Fukui/5.png"
+    },
+    {
+      "pokemon": "Fukui - Minami Echizen PokéLid",
+      "lat": 35.6045,
+      "lng": 135.9368888888889,
+      "dms": "35°36'16.2\"N 135°56'12.8\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukui/9.png",
+      "image_local": "images/Fukui/9.png"
+    },
+    {
+      "pokemon": "Fukui - Fukui PokéLid",
+      "lat": 35.6045,
+      "lng": 135.9368888888889,
+      "dms": "35°36'16.2\"N 135°56'12.8\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukui/13.png",
+      "image_local": "images/Fukui/13.png"
+    },
+    {
+      "pokemon": "Fukui - Echizen-cho PokéLid",
+      "lat": 35.6045,
+      "lng": 135.9368888888889,
+      "dms": "35°36'16.2\"N 135°56'12.8\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukui/17.png",
+      "image_local": "images/Fukui/17.png"
+    }
+  ],
+  "Fukuoka": [
+    {
+      "pokemon": "Fukuoka - Dazaifu PokéLid",
+      "lat": 33.50519444444444,
+      "lng": 130.51658333333333,
+      "dms": "33°30'18.7\"N 130°30'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukuoka/7.png",
+      "image_local": "images/Fukuoka/7.png"
+    },
+    {
+      "pokemon": "Fukuoka - Kitakyushu PokéLid",
+      "lat": 33.50519444444444,
+      "lng": 130.51658333333333,
+      "dms": "33°30'18.7\"N 130°30'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukuoka/4.png",
+      "image_local": "images/Fukuoka/4.png"
+    }
+  ],
+  "Fukushima": [
+    {
+      "pokemon": "Fukushima - Kunimi PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/34.png",
+      "image_local": "images/Fukushima/34.png"
+    },
+    {
+      "pokemon": "Fukushima - Kunimi PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/30.png",
+      "image_local": "images/Fukushima/30.png"
+    },
+    {
+      "pokemon": "Fukushima - Shinchi PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/26.png",
+      "image_local": "images/Fukushima/26.png"
+    },
+    {
+      "pokemon": "Fukushima - Naraha PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/22.png",
+      "image_local": "images/Fukushima/22.png"
+    },
+    {
+      "pokemon": "Fukushima - Kawauchi PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/18.png",
+      "image_local": "images/Fukushima/18.png"
+    },
+    {
+      "pokemon": "Fukushima - Minamiaizu PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/14.png",
+      "image_local": "images/Fukushima/14.png"
+    },
+    {
+      "pokemon": "Fukushima - Iitate PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/10.png",
+      "image_local": "images/Fukushima/10.png"
+    },
+    {
+      "pokemon": "Fukushima - Inawashiro PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/6.png",
+      "image_local": "images/Fukushima/6.png"
+    },
+    {
+      "pokemon": "Fukushima - Furudono PokéLid",
+      "lat": 37.872638888888886,
+      "lng": 140.5468611111111,
+      "dms": "37°52'21.5\"N 140°32'48.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/fukushima/2.png",
+      "image_local": "images/Fukushima/2.png"
+    }
+  ],
+  "Gifu": [
+    {
+      "pokemon": "Gifu - Kakamigahara PokéLid",
+      "lat": 35.370666666666665,
+      "lng": 136.8077777777778,
+      "dms": "35°22'14.4\"N 136°48'28.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/gifu/1.png",
+      "image_local": "images/Gifu/1.png"
+    },
+    {
+      "pokemon": "Gifu - Takayama PokéLid",
+      "lat": 35.370666666666665,
+      "lng": 136.8077777777778,
+      "dms": "35°22'14.4\"N 136°48'28.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/gifu/5.png",
+      "image_local": "images/Gifu/5.png"
+    }
+  ],
+  "Hokkaido": [
+    {
+      "pokemon": "Hokkaido - Biei PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/42.png",
+      "image_local": "images/Hokkaido/42.png"
+    },
+    {
+      "pokemon": "Hokkaido - Mori PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/32.png",
+      "image_local": "images/Hokkaido/32.png"
+    },
+    {
+      "pokemon": "Hokkaido - Teshio PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/28.png",
+      "image_local": "images/Hokkaido/28.png"
+    },
+    {
+      "pokemon": "Hokkaido - Engaru PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/24.png",
+      "image_local": "images/Hokkaido/24.png"
+    },
+    {
+      "pokemon": "Hokkaido - Tomakomai PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/20.png",
+      "image_local": "images/Hokkaido/20.png"
+    },
+    {
+      "pokemon": "Hokkaido - Hakodate PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/16.png",
+      "image_local": "images/Hokkaido/16.png"
+    },
+    {
+      "pokemon": "Hokkaido - Honbetsu PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/12.png",
+      "image_local": "images/Hokkaido/12.png"
+    },
+    {
+      "pokemon": "Hokkaido - Kushiro PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/8.png",
+      "image_local": "images/Hokkaido/8.png"
+    },
+    {
+      "pokemon": "Hokkaido - Higasikawa PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/4.png",
+      "image_local": "images/Hokkaido/4.png"
+    },
+    {
+      "pokemon": "Hokkaido - Muroan PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/36.png",
+      "image_local": "images/Hokkaido/36.png"
+    },
+    {
+      "pokemon": "Hokkaido - Saurfutsu PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/40.png",
+      "image_local": "images/Hokkaido/40.png"
+    },
+    {
+      "pokemon": "Hokkaido - Yuni PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/45.png",
+      "image_local": "images/Hokkaido/45.png"
+    },
+    {
+      "pokemon": "Hokkaido - Yubetsu PokéLid",
+      "lat": 43.591972222222225,
+      "lng": 142.4637222222222,
+      "dms": "43°35'31.1\"N 142°27'49.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hokkaido/49.png",
+      "image_local": "images/Hokkaido/49.png"
+    }
+  ],
+  "Hyogo": [
+    {
+      "pokemon": "Hyogo - Awaji PokéLid",
+      "lat": 34.60183333333333,
+      "lng": 135.00944444444445,
+      "dms": "34°36'06.6\"N 135°00'34.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/hyogo/3.png",
+      "image_local": "images/Hyogo/3.png"
+    }
+  ],
+  "Ibaraki": [
+    {
+      "pokemon": "Ibaraki - Kamisu PokéLid",
+      "lat": 35.897333333333336,
+      "lng": 140.64908333333332,
+      "dms": "35°53'50.4\"N 140°38'56.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/ibaraki/1.png",
+      "image_local": "images/Ibaraki/1.png"
+    },
+    {
+      "pokemon": "Ibaraki - Mito PokéLid",
+      "lat": 35.897333333333336,
+      "lng": 140.64908333333332,
+      "dms": "35°53'50.4\"N 140°38'56.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/ibaraki/5.png",
+      "image_local": "images/Ibaraki/5.png"
+    }
+  ],
+  "Ishikawa": [
+    {
+      "pokemon": "Ishikawa - Kanazawa PokéLid",
+      "lat": 36.55916666666666,
+      "lng": 136.66191666666668,
+      "dms": "36°33'33.0\"N 136°39'42.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/ishikawa/1.png",
+      "image_local": "images/Ishikawa/1.png"
+    }
+  ],
+  "Iwate": [
+    {
+      "pokemon": "Iwate - Hirono PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/26.png",
+      "image_local": "images/Iwate/26.png"
+    },
+    {
+      "pokemon": "Iwate - Iwaizumi PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/22.png",
+      "image_local": "images/Iwate/22.png"
+    },
+    {
+      "pokemon": "Iwate - Otsuchi PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/18.png",
+      "image_local": "images/Iwate/18.png"
+    },
+    {
+      "pokemon": "Iwate - Sumita PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/14.png",
+      "image_local": "images/Iwate/14.png"
+    },
+    {
+      "pokemon": "Iwate - Ninohe PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/10.png",
+      "image_local": "images/Iwate/10.png"
+    },
+    {
+      "pokemon": "Iwate - Shiwa PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/6.png",
+      "image_local": "images/Iwate/6.png"
+    },
+    {
+      "pokemon": "Iwate - Kunohe PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/2.png",
+      "image_local": "images/Iwate/2.png"
+    },
+    {
+      "pokemon": "Iwate - Morioka PokéLid",
+      "lat": 40.40611111111111,
+      "lng": 141.71952777777778,
+      "dms": "40°24'22.0\"N 141°43'10.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/iwate/29.png",
+      "image_local": "images/Iwate/29.png"
+    }
+  ],
+  "Kagawa": [
+    {
+      "pokemon": "Kagawa - Takamatsu PokéLid",
+      "lat": 34.33888888888889,
+      "lng": 134.04905555555555,
+      "dms": "34°20'20.0\"N 134°02'56.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagawa/17.png",
+      "image_local": "images/Kagawa/17.png"
+    },
+    {
+      "pokemon": "Kagawa - Kan-onji PokéLid",
+      "lat": 34.33888888888889,
+      "lng": 134.04905555555555,
+      "dms": "34°20'20.0\"N 134°02'56.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagawa/13.png",
+      "image_local": "images/Kagawa/13.png"
+    },
+    {
+      "pokemon": "Kagawa - Tonosho PokéLid",
+      "lat": 34.33888888888889,
+      "lng": 134.04905555555555,
+      "dms": "34°20'20.0\"N 134°02'56.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagawa/9.png",
+      "image_local": "images/Kagawa/9.png"
+    },
+    {
+      "pokemon": "Kagawa - Ayahawa PokéLid",
+      "lat": 34.33888888888889,
+      "lng": 134.04905555555555,
+      "dms": "34°20'20.0\"N 134°02'56.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagawa/5.png",
+      "image_local": "images/Kagawa/5.png"
+    },
+    {
+      "pokemon": "Kagawa - Utazu PokéLid",
+      "lat": 34.33888888888889,
+      "lng": 134.04905555555555,
+      "dms": "34°20'20.0\"N 134°02'56.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagawa/1.png",
+      "image_local": "images/Kagawa/1.png"
+    }
+  ],
+  "Kagoshima": [
+    {
+      "pokemon": "Kagoshima - Ibusuki PokéLid",
+      "lat": 31.237194444444444,
+      "lng": 130.6428611111111,
+      "dms": "31°14'13.9\"N 130°38'34.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagoshima/9.png",
+      "image_local": "images/Kagoshima/9.png"
+    },
+    {
+      "pokemon": "Kagoshima - Ibusuki PokéLid",
+      "lat": 31.237194444444444,
+      "lng": 130.6428611111111,
+      "dms": "31°14'13.9\"N 130°38'34.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagoshima/5.png",
+      "image_local": "images/Kagoshima/5.png"
+    },
+    {
+      "pokemon": "Kagoshima - Ibusuki PokéLid",
+      "lat": 31.237194444444444,
+      "lng": 130.6428611111111,
+      "dms": "31°14'13.9\"N 130°38'34.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kagoshima/1.png",
+      "image_local": "images/Kagoshima/1.png"
+    }
+  ],
+  "Kanagawa": [
+    {
+      "pokemon": "Kanagawa - Yokohama PokéLid",
+      "lat": 35.45333333333333,
+      "lng": 139.63169444444446,
+      "dms": "35°27'12.0\"N 139°37'54.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kanagawa/5.png",
+      "image_local": "images/Kanagawa/5.png"
+    },
+    {
+      "pokemon": "Kanagawa - Yokohama PokéLid",
+      "lat": 35.45333333333333,
+      "lng": 139.63169444444446,
+      "dms": "35°27'12.0\"N 139°37'54.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kanagawa/1.png",
+      "image_local": "images/Kanagawa/1.png"
+    }
+  ],
+  "Kochi": [
+    {
+      "pokemon": "Kochi - Mihara PokéLid",
+      "lat": 32.92252777777777,
+      "lng": 132.83983333333333,
+      "dms": "32°55'21.1\"N 132°50'23.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kochi/7.png",
+      "image_local": "images/Kochi/7.png"
+    },
+    {
+      "pokemon": "Kochi - Otoyo PokéLid",
+      "lat": 32.92252777777777,
+      "lng": 132.83983333333333,
+      "dms": "32°55'21.1\"N 132°50'23.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kochi/3.png",
+      "image_local": "images/Kochi/3.png"
+    },
+    {
+      "pokemon": "Kochi - Akita PokéLid",
+      "lat": 32.92252777777777,
+      "lng": 132.83983333333333,
+      "dms": "32°55'21.1\"N 132°50'23.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kochi/9.png",
+      "image_local": "images/Kochi/9.png"
+    },
+    {
+      "pokemon": "Kochi - Toyo PokéLid",
+      "lat": 32.92252777777777,
+      "lng": 132.83983333333333,
+      "dms": "32°55'21.1\"N 132°50'23.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kochi/13.png",
+      "image_local": "images/Kochi/13.png"
+    }
+  ],
+  "Kyoto": [
+    {
+      "pokemon": "Kyoto - Kyoto PokéLid",
+      "lat": 35.01186111111111,
+      "lng": 135.67874999999998,
+      "dms": "35°00'42.7\"N 135°40'43.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kyoto/5.png",
+      "image_local": "images/Kyoto/5.png"
+    },
+    {
+      "pokemon": "Kyoto - Kyoto PokéLid",
+      "lat": 35.01186111111111,
+      "lng": 135.67874999999998,
+      "dms": "35°00'42.7\"N 135°40'43.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/kyoto/1.png",
+      "image_local": "images/Kyoto/1.png"
+    }
+  ],
+  "Mie": [
+    {
+      "pokemon": "Mie - Kiho PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/8.png",
+      "image_local": "images/Mie/8.png"
+    },
+    {
+      "pokemon": "Mie - Asahi PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/12.png",
+      "image_local": "images/Mie/12.png"
+    },
+    {
+      "pokemon": "Mie - Ise PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/5.png",
+      "image_local": "images/Mie/5.png"
+    },
+    {
+      "pokemon": "Mie - Iga PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/1.png",
+      "image_local": "images/Mie/1.png"
+    },
+    {
+      "pokemon": "Mie - Minamiise PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/17.png",
+      "image_local": "images/Mie/17.png"
+    },
+    {
+      "pokemon": "Mie - Kawagoe PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/21.png",
+      "image_local": "images/Mie/21.png"
+    },
+    {
+      "pokemon": "Mie - Inabe PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/25.png",
+      "image_local": "images/Mie/25.png"
+    },
+    {
+      "pokemon": "Mie - Mihama PokéLid",
+      "lat": 33.76975,
+      "lng": 136.0286388888889,
+      "dms": "33°46'11.1\"N 136°01'43.1\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/mie/29.png",
+      "image_local": "images/Mie/29.png"
+    }
+  ],
+  "Miyagi": [
+    {
+      "pokemon": "Miyagi - Kasenuma Park PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/36.png",
+      "image_local": "images/Miyagi/36.png"
+    },
+    {
+      "pokemon": "Miyagi - Ishinomaki PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/32.png",
+      "image_local": "images/Miyagi/32.png"
+    },
+    {
+      "pokemon": "Miyagi - Rifu PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/28.png",
+      "image_local": "images/Miyagi/28.png"
+    },
+    {
+      "pokemon": "Miyagi - Natori PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/24.png",
+      "image_local": "images/Miyagi/24.png"
+    },
+    {
+      "pokemon": "Miyagi - Shiroishi PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/20.png",
+      "image_local": "images/Miyagi/20.png"
+    },
+    {
+      "pokemon": "Miyagi - Osaki PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/16.png",
+      "image_local": "images/Miyagi/16.png"
+    },
+    {
+      "pokemon": "Miyagi - Ogawara PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/12.png",
+      "image_local": "images/Miyagi/12.png"
+    },
+    {
+      "pokemon": "Miyagi - Marumori PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/8.png",
+      "image_local": "images/Miyagi/8.png"
+    },
+    {
+      "pokemon": "Miyagi - Shikam PokéLid",
+      "lat": 38.311638888888886,
+      "lng": 140.98325,
+      "dms": "38°18'41.9\"N 140°58'59.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyagi/4.png",
+      "image_local": "images/Miyagi/4.png"
+    }
+  ],
+  "Miyazaki": [
+    {
+      "pokemon": "Miyazaki - Miyazaki PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/26.png",
+      "image_local": "images/Miyazaki/26.png"
+    },
+    {
+      "pokemon": "Miyazaki - Kobayashi PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/22.png",
+      "image_local": "images/Miyazaki/22.png"
+    },
+    {
+      "pokemon": "Miyazaki - Erbino PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/18.png",
+      "image_local": "images/Miyazaki/18.png"
+    },
+    {
+      "pokemon": "Miyazaki - Kijo PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/14.png",
+      "image_local": "images/Miyazaki/14.png"
+    },
+    {
+      "pokemon": "Miyazaki - Misato PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/10.png",
+      "image_local": "images/Miyazaki/10.png"
+    },
+    {
+      "pokemon": "Miyazaki - Nishimera PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/6.png",
+      "image_local": "images/Miyazaki/6.png"
+    },
+    {
+      "pokemon": "Miyazaki - Hinokage PokéLid",
+      "lat": 31.8075,
+      "lng": 131.45783333333333,
+      "dms": "31°48'27.0\"N 131°27'28.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/miyazaki/2.png",
+      "image_local": "images/Miyazaki/2.png"
+    }
+  ],
+  "Nagasaki": [
+    {
+      "pokemon": "Nagasaki - Shinkamigoto PokéLid",
+      "lat": 32.98641666666667,
+      "lng": 129.11275,
+      "dms": "32°59'11.1\"N 129°06'45.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/nagasaki/1.png",
+      "image_local": "images/Nagasaki/1.png"
+    },
+    {
+      "pokemon": "Nagasaki - Nagasaki PokéLid",
+      "lat": 32.98641666666667,
+      "lng": 129.11275,
+      "dms": "32°59'11.1\"N 129°06'45.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/nagasaki/5.png",
+      "image_local": "images/Nagasaki/5.png"
+    },
+    {
+      "pokemon": "Nagasaki - Higashisonogi PokéLid",
+      "lat": 32.98641666666667,
+      "lng": 129.11275,
+      "dms": "32°59'11.1\"N 129°06'45.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/nagasaki/9.png",
+      "image_local": "images/Nagasaki/9.png"
+    }
+  ],
+  "Nara": [
+    {
+      "pokemon": "Nara - Ikaruga PokéLid",
+      "lat": 34.601888888888894,
+      "lng": 135.73916666666665,
+      "dms": "34°36'06.8\"N 135°44'21.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/nara/5.png",
+      "image_local": "images/Nara/5.png"
+    },
+    {
+      "pokemon": "Nara - Ikaruga PokéLid",
+      "lat": 34.601888888888894,
+      "lng": 135.73916666666665,
+      "dms": "34°36'06.8\"N 135°44'21.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/nara/1.png",
+      "image_local": "images/Nara/1.png"
+    }
+  ],
+  "Niigata": [
+    {
+      "pokemon": "Niigata - Ojiya PokéLid",
+      "lat": 37.31422222222222,
+      "lng": 138.79480555555554,
+      "dms": "37°18'51.2\"N 138°47'41.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/niigata/4.png",
+      "image_local": "images/Niigata/4.png"
+    }
+  ],
+  "Okayama": [
+    {
+      "pokemon": "Okayama - Kurashiki PokéLid",
+      "lat": 34.43427777777777,
+      "lng": 133.8138888888889,
+      "dms": "34°26'03.4\"N 133°48'50.0\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okayama/4.png",
+      "image_local": "images/Okayama/4.png"
+    }
+  ],
+  "Okinawa": [
+    {
+      "pokemon": "Okinawa - Naha PokéLid",
+      "lat": 26.216416666666667,
+      "lng": 127.68941666666667,
+      "dms": "26°12'59.1\"N 127°41'21.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okinawa/12.png",
+      "image_local": "images/Okinawa/12.png"
+    },
+    {
+      "pokemon": "Okinawa - Urasoe PokéLid",
+      "lat": 26.216416666666667,
+      "lng": 127.68941666666667,
+      "dms": "26°12'59.1\"N 127°41'21.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okinawa/8.png",
+      "image_local": "images/Okinawa/8.png"
+    },
+    {
+      "pokemon": "Okinawa - Tomigusuku PokéLid",
+      "lat": 26.216416666666667,
+      "lng": 127.68941666666667,
+      "dms": "26°12'59.1\"N 127°41'21.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okinawa/4.png",
+      "image_local": "images/Okinawa/4.png"
+    },
+    {
+      "pokemon": "Okinawa - Chatan PokéLid",
+      "lat": 26.216416666666667,
+      "lng": 127.68941666666667,
+      "dms": "26°12'59.1\"N 127°41'21.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okinawa/13.png",
+      "image_local": "images/Okinawa/13.png"
+    },
+    {
+      "pokemon": "Okinawa - Naha PokéLid",
+      "lat": 26.216416666666667,
+      "lng": 127.68941666666667,
+      "dms": "26°12'59.1\"N 127°41'21.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/okinawa/17.png",
+      "image_local": "images/Okinawa/17.png"
+    }
+  ],
+  "Osaka": [
+    {
+      "pokemon": "Osaka - Higashiosaka PokéLid",
+      "lat": 34.67977777777777,
+      "lng": 135.60122222222222,
+      "dms": "34°40'47.2\"N 135°36'04.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/osaka/5.png",
+      "image_local": "images/Osaka/5.png"
+    },
+    {
+      "pokemon": "Osaka - Higashiosaka PokéLid",
+      "lat": 34.67977777777777,
+      "lng": 135.60122222222222,
+      "dms": "34°40'47.2\"N 135°36'04.4\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/osaka/1.png",
+      "image_local": "images/Osaka/1.png"
+    }
+  ],
+  "Saga": [
+    {
+      "pokemon": "Saga - Saga PokéLid",
+      "lat": 33.25075,
+      "lng": 130.29894444444443,
+      "dms": "33°15'02.7\"N 130°17'56.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/saga/3.png",
+      "image_local": "images/Saga/3.png"
+    }
+  ],
+  "Saitama": [
+    {
+      "pokemon": "Saitama - Tokorozawa PokéLid",
+      "lat": 35.79747222222222,
+      "lng": 139.5055277777778,
+      "dms": "35°47'50.9\"N 139°30'19.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/saitama/3.png",
+      "image_local": "images/Saitama/3.png"
+    }
+  ],
+  "Shiga": [
+    {
+      "pokemon": "Shiga - Otsu PokéLid",
+      "lat": 35.010194444444444,
+      "lng": 135.8698888888889,
+      "dms": "35°00'36.7\"N 135°52'11.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shiga/5.png",
+      "image_local": "images/Shiga/5.png"
+    },
+    {
+      "pokemon": "Shiga - Koka PokéLid",
+      "lat": 35.010194444444444,
+      "lng": 135.8698888888889,
+      "dms": "35°00'36.7\"N 135°52'11.6\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shiga/1.png",
+      "image_local": "images/Shiga/1.png"
+    }
+  ],
+  "Shimane": [
+    {
+      "pokemon": "Shimane - Okinoshima PokéLid",
+      "lat": 36.17725,
+      "lng": 133.33025,
+      "dms": "36°10'38.1\"N 133°19'48.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shimane/5.png",
+      "image_local": "images/Shimane/5.png"
+    },
+    {
+      "pokemon": "Shimane - Hamada PokéLid",
+      "lat": 36.17725,
+      "lng": 133.33025,
+      "dms": "36°10'38.1\"N 133°19'48.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shimane/1.png",
+      "image_local": "images/Shimane/1.png"
+    }
+  ],
+  "Shizuoka": [
+    {
+      "pokemon": "Shizuoka - Izu PokéLid",
+      "lat": 34.97027777777778,
+      "lng": 138.92775,
+      "dms": "34°58'13.0\"N 138°55'39.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shizuoka/1.png",
+      "image_local": "images/Shizuoka/1.png"
+    },
+    {
+      "pokemon": "Shizuoka - Shizuoka PokéLid",
+      "lat": 34.97027777777778,
+      "lng": 138.92775,
+      "dms": "34°58'13.0\"N 138°55'39.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/shizuoka/5.png",
+      "image_local": "images/Shizuoka/5.png"
+    }
+  ],
+  "Tochigi": [
+    {
+      "pokemon": "Tochigi - Utsunomiya PokéLid",
+      "lat": 36.56077777777777,
+      "lng": 139.9095,
+      "dms": "36°33'38.8\"N 139°54'34.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tochigi/3.png",
+      "image_local": "images/Tochigi/3.png"
+    }
+  ],
+  "Tokushima": [
+    {
+      "pokemon": "Tokushima - Naruto City PokéLid",
+      "lat": 34.16808333333333,
+      "lng": 134.6163611111111,
+      "dms": "34°10'05.1\"N 134°36'58.9\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tokushima/3.png",
+      "image_local": "images/Tokushima/3.png"
+    }
+  ],
+  "Tokyo": [
+    {
+      "pokemon": "Tokyo - Machida PokéLid",
+      "lat": 35.54811111111111,
+      "lng": 139.45033333333333,
+      "dms": "35°32'53.2\"N 139°27'01.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tokyo/12.png",
+      "image_local": "images/Tokyo/12.png"
+    },
+    {
+      "pokemon": "Tokyo - Machida PokéLid",
+      "lat": 35.54811111111111,
+      "lng": 139.45033333333333,
+      "dms": "35°32'53.2\"N 139°27'01.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tokyo/8.png",
+      "image_local": "images/Tokyo/8.png"
+    },
+    {
+      "pokemon": "Tokyo - Ogasawara PokéLid",
+      "lat": 35.54811111111111,
+      "lng": 139.45033333333333,
+      "dms": "35°32'53.2\"N 139°27'01.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tokyo/4.png",
+      "image_local": "images/Tokyo/4.png"
+    }
+  ],
+  "Tottori": [
+    {
+      "pokemon": "Tottori - Tottori PokéLid",
+      "lat": 35.53966666666666,
+      "lng": 134.23727777777776,
+      "dms": "35°32'22.8\"N 134°14'14.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tottori/19.png",
+      "image_local": "images/Tottori/19.png"
+    },
+    {
+      "pokemon": "Tottori - Iwami PokéLid",
+      "lat": 35.53966666666666,
+      "lng": 134.23727777777776,
+      "dms": "35°32'22.8\"N 134°14'14.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tottori/15.png",
+      "image_local": "images/Tottori/15.png"
+    },
+    {
+      "pokemon": "Tottori - Kotoura PokéLid",
+      "lat": 35.53966666666666,
+      "lng": 134.23727777777776,
+      "dms": "35°32'22.8\"N 134°14'14.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tottori/11.png",
+      "image_local": "images/Tottori/11.png"
+    },
+    {
+      "pokemon": "Tottori - Nichinan PokéLid",
+      "lat": 35.53966666666666,
+      "lng": 134.23727777777776,
+      "dms": "35°32'22.8\"N 134°14'14.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tottori/7.png",
+      "image_local": "images/Tottori/7.png"
+    },
+    {
+      "pokemon": "Tottori - Hokuei PokéLid",
+      "lat": 35.53966666666666,
+      "lng": 134.23727777777776,
+      "dms": "35°32'22.8\"N 134°14'14.2\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tottori/3.png",
+      "image_local": "images/Tottori/3.png"
+    }
+  ],
+  "Toyama": [
+    {
+      "pokemon": "Toyama - Toyama PokéLid",
+      "lat": 36.715611111111116,
+      "lng": 137.1643611111111,
+      "dms": "36°42'56.2\"N 137°09'51.7\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/toyama/3.png",
+      "image_local": "images/Toyama/3.png"
+    }
+  ],
+  "Wakayama": [
+    {
+      "pokemon": "Wakayama - Nachikatsuura PokéLid",
+      "lat": 33.66897222222222,
+      "lng": 135.90291666666667,
+      "dms": "33°40'08.3\"N 135°54'10.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/wakayama/1.png",
+      "image_local": "images/Wakayama/1.png"
+    },
+    {
+      "pokemon": "Wakayama - Shirahama PokéLid",
+      "lat": 33.66897222222222,
+      "lng": 135.90291666666667,
+      "dms": "33°40'08.3\"N 135°54'10.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/wakayama/5.png",
+      "image_local": "images/Wakayama/5.png"
+    }
+  ],
+  "Yamagata": [],
+  "Yamaguchi": [
+    {
+      "pokemon": "Yamaguchi - Shimonoseki PokéLid",
+      "lat": 33.958222222222226,
+      "lng": 130.94869444444444,
+      "dms": "33°57'29.6\"N 130°56'55.3\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/yamaguchi/1.png",
+      "image_local": "images/Yamaguchi/1.png"
+    }
+  ]
+}
