@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	  <meta charset="UTF-8"/>
-	  <link rel="stylesheet" href="styles.css">
-	  <script src="d3.js"></script>
-	  <script src="regions.js"></script>
-  </head>
-  <body>
-	  <div id="tooltip" class="tooltip"></div>
-	  <svg id="svg"></svg>
-    <script src="map.js"></script>
-  </body>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	    <title>Pokélid Map - Japan</title>
+	    <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	    <svg></svg>
+	    
+	    <!-- Tooltip -->
+	    <div id="tooltip"></div>
+	    
+	    <!-- Pokélid Modal -->
+		<div id="pokelid-modal" class="modal">
+	        <div class="modal-content">
+				<span class="modal-close">&times;</span>
+    		    <h2 class="modal-title">Pokélid Name</h2>
+    	        <p class="modal-prefecture-label">Prefecture: <span class="modal-prefecture"></span></p>
+    	        <img class="modal-image" src="" alt="Pokélid">
+    	        <div class="modal-links">
+    	            <a class="modal-maps-link" href="#" target="_blank" rel="noopener noreferrer">
+    	                📍 View on Google Maps
+    	            </a>
+    	            <a class="modal-pokemon-link" href="#" target="_blank" rel="noopener noreferrer">
+    	                🎮 Pokemon Local Acts Page
+    	            </a>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <script src="d3.js"></script>
+	    <script src="regions.js"></script>
+	    <script src="map.js"></script>
+	    <script>
+	        // Ensure modal starts hidden on page load
+	        (function() {
+	            const modal = document.getElementById('pokelid-modal');
+	            if (modal) {
+	                // Force remove show class
+	                modal.classList.remove('show');
+	                // Force display none
+	                modal.style.display = 'none';
+	                console.log('Modal initialized - hidden');
+	                console.log('Modal classes:', modal.className);
+	                console.log('Modal display:', window.getComputedStyle(modal).display);
+	            }
+	        })();
+	    </script>
+	</body>
 </html>

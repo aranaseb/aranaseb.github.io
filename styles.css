@@ -1,55 +1,234 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    touch-action: none;
+}
+
 svg {
-	background: #cfe8ff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    touch-action: none;
 }
 
 .prefecture {
-    stroke: #222;
-    stroke-width: 0.3px;
-	stroke-linecap: round;
-    pointer-events: all;
-    transition: stroke 0.15s, stroke-width 0.15s, fill 0.2s ease-out;
-  }
+    stroke: #333;
+    stroke-width: 0.5px;
+    transition: fill 0.3s;
+    -webkit-tap-highlight-color: transparent;
+}
 
-  .prefecture:hover {
-	  stroke: "#ffffff";
-	  stroke-width: 0.7;
-  }
+.prefecture:hover {
+    fill-opacity: 0.7;
+}
 
-  .selected {
-    fill: #ffd27f;
-	stroke: "#ff8800";
-	stroke-width: 1;
-  }
+.prefecture:active {
+    fill-opacity: 0.5;
+}
 
-  /* Tooltip */
-  .tooltip {
-    position: absolute;
-    padding: 4px 8px;
-    background: rgba(0,0,0,0.75);
+.prefecture.selected {
+    fill: #ffeb3b !important;
+    stroke: #ff5722;
+    stroke-width: 1.5px;
+}
+
+#tooltip {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    border-radius: 4px;
-    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.15s ease-out;
-  }
+    transition: opacity 0.2s;
+    z-index: 1000;
+    max-width: 200px;
+    word-wrap: break-word;
+}
 
-  /* Reset button */
-  #reset-zoom {
+/* Modal Styles */
+#pokelid-modal {
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none !important;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#pokelid-modal.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-close {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    padding: 8px 12px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    right: 15px;
+    top: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #999;
     cursor: pointer;
-    font-size: 14px;
-  }
-  #reset-zoom:hover {
-    background: #f0f0f0;
-  }
+    line-height: 1;
+    transition: color 0.2s;
+    padding: 5px;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+}
+
+.modal-close:hover,
+.modal-close:active {
+    color: #333;
+}
+
+.modal-title {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 22px;
+    padding-right: 40px;
+    line-height: 1.3;
+}
+
+.modal-prefecture-label {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 15px;
+}
+
+.modal-prefecture {
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-links a {
+    display: block;
+    padding: 14px 20px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.modal-links a:active {
+    transform: scale(0.98);
+}
+
+.modal-links a:hover {
+    background-color: #1976D2;
+}
+
+.modal-maps-link {
+    background-color: #4CAF50 !important;
+}
+
+.modal-maps-link:hover,
+.modal-maps-link:active {
+    background-color: #45a049 !important;
+}
+
+.modal-pokemon-link {
+    background-color: #FF5722 !important;
+}
+
+.modal-pokemon-link:hover,
+.modal-pokemon-link:active {
+    background-color: #E64A19 !important;
+}
+
+/* Mobile Responsive design */
+@media (max-width: 600px) {
+    #pokelid-modal {
+        padding: 10px;
+    }
+    
+    .modal-content {
+        padding: 20px;
+        border-radius: 10px;
+        max-height: 85vh;
+    }
+    
+    .modal-close {
+        font-size: 32px;
+        right: 10px;
+        top: 10px;
+        padding: 8px;
+    }
+    
+    .modal-title {
+        font-size: 20px;
+        padding-right: 35px;
+    }
+    
+    .modal-prefecture-label {
+        font-size: 14px;
+    }
+    
+    .modal-links a {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+    .modal-content {
+        padding: 15px;
+    }
+    
+    .modal-title {
+        font-size: 18px;
+    }
+    
+    .modal-prefecture-label {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}

@@ -70,6 +70,52 @@ function filterCitiesByPrefecture() {
 		});
 }
 
+function showPokelidModal(pokelid) {
+	console.log("=== showPokelidModal called ===");
+	console.log("Pokelid:", pokelid);
+	
+	const modal = d3.select("#pokelid-modal");
+	const prefecture = pokelid.prefecture;
+	
+	console.log("Modal element:", modal.node());
+	console.log("Classes before:", modal.attr("class"));
+
+	// Set modal content
+	modal.select(".modal-title").text(pokelid.name);
+	modal.select(".modal-prefecture").text(prefecture);
+
+	// Set prefecture image
+	const imagePath = `backgrounds/Location_Background_Pokelid_${prefecture}.png`;
+	modal.select(".modal-image")
+		.attr("src", imagePath)
+		.attr("alt", `${prefecture} Pokélid`);
+
+	// Set Google Maps link
+	const mapsUrl = `https://www.google.com/maps?q=${pokelid.lat},${pokelid.lng}`;
+	modal.select(".modal-maps-link")
+		.attr("href", mapsUrl);
+
+	// Set Pokemon Local Acts link
+	const pokemonUrl = "https://local.pokemon.jp/en/manhole/${prefecture.toLowerCase()}.html";
+	modal.select(".modal-pokemon-link")
+		.attr("href", pokemonUrl);
+
+	// Show modal
+	modal.node().style.display = ''; // Remove inline style
+	modal.classed("show", true);
+	
+	console.log("Classes after:", modal.attr("class"));
+	console.log("Computed display:", window.getComputedStyle(modal.node()).display);
+	console.log("=== End showPokelidModal ===");
+}
+
+function closePokelidModal() {
+	const modal = d3.select("#pokelid-modal");
+	modal.classed("show", false);
+	modal.node().style.display = 'none'; // Force hide with inline style
+	console.log("Modal closed");
+}
+
 function showPokelids() {
 	const allPoints = [];
 	for (let prefName of selectedPrefectures) {
@@ -81,7 +127,8 @@ function showPokelids() {
 	const circles = pokelidLayer.selectAll("circle.pokelid")
 		.data(allPoints, d => `${d.prefecture}-${d.lat},${d.lng}`);
 
-	circles.enter()
+	// Enter new circles
+	const enterCircles = circles.enter()
 		.append("circle")
 		.attr("class", "pokelid")
 		.attr("r", 0.75)
@@ -89,18 +136,37 @@ function showPokelids() {
 		.attr("stroke", "black")
 		.attr("stroke-width", 0.25)
 		.attr("opacity", 0.9)
+		.style("cursor", "pointer");
+
+	// Merge enter and update selections, then apply attributes and events
+	enterCircles.merge(circles)
 		.attr("transform", d => {
 			const [x,y] = projection([d.lng, d.lat]);
 			return `translate(${x}, ${y})`;
 		})
-		.on("mousemove", function(event, d) {
+		.on("mousemove touchmove", function(event, d) {
+			const e = event.type === 'touchmove' ? event.touches[0] : event;
 			tooltip.style("opacity", 1)
 				.html(`${d.name}<br>${d.dms}`)
-				.style("left", (event.pageX + 12) + "px")
-				.style("top", (event.pageY + 12) + "px");
+				.style("left", (e.pageX + 12) + "px")
+				.style("top", (e.pageY + 12) + "px");
 		})
-		.on("mouseout", function() {
+		.on("mouseout touchend", function() {
 			tooltip.style("opacity", 0);
+		})
+		.on("click touchend", function(event, d) {
+			console.log("*** Pokelid clicked! ***", d);
+			event.stopPropagation();
+			event.preventDefault();
+			
+			// Only trigger on actual clicks, not drags
+			if (event.type === 'touchend') {
+				const touch = event.changedTouches[0];
+				const elem = document.elementFromPoint(touch.clientX, touch.clientY);
+				if (!this.contains(elem) && elem !== this) return;
+			}
+			
+			showPokelidModal(d);
 		});
 
 	circles.exit().remove();
@@ -181,17 +247,28 @@ d3.json("jp.json").then(function(geojson) {
 			return regionColors(region);
 		})
 		.style("cursor", "pointer")
-		.on("mousemove", function (event, d) {
+		.on("mousemove touchmove", function (event, d) {
+			// Handle both mouse and touch events
+			const e = event.type === 'touchmove' ? event.touches[0] : event;
 			tooltip.style("opacity", 1)
 				.html(d.properties.name)
-				.style("left", (event.pageX + 12) + "px")
-				.style("top", (event.pageY + 12) + "px");
+				.style("left", (e.pageX + 12) + "px")
+				.style("top", (e.pageY + 12) + "px");
 		})
-		.on("mouseout", function () {
+		.on("mouseout touchend", function () {
 			tooltip.style("opacity", 0);
 		})
-		.on("click", function (event, d) {
+		.on("click touchend", function (event, d) {
 			event.stopPropagation();
+			event.preventDefault(); // Prevent double-tap zoom on mobile
+			
+			// Only trigger on actual clicks, not drags
+			if (event.type === 'touchend') {
+				const touch = event.changedTouches[0];
+				const elem = document.elementFromPoint(touch.clientX, touch.clientY);
+				if (elem !== this) return; // Touch ended on different element
+			}
+			
 			const prefName = d.properties.name;
 			
 			// Toggle selection
@@ -212,38 +289,39 @@ d3.json("jp.json").then(function(geojson) {
 		});		
 	pokelidLayer.raise();
 	cityLayer.raise();
-});
-
-d3.json("jpcities.json").then(function(cities) {
-	cityLayer.selectAll("g.city")
-		.data(cities)
-		.join("g")
-			.attr("class", "city")
-			.style("display", "none")
-			.attr("transform", d => {
-				const [x, y] = projection([+d.lng, +d.lat]);
-				return `translate(${x},${y})`;
-			})
-			.each(function(d) {
-				const group = d3.select(this);
-				group.append("circle")
-					.attr("r", 0.5)
-					.attr("fill", "#000")
-					.attr("stroke", "#fff")
-					.attr("stroke-width", 0.25);
 	
-				group.append("text")
-					.text(d.city)
-					.attr("x", 1)
-					.attr("y", 1)
-					.attr("font-size", "3px")
-					.attr("font-family", "sans-serif")
-					.attr("fill", "#333")
-					.attr("paint-order", "stroke")
-					.attr("stroke", "white")
-					.attr("stroke-width", 0.5)
-					.style("pointer-events", "none");
-			});
+	// Load cities AFTER projection is configured
+	d3.json("jpcities.json").then(function(cities) {
+		cityLayer.selectAll("g.city")
+			.data(cities)
+			.join("g")
+				.attr("class", "city")
+				.style("display", "none")
+				.each(function(d) {
+					const group = d3.select(this);
+					group.append("circle")
+						.attr("r", 0.5)
+						.attr("fill", "#000")
+						.attr("stroke", "#fff")
+						.attr("stroke-width", 0.25);
+		
+					group.append("text")
+						.text(d.city)
+						.attr("x", 1)
+						.attr("y", 1)
+						.attr("font-size", "3px")
+						.attr("font-family", "sans-serif")
+						.attr("fill", "#333")
+						.attr("paint-order", "stroke")
+						.attr("stroke", "white")
+						.attr("stroke-width", 0.5)
+						.style("pointer-events", "none");
+				})
+				.attr("transform", d => {
+					const [x, y] = projection([+d.lng, +d.lat]);
+					return `translate(${x},${y})`;
+				});
+	});
 });
 
 svg.on("click", () => {
@@ -256,3 +334,12 @@ svg.on("click", () => {
 		.call(zoom.transform, d3.zoomIdentity);
 });
 
+d3.select("#pokelid-modal").on("click", function(event) {
+	if (event.target === this) {
+		closePokelidModal();
+	}
+});
+d3.select(".modal-close").on("click", function(event) {
+	event.stopPropagation();
+	closePokelidModal();
+});
