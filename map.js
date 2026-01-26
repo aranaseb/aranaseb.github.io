@@ -96,7 +96,7 @@ function showPokelidModal(pokelid) {
 		.attr("href", mapsUrl);
 
 	// Set Pokemon Local Acts link
-	const pokemonUrl = "https://local.pokemon.jp/en/manhole/${prefecture.toLowerCase()}.html";
+	const pokemonUrl = "https://local.pokemon.jp/en/manhole/${prefecture.toLowerCase}.html";
 	modal.select(".modal-pokemon-link")
 		.attr("href", pokemonUrl);
 
@@ -116,6 +116,102 @@ function closePokelidModal() {
 	console.log("Modal closed");
 }
 
+function showClusterModal(cluster) {
+	console.log("=== showClusterModal called ===");
+	console.log("Cluster with", cluster.lids.length, "lids");
+	
+	const modal = d3.select("#cluster-modal");
+	const prefecture = cluster.prefecture;
+	
+	// Set modal title
+	modal.select(".cluster-modal-title").text(`${cluster.lids.length} Pokélids in ${prefecture}`);
+	
+	// Clear and populate list
+	const listContainer = modal.select(".cluster-list");
+	listContainer.html(""); // Clear existing
+	
+	cluster.lids.forEach(lid => {
+		const item = listContainer.append("div")
+			.attr("class", "cluster-item")
+			.style("cursor", "pointer")
+			.on("click", function() {
+				closeClusterModal();
+				showPokelidModal(lid);
+			});
+		
+		item.append("div")
+			.attr("class", "cluster-item-name")
+			.text(lid.name);
+		
+		item.append("div")
+			.attr("class", "cluster-item-coords")
+			.text(lid.dms);
+	});
+	
+	// Show modal
+	modal.node().style.display = '';
+	modal.classed("show", true);
+	console.log("=== End showClusterModal ===");
+}
+
+function closeClusterModal() {
+	const modal = d3.select("#cluster-modal");
+	modal.classed("show", false);
+	modal.node().style.display = 'none';
+	console.log("Cluster modal closed");
+}
+
+// Calculate distance between two lat/lng points in km
+function getDistance(lat1, lng1, lat2, lng2) {
+	const R = 6371; // Earth's radius in km
+	const dLat = (lat2 - lat1) * Math.PI / 180;
+	const dLng = (lng2 - lng1) * Math.PI / 180;
+	const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+	          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+	          Math.sin(dLng/2) * Math.sin(dLng/2);
+	const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+	return R * c;
+}
+
+// Cluster nearby pokelids within 5km
+function clusterPokelids(points, maxDistance = 5) {
+	const clusters = [];
+	const used = new Set();
+	
+	points.forEach((point, i) => {
+		if (used.has(i)) return;
+		
+		const cluster = {
+			lids: [point],
+			lat: point.lat,
+			lng: point.lng,
+			prefecture: point.prefecture
+		};
+		
+		// Find all points within maxDistance km
+		points.forEach((other, j) => {
+			if (i === j || used.has(j)) return;
+			const distance = getDistance(point.lat, point.lng, other.lat, other.lng);
+			if (distance <= maxDistance) {
+				cluster.lids.push(other);
+				used.add(j);
+			}
+		});
+		
+		used.add(i);
+		
+		// Calculate centroid if multiple lids
+		if (cluster.lids.length > 1) {
+			cluster.lat = cluster.lids.reduce((sum, lid) => sum + lid.lat, 0) / cluster.lids.length;
+			cluster.lng = cluster.lids.reduce((sum, lid) => sum + lid.lng, 0) / cluster.lids.length;
+		}
+		
+		clusters.push(cluster);
+	});
+	
+	return clusters;
+}
+
 function showPokelids() {
 	const allPoints = [];
 	for (let prefName of selectedPrefectures) {
@@ -124,30 +220,58 @@ function showPokelids() {
 			allPoints.push({...p, prefecture: prefName});
 		});
 	}
-	const circles = pokelidLayer.selectAll("circle.pokelid")
-		.data(allPoints, d => `${d.prefecture}-${d.lat},${d.lng}`);
-
-	// Enter new circles
-	const enterCircles = circles.enter()
-		.append("circle")
-		.attr("class", "pokelid")
-		.attr("r", 0.75)
-		.attr("fill", "red")
+	
+	// Cluster nearby pokelids
+	const clusters = clusterPokelids(allPoints, 5);
+	
+	// Remove old clusters
+	pokelidLayer.selectAll("g.pokelid-cluster").remove();
+	
+	// Create cluster groups
+	const clusterGroups = pokelidLayer.selectAll("g.pokelid-cluster")
+		.data(clusters, d => `${d.prefecture}-${d.lat},${d.lng}-${d.lids.length}`);
+	
+	const enterGroups = clusterGroups.enter()
+		.append("g")
+		.attr("class", "pokelid-cluster")
+		.style("cursor", "pointer");
+	
+	// Add circles to groups
+	enterGroups.append("circle")
+		.attr("class", "pokelid-circle")
+		.attr("r", d => d.lids.length > 1 ? 1.2 : 0.75)
+		.attr("fill", d => d.lids.length > 1 ? "#ff6b6b" : "red")
 		.attr("stroke", "black")
 		.attr("stroke-width", 0.25)
-		.attr("opacity", 0.9)
-		.style("cursor", "pointer");
-
-	// Merge enter and update selections, then apply attributes and events
-	enterCircles.merge(circles)
+		.attr("opacity", 0.9);
+	
+	// Add count badge for clusters with multiple lids
+	enterGroups.filter(d => d.lids.length > 1)
+		.append("text")
+		.attr("class", "cluster-count")
+		.attr("text-anchor", "middle")
+		.attr("dy", "0.35em")
+		.attr("font-size", "2.5px")
+		.attr("font-weight", "bold")
+		.attr("fill", "white")
+		.attr("stroke", "black")
+		.attr("stroke-width", 0.15)
+		.attr("paint-order", "stroke")
+		.text(d => d.lids.length);
+	
+	// Position and add events to merged selection
+	enterGroups.merge(clusterGroups)
 		.attr("transform", d => {
-			const [x,y] = projection([d.lng, d.lat]);
+			const [x, y] = projection([d.lng, d.lat]);
 			return `translate(${x}, ${y})`;
 		})
 		.on("mousemove touchmove", function(event, d) {
 			const e = event.type === 'touchmove' ? event.touches[0] : event;
+			const tooltipText = d.lids.length > 1 
+				? `${d.lids.length} Pokélids in this area`
+				: `${d.lids[0].name}<br>${d.lids[0].dms}`;
 			tooltip.style("opacity", 1)
-				.html(`${d.name}<br>${d.dms}`)
+				.html(tooltipText)
 				.style("left", (e.pageX + 12) + "px")
 				.style("top", (e.pageY + 12) + "px");
 		})
@@ -155,7 +279,7 @@ function showPokelids() {
 			tooltip.style("opacity", 0);
 		})
 		.on("click touchend", function(event, d) {
-			console.log("*** Pokelid clicked! ***", d);
+			console.log("*** Cluster clicked! ***", d);
 			event.stopPropagation();
 			event.preventDefault();
 			
@@ -166,14 +290,20 @@ function showPokelids() {
 				if (!this.contains(elem) && elem !== this) return;
 			}
 			
-			showPokelidModal(d);
+			// If single lid, show its modal
+			if (d.lids.length === 1) {
+				showPokelidModal(d.lids[0]);
+			} else {
+				// If cluster, show list modal
+				showClusterModal(d);
+			}
 		});
-
-	circles.exit().remove();
+	
+	clusterGroups.exit().remove();
 }
 
 function clearPokelids() {
-	pokelidLayer.selectAll(".pokelid").remove();
+	pokelidLayer.selectAll("g.pokelid-cluster").remove();
 }
 
 const customZoomBounds = {
@@ -342,4 +472,15 @@ d3.select("#pokelid-modal").on("click", function(event) {
 d3.select(".modal-close").on("click", function(event) {
 	event.stopPropagation();
 	closePokelidModal();
+});
+
+// Cluster modal event handlers
+d3.select("#cluster-modal").on("click", function(event) {
+	if (event.target === this) {
+		closeClusterModal();
+	}
+});
+d3.select(".cluster-modal-close").on("click", function(event) {
+	event.stopPropagation();
+	closeClusterModal();
 });
