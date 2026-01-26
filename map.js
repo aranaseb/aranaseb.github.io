@@ -96,7 +96,7 @@ function showPokelidModal(pokelid) {
 		.attr("href", mapsUrl);
 
 	// Set Pokemon Local Acts link
-	const pokemonUrl = "https://local.pokemon.jp/en/manhole/${prefecture.toLowerCase}.html";
+	const pokemonUrl = `https://local.pokemon.jp/en/manhole/${prefecture.toLowerCase()}.html`;
 	modal.select(".modal-pokemon-link")
 		.attr("href", pokemonUrl);
 

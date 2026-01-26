@@ -36,7 +36,7 @@ svg {
 }
 
 .prefecture.selected {
-    fill: #33cc33;
+    fill: #ccffcc;
     stroke: #000;
     stroke-width: 1.5px;
 }
