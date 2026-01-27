@@ -24,7 +24,7 @@ let selectedPrefectures = new Set();
 const screenScale = Math.min(WIDTH, HEIGHT) / 1000; // Normalize to 1000px baseline
 const baseFontSize = 3 * screenScale;
 const baseCityRadius = 0.5 * screenScale;
-const basePokelidRadius = 0.75 * screenScale;
+const basePokelidRadius = 0.9 * screenScale;
 const baseClusterRadius = 1.2 * screenScale;
 const baseCountSize = 2.5 * screenScale;
 
