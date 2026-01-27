@@ -12,13 +12,21 @@ const regionColors = d3.scaleOrdinal()
 		"Chugoku-Shikoku",
 		"Kyushu-Okinawa"
 	])
-	.range(d3.schemeSet3);
+	.range(["#048c28"]);
 
 const WIDTH = window.innerWidth;
 const HEIGHT = window.innerHeight;
 const PADDING = 50;
 
 let selectedPrefectures = new Set();
+
+// Calculate screen scale factor (smaller screens = larger elements for readability)
+const screenScale = Math.min(WIDTH, HEIGHT) / 1000; // Normalize to 1000px baseline
+const baseFontSize = 3 * screenScale;
+const baseCityRadius = 0.5 * screenScale;
+const basePokelidRadius = 0.75 * screenScale;
+const baseClusterRadius = 1.2 * screenScale;
+const baseCountSize = 2.5 * screenScale;
 
 const projection = d3.geoEquirectangular()
 const path = d3.geoPath().projection(projection);
@@ -53,6 +61,11 @@ function resetColors() {
 			return regionColors(regions[pref]);
 		});
 	selectedPrefectures.clear();
+}
+
+function getPokelidCount(prefName) {
+	const points = pokelids[prefName] || [];
+	return points.length;
 }
 
 function filterCitiesByPrefecture() {
@@ -239,10 +252,10 @@ function showPokelids() {
 	// Add circles to groups
 	enterGroups.append("circle")
 		.attr("class", "pokelid-circle")
-		.attr("r", d => d.lids.length > 1 ? 1.2 : 0.75)
+		.attr("r", d => d.lids.length > 1 ? baseClusterRadius : basePokelidRadius)
 		.attr("fill", d => d.lids.length > 1 ? "#ff6b6b" : "red")
 		.attr("stroke", "black")
-		.attr("stroke-width", 0.25)
+		.attr("stroke-width", 0.25 * screenScale)
 		.attr("opacity", 0.9);
 	
 	// Add count badge for clusters with multiple lids
@@ -251,11 +264,11 @@ function showPokelids() {
 		.attr("class", "cluster-count")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
-		.attr("font-size", "2.5px")
+		.attr("font-size", `${baseCountSize}px`)
 		.attr("font-weight", "bold")
 		.attr("fill", "white")
 		.attr("stroke", "black")
-		.attr("stroke-width", 0.15)
+		.attr("stroke-width", 0.15 * screenScale)
 		.attr("paint-order", "stroke")
 		.text(d => d.lids.length);
 	
@@ -380,8 +393,13 @@ d3.json("jp.json").then(function(geojson) {
 		.on("mousemove touchmove", function (event, d) {
 			// Handle both mouse and touch events
 			const e = event.type === 'touchmove' ? event.touches[0] : event;
+			const prefName = d.properties.name;
+			const count = getPokelidCount(prefName);
+			const tooltipText = count > 0 
+				? `${prefName}<br>${count} Pokélid${count > 1 ? 's' : ''}`
+				: prefName;
 			tooltip.style("opacity", 1)
-				.html(d.properties.name)
+				.html(tooltipText)
 				.style("left", (e.pageX + 12) + "px")
 				.style("top", (e.pageY + 12) + "px");
 		})
@@ -420,6 +438,32 @@ d3.json("jp.json").then(function(geojson) {
 	pokelidLayer.raise();
 	cityLayer.raise();
 	
+	// Initial zoom to mainland Japan (excluding Okinawa and far islands)
+	// Focus on central Japan from Hokkaido to Kyushu
+	const mainlandBounds = {
+		lat: [30, 46],  // Latitude range: Kyushu to Hokkaido
+		lng: [128, 146] // Longitude range: West to East coast
+	};
+	
+	const [[x0, y0], [x1, y1]] = [
+		projection([mainlandBounds.lng[0], mainlandBounds.lat[1]]),
+		projection([mainlandBounds.lng[1], mainlandBounds.lat[0]])
+	];
+	
+	const scale = Math.min(8, 0.9 / Math.max((x1 - x0) / WIDTH, (y1 - y0) / HEIGHT));
+	const centerX = (x0 + x1) / 2;
+	const centerY = (y0 + y1) / 2;
+	
+	svg.transition()
+		.duration(1000)
+		.call(
+			zoom.transform,
+			d3.zoomIdentity
+				.translate(WIDTH / 2, HEIGHT / 2)
+				.scale(scale)
+				.translate(-centerX, -centerY)
+		);
+	
 	// Load cities AFTER projection is configured
 	d3.json("jpcities.json").then(function(cities) {
 		cityLayer.selectAll("g.city")
@@ -430,21 +474,21 @@ d3.json("jp.json").then(function(geojson) {
 				.each(function(d) {
 					const group = d3.select(this);
 					group.append("circle")
-						.attr("r", 0.5)
+						.attr("r", baseCityRadius)
 						.attr("fill", "#000")
 						.attr("stroke", "#fff")
-						.attr("stroke-width", 0.25);
+						.attr("stroke-width", 0.25 * screenScale);
 		
 					group.append("text")
 						.text(d.city)
 						.attr("x", 1)
 						.attr("y", 1)
-						.attr("font-size", "3px")
+						.attr("font-size", `${baseFontSize}px`)
 						.attr("font-family", "sans-serif")
 						.attr("fill", "#333")
 						.attr("paint-order", "stroke")
 						.attr("stroke", "white")
-						.attr("stroke-width", 0.5)
+						.attr("stroke-width", 0.5 * screenScale)
 						.style("pointer-events", "none");
 				})
 				.attr("transform", d => {
