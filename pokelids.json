@@ -3222,6 +3222,14 @@
     }
   ],
   "Tokyo": [
+	{
+	  "name": "PokéPark KANTO",
+	  "lat": 35.62637,
+	  "lng": 139.521513,
+	  "dms": "35°37'34.9\"N 139°31'17.5\"E",
+	  "image_url": "https://www.serebii.net/pokelids/th/tokyo/13.png",
+	  "image_local": "images/Tokyo/12.png"
+	},
     {
       "name": "Machida",
       "lat": 35.54811111111111,
