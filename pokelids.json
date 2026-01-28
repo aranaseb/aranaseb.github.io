@@ -2338,9 +2338,9 @@
     },
     {
       "name": "Kawasaki",
-      "lat": 38.177527777777776,
-      "lng": 140.64644444444443,
-      "dms": "38°10'39.1\"N 140°38'47.2\"E",
+      "lat": 38.177521,
+      "lng": 140.643663,
+      "dms": "38°10'39.0756\"N 140°38'37.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/9.png",
       "image_local": "images/Miyagi/9.png"
     },
