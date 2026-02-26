@@ -3,6 +3,7 @@
 ## Pokélid Campaign Description - from serebii.net
 
 Poké Lids are a special campaign held throughout Japan as part of the Pokémon Local Acts campaign, where Pokémon become ambassadors of certain areas in Japan and help with the economy and local features including parks.
+![lids](https://github.com/user-attachments/assets/908889ef-c51c-4f88-8a92-ef467094789b)
 
 Poké Lids are an extension of this and offer special Utility Covers throughout Japan that are placed in common tourist spots or places of special cultural significance. Many Poké Lids are routinely added with over 250 Poké Lids having been placed so far.
 
