@@ -24,4 +24,6 @@ Resources on this feature are very limited. Official information can be found at
 
 As an avid pokémon GO player and traveler, I was in great need of a larger-scale view of the feature and where these POIs are located across Japan. 
 
-The special location backgrounds featured are a rare commodity in the game, and this site links the in-game image to the geographic location of each Pokélid as well as visualizes areas of high concentration for collectors to visit in-person to efficiently add to their collections.
+My website, built using the d3.js Javascript library for data visualization (specifically d3.geo), provides a visual overview of the geographic locations of all the pokelids, separated by prefecture, with direct access to the corresponding location background you can expect by visiting.
+
+My goal is to help Pokémon GO travelers like myself navigate this enormous feature and maximize their travels to catch 'em all.
