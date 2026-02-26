@@ -15,7 +15,8 @@ In addition to being in tourist spots, these Poké Lids also are made into speci
 These POIs are significant to Pokemon GO collectors as every 2 manhole Pokéstops visited in-game, the player is rewarded with a special encounter with an in-game Pokémon. 
 This Pokémon, when caught, displays a rare background image based on the Japanese Prefecture the Pokélid is located in. 
 
-Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a unique, rare background commemorating any player who visits them.
+Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a unique, rare background commemorating any player who visits them. If a player is lucky, the pokémon encountered can be "shiny", meaning it has a very rare special color variation compared to the normal version. Any player who catches one of these, with the exclusive location background, can consider themself in possession of one of the rarest unique pokémon in the history of the game.
+
 
 ![s-l1600](https://github.com/user-attachments/assets/1aa25afc-63c2-4863-8878-bf60c4efc18d)
 
