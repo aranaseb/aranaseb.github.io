@@ -24,7 +24,7 @@ Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a uni
 
 ## My Task
 
-Resources on this feature are very limited. Official information can be found at https://local.pokemon.jp/en/manhole/, however specifics on the in-game feature are mostly hidden inside the game.
+Resources on this feature are very limited. Official information on the Pokélids can be found at https://local.pokemon.jp/en/manhole/, however specifics on the in-game feature are mostly hidden inside the game.
 
 As an avid pokémon GO player and traveler, I was in great need of a larger-scale view of the feature and where these POIs are located across Japan. 
 
