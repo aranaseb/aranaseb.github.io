@@ -10,7 +10,10 @@ Poké Lids are an extension of this and offer special Utility Covers throughout 
 
 ## Pokemon Go Feature
 
-In addition to being in tourist spots, these Poké Lids also are made into special PokéStops in Pokémon GO. These POIs are significant to Pokemon GO collectors as every 2 manhole Pokéstops visited in-game, the player is rewarded with a special encounter with an in-game Pokémon. This Pokémon, when caught, displays a rare background image based on the Japanese Prefecture the Pokélid is located in. 
+In addition to being in tourist spots, these Poké Lids also are made into special PokéStops in Pokémon GO. 
+
+These POIs are significant to Pokemon GO collectors as every 2 manhole Pokéstops visited in-game, the player is rewarded with a special encounter with an in-game Pokémon. 
+This Pokémon, when caught, displays a rare background image based on the Japanese Prefecture the Pokélid is located in. 
 
 Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a unique, rare background commemorating any player who visits them.
 
@@ -18,6 +21,6 @@ Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a uni
 
 Resources on this feature are very limited. Official information can be found at https://local.pokemon.jp/en/manhole/, however specifics on the in-game feature are mostly hidden inside the game.
 
-No other overviews or visual resources exist. As an avid pokémon GO player and traveler, I was in great need of a larger-scale view of the feature and where these POIs are located across Japan. The special location backgrounds featured are a rare commodity in the game, and this site links the in-game image to the geographic location of each Pokélid as well as visualizes areas of high concentration for collectors to visit in-person to efficiently add to their collections.
+As an avid pokémon GO player and traveler, I was in great need of a larger-scale view of the feature and where these POIs are located across Japan. 
 
-
+The special location backgrounds featured are a rare commodity in the game, and this site links the in-game image to the geographic location of each Pokélid as well as visualizes areas of high concentration for collectors to visit in-person to efficiently add to their collections.
