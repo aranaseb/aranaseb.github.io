@@ -10,7 +10,7 @@ Poké Lids are an extension of this and offer special Utility Covers throughout 
 
 ## Pokemon Go Feature
 
-In addition to being in tourist spots, these Poké Lids also are made into special PokéStops in Pokémon GO. 
+In addition to being in tourist spots, these Poké Lids also are made into special PokéStops in Pokémon GO, a mobile game played by traversing through the real world and catching pokémon based on your real environment.
 
 These POIs are significant to Pokemon GO collectors as every 2 manhole Pokéstops visited in-game, the player is rewarded with a special encounter with an in-game Pokémon. 
 This Pokémon, when caught, displays a rare background image based on the Japanese Prefecture the Pokélid is located in. 
