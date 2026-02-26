@@ -8,7 +8,8 @@ Poké Lids are an extension of this and offer special Utility Covers throughout 
 
 ![lids](https://github.com/user-attachments/assets/908889ef-c51c-4f88-8a92-ef467094789b)
 
-## Pokemon Go Feature
+
+# Pokemon Go Feature
 
 In addition to being in tourist spots, these Poké Lids also are made into special PokéStops in Pokémon GO, a mobile game played by traversing through the real world and catching pokémon based on your real environment.
 
@@ -17,7 +18,7 @@ This Pokémon, when caught, displays a rare background image based on the Japane
 
 Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a unique, rare background commemorating any player who visits them. If a player is lucky, the pokémon encountered can be "shiny", meaning it has a very rare special color variation compared to the normal version. Any player who catches one of these, with the exclusive location background, can consider themself in possession of one of the rarest unique pokémon in the history of the game.
 
-
+### All 40 obtainable Pikachus with the rare location background.
 ![s-l1600](https://github.com/user-attachments/assets/1aa25afc-63c2-4863-8878-bf60c4efc18d)
 
 Resources on this feature are very limited. Official information can be found at https://local.pokemon.jp/en/manhole/, however specifics on the in-game feature are mostly hidden inside the game.
