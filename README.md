@@ -21,6 +21,9 @@ Out of the 47 prefectures of Japan, 40 have at least 2 pokélids and offer a uni
 ### All 40 obtainable Pikachus with the rare location background
 ![s-l1600](https://github.com/user-attachments/assets/1aa25afc-63c2-4863-8878-bf60c4efc18d)
 
+
+## My Task
+
 Resources on this feature are very limited. Official information can be found at https://local.pokemon.jp/en/manhole/, however specifics on the in-game feature are mostly hidden inside the game.
 
 As an avid pokémon GO player and traveler, I was in great need of a larger-scale view of the feature and where these POIs are located across Japan. 
