@@ -56,6 +56,38 @@ svg {
     word-wrap: break-word;
 }
 
+#lang-toggle {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#lang-toggle:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#pokelid-counter {
+	position: fixed;
+  	top: 12px;
+  	right: 12px;
+  	background: rgba(0, 0, 0, 0.6);
+  	color: white;
+  	padding: 6px 14px;
+  	border-radius: 20px;
+  	font-size: 13px;
+	font-family: sans-serif;
+	z-index: 100;
+	pointer-events: none;
+}
+
 /* Modal Styles */
 #pokelid-modal {
     position: fixed;

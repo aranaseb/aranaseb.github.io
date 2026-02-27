@@ -1,0 +1,419 @@
+{
+"ui": {
+   	"prefecture_label": { "en": "Prefecture:", "ja": "都道府県:" },
+   	"view_on_maps":     { "en": "📍 View on Google Maps", "ja": "📍 Googleマップで見る" },
+   	"pokemon_page":     { "en": "Pokemon Local Acts Page", "ja": "ポケモンだいすきグラブページ" },
+   	"pokelids_in_area": { "en": "Pokélids in this area", "ja": "地域のポケふた" },
+   	"click_to_view":    { "en": "Click a Pokélid to view details:", "ja": "ポケふたをクリックして詳細を見る：" },
+   	"pokelids_total":   { "en": "Pokélids total", "ja": "ポケふた合計" },
+   	"lang_toggle":      { "en": "日本語", "ja": "English" },
+   	"multiple_pokelids":{ "en": "Multiple Pokélids", "ja": "複数のポケふた" },
+   	"pokelid_count":    { "en": "Pokélids", "ja": "ポケふた" }
+},
+"prefectures": {
+    "hokkaido": {
+      "en": "Hokkaido",
+      "ja": "北海道"
+    },
+    "aomori": {
+      "en": "Aomori",
+      "ja": "青森県"
+    },
+    "iwate": {
+      "en": "Iwate",
+      "ja": "岩手県"
+    },
+    "miyagi": {
+      "en": "Miyagi",
+      "ja": "宮城県"
+    },
+    "akita": {
+      "en": "Akita",
+      "ja": "秋田県"
+    },
+    "yamagata": {
+      "en": "Yamagata",
+      "ja": "山形県"
+    },
+    "fukushima": {
+      "en": "Fukushima",
+      "ja": "福島県"
+    },
+    "ibaraki": {
+      "en": "Ibaraki",
+      "ja": "茨城県"
+    },
+    "tochigi": {
+      "en": "Tochigi",
+      "ja": "栃木県"
+    },
+    "gunma": {
+      "en": "Gunma",
+      "ja": "群馬県"
+    },
+    "saitama": {
+      "en": "Saitama",
+      "ja": "埼玉県"
+    },
+    "chiba": {
+      "en": "Chiba",
+      "ja": "千葉県"
+    },
+    "tokyo": {
+      "en": "Tokyo",
+      "ja": "東京都"
+    },
+    "kanagawa": {
+      "en": "Kanagawa",
+      "ja": "神奈川県"
+    },
+    "niigata": {
+      "en": "Niigata",
+      "ja": "新潟県"
+    },
+    "toyama": {
+      "en": "Toyama",
+      "ja": "富山県"
+    },
+    "ishikawa": {
+      "en": "Ishikawa",
+      "ja": "石川県"
+    },
+    "fukui": {
+      "en": "Fukui",
+      "ja": "福井県"
+    },
+    "yamanashi": {
+      "en": "Yamanashi",
+      "ja": "山梨県"
+    },
+    "nagano": {
+      "en": "Nagano",
+      "ja": "長野県"
+    },
+    "gifu": {
+      "en": "Gifu",
+      "ja": "岐阜県"
+    },
+    "shizuoka": {
+      "en": "Shizuoka",
+      "ja": "静岡県"
+    },
+    "aichi": {
+      "en": "Aichi",
+      "ja": "愛知県"
+    },
+    "mie": {
+      "en": "Mie",
+      "ja": "三重県"
+    },
+    "shiga": {
+      "en": "Shiga",
+      "ja": "滋賀県"
+    },
+    "kyoto": {
+      "en": "Kyoto",
+      "ja": "京都府"
+    },
+    "osaka": {
+      "en": "Osaka",
+      "ja": "大阪府"
+    },
+    "hyogo": {
+      "en": "Hyogo",
+      "ja": "兵庫県"
+    },
+    "nara": {
+      "en": "Nara",
+      "ja": "奈良県"
+    },
+    "wakayama": {
+      "en": "Wakayama",
+      "ja": "和歌山県"
+    },
+    "tottori": {
+      "en": "Tottori",
+      "ja": "鳥取県"
+    },
+    "shimane": {
+      "en": "Shimane",
+      "ja": "島根県"
+    },
+    "okayama": {
+      "en": "Okayama",
+      "ja": "岡山県"
+    },
+    "hiroshima": {
+      "en": "Hiroshima",
+      "ja": "広島県"
+    },
+    "yamaguchi": {
+      "en": "Yamaguchi",
+      "ja": "山口県"
+    },
+    "tokushima": {
+      "en": "Tokushima",
+      "ja": "徳島県"
+    },
+    "kagawa": {
+      "en": "Kagawa",
+      "ja": "香川県"
+    },
+    "ehime": {
+      "en": "Ehime",
+      "ja": "愛媛県"
+    },
+    "kochi": {
+      "en": "Kochi",
+      "ja": "高知県"
+    },
+    "fukuoka": {
+      "en": "Fukuoka",
+      "ja": "福岡県"
+    },
+    "saga": {
+      "en": "Saga",
+      "ja": "佐賀県"
+    },
+    "nagasaki": {
+      "en": "Nagasaki",
+      "ja": "長崎県"
+    },
+    "kumamoto": {
+      "en": "Kumamoto",
+      "ja": "熊本県"
+    },
+    "oita": {
+      "en": "Oita",
+      "ja": "大分県"
+    },
+    "miyazaki": {
+      "en": "Miyazaki",
+      "ja": "宮崎県"
+    },
+    "kagoshima": {
+      "en": "Kagoshima",
+      "ja": "鹿児島県"
+    },
+    "okinawa": {
+      "en": "Okinawa",
+      "ja": "沖縄県"
+    }
+  },
+  "cities": {
+    "sapporo": {
+      "en": "Sapporo",
+      "ja": "札幌市"
+    },
+    "aomori_city": {
+      "en": "Aomori",
+      "ja": "青森市"
+    },
+    "morioka": {
+      "en": "Morioka",
+      "ja": "盛岡市"
+    },
+    "sendai": {
+      "en": "Sendai",
+      "ja": "仙台市"
+    },
+    "akita_city": {
+      "en": "Akita",
+      "ja": "秋田市"
+    },
+    "yamagata_city": {
+      "en": "Yamagata",
+      "ja": "山形市"
+    },
+    "fukushima_city": {
+      "en": "Fukushima",
+      "ja": "福島市"
+    },
+    "mito": {
+      "en": "Mito",
+      "ja": "水戸市"
+    },
+    "utsunomiya": {
+      "en": "Utsunomiya",
+      "ja": "宇都宮市"
+    },
+    "maebashi": {
+      "en": "Maebashi",
+      "ja": "前橋市"
+    },
+    "saitama_city": {
+      "en": "Saitama",
+      "ja": "さいたま市"
+    },
+    "chiba_city": {
+      "en": "Chiba",
+      "ja": "千葉市"
+    },
+    "tokyo_city": {
+      "en": "Tokyo",
+      "ja": "東京"
+    },
+    "yokohama": {
+      "en": "Yokohama",
+      "ja": "横浜市"
+    },
+    "niigata_city": {
+      "en": "Niigata",
+      "ja": "新潟市"
+    },
+    "toyama_city": {
+      "en": "Toyama",
+      "ja": "富山市"
+    },
+    "kanazawa": {
+      "en": "Kanazawa",
+      "ja": "金沢市"
+    },
+    "fukui_city": {
+      "en": "Fukui",
+      "ja": "福井市"
+    },
+    "kofu": {
+      "en": "Kofu",
+      "ja": "甲府市"
+    },
+    "nagano_city": {
+      "en": "Nagano",
+      "ja": "長野市"
+    },
+    "gifu_city": {
+      "en": "Gifu",
+      "ja": "岐阜市"
+    },
+    "shizuoka_city": {
+      "en": "Shizuoka",
+      "ja": "静岡市"
+    },
+    "nagoya": {
+      "en": "Nagoya",
+      "ja": "名古屋市"
+    },
+    "tsu": {
+      "en": "Tsu",
+      "ja": "津市"
+    },
+    "otsu": {
+      "en": "Otsu",
+      "ja": "大津市"
+    },
+    "kyoto_city": {
+      "en": "Kyoto",
+      "ja": "京都市"
+    },
+    "osaka_city": {
+      "en": "Osaka",
+      "ja": "大阪市"
+    },
+    "kobe": {
+      "en": "Kobe",
+      "ja": "神戸市"
+    },
+    "nara_city": {
+      "en": "Nara",
+      "ja": "奈良市"
+    },
+    "wakayama_city": {
+      "en": "Wakayama",
+      "ja": "和歌山市"
+    },
+    "tottori_city": {
+      "en": "Tottori",
+      "ja": "鳥取市"
+    },
+    "matsue": {
+      "en": "Matsue",
+      "ja": "松江市"
+    },
+    "okayama_city": {
+      "en": "Okayama",
+      "ja": "岡山市"
+    },
+    "hiroshima_city": {
+      "en": "Hiroshima",
+      "ja": "広島市"
+    },
+    "yamaguchi_city": {
+      "en": "Yamaguchi",
+      "ja": "山口市"
+    },
+    "tokushima_city": {
+      "en": "Tokushima",
+      "ja": "徳島市"
+    },
+    "takamatsu": {
+      "en": "Takamatsu",
+      "ja": "高松市"
+    },
+    "matsuyama": {
+      "en": "Matsuyama",
+      "ja": "松山市"
+    },
+    "kochi_city": {
+      "en": "Kochi",
+      "ja": "高知市"
+    },
+    "fukuoka_city": {
+      "en": "Fukuoka",
+      "ja": "福岡市"
+    },
+    "saga_city": {
+      "en": "Saga",
+      "ja": "佐賀市"
+    },
+    "nagasaki_city": {
+      "en": "Nagasaki",
+      "ja": "長崎市"
+    },
+    "kumamoto_city": {
+      "en": "Kumamoto",
+      "ja": "熊本市"
+    },
+    "oita_city": {
+      "en": "Oita",
+      "ja": "大分市"
+    },
+    "miyazaki_city": {
+      "en": "Miyazaki",
+      "ja": "宮崎市"
+    },
+    "kagoshima_city": {
+      "en": "Kagoshima",
+      "ja": "鹿児島市"
+    },
+    "naha": {
+      "en": "Naha",
+      "ja": "那覇市"
+    }
+  },
+  "regions": {
+    "hokkaido-tohoku": {
+      "en": "Hokkaido-Tohoku",
+      "ja": "北海道・東北"
+    },
+    "kanto": {
+      "en": "Kanto",
+      "ja": "関東"
+    },
+    "chubu": {
+      "en": "Chubu",
+      "ja": "中部"
+    },
+    "kinki": {
+      "en": "Kinki",
+      "ja": "近畿"
+    },
+    "chugoku-shikoku": {
+      "en": "Chugoku-Shikoku",
+      "ja": "中国・四国"
+    },
+    "kyushu-okinawa": {
+      "en": "Kyushu-Okinawa",
+      "ja": "九州・沖縄"
+    }
+  }
+}

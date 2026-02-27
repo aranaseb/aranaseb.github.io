@@ -1,5 +1,5 @@
 {
-  "Aichi": [
+  "aichi": [
     {
       "name": "Toyohashi",
       "lat": 34.76261111111111,
@@ -73,7 +73,7 @@
       "image_local": "images/Aichi/9.png"
     }
   ],
-  "Akita": [
+  "akita": [
     {
       "name": "Senboku",
       "lat": 39.699999999999996,
@@ -115,7 +115,7 @@
       "image_local": "images/Akita/5.png"
     }
   ],
-  "Aomori": [
+  "aomori": [
     {
       "name": "Hacinohe",
       "lat": 40.53794444444444,
@@ -133,7 +133,7 @@
       "image_local": "images/Aomori/1.png"
     }
   ],
-  "Chiba": [
+  "chiba": [
     {
       "name": "Katori",
       "lat": 35.894416666666665,
@@ -167,7 +167,7 @@
       "image_local": "images/Chiba/1.png"
     }
   ],
-  "Ehime": [
+  "ehime": [
     {
       "name": "Matsuyama",
       "lat": 33.841055555555556,
@@ -185,7 +185,7 @@
       "image_local": "images/Ehime/2.png"
     }
   ],
-  "Fukui": [
+  "fukui": [
     {
       "name": "Mihama",
       "lat": 35.6045,
@@ -323,7 +323,7 @@
       "image_local": "images/Fukui/17.png"
     }
   ],
-  "Fukuoka": [
+  "fukuoka": [
     {
       "name": "Dazaifu",
       "lat": 33.50519444444444,
@@ -389,7 +389,7 @@
       "image_local": "images/Fukuoka/1.png"
     }
   ],
-  "Fukushima": [
+  "fukushima": [
     {
       "name": "Kunimi",
       "lat": 37.872638888888886,
@@ -663,7 +663,7 @@
       "image_local": "images/Fukushima/1.png"
     }
   ],
-  "Gifu": [
+  "gifu": [
     {
       "name": "Kakamigahara",
       "lat": 35.370666666666665,
@@ -705,7 +705,7 @@
       "image_local": "images/Gifu/5.png"
     }
   ],
-  "Hokkaido": [
+  "hokkaido": [
     {
       "name": "Biei",
       "lat": 43.591972222222225,
@@ -1107,7 +1107,7 @@
       "image_local": "images/Hokkaido/50.png"
     }
   ],
-  "Hyogo": [
+  "hyogo": [
     {
       "name": "Awaji",
       "lat": 34.60183333333333,
@@ -1133,7 +1133,7 @@
       "image_local": "images/Hyogo/1.png"
     }
   ],
-  "Ibaraki": [
+  "ibaraki": [
     {
       "name": "Kamisu",
       "lat": 35.897333333333336,
@@ -1175,7 +1175,7 @@
       "image_local": "images/Ibaraki/5.png"
     }
   ],
-  "Ishikawa": [
+  "ishikawa": [
     {
       "name": "Kanazawa",
       "lat": 36.55916666666666,
@@ -1185,7 +1185,7 @@
       "image_local": "images/Ishikawa/1.png"
     }
   ],
-  "Iwate": [
+  "iwate": [
     {
       "name": "Hirono",
       "lat": 40.40611111111111,
@@ -1435,7 +1435,7 @@
       "image_local": "images/Iwate/31.png"
     }
   ],
-  "Kagawa": [
+  "kagawa": [
     {
       "name": "Takamatsu",
       "lat": 34.33888888888889,
@@ -1581,7 +1581,7 @@
       "image_local": "images/Kagawa/18.png"
     }
   ],
-  "Kagoshima": [
+  "kagoshima": [
     {
       "name": "Ibusuki",
       "lat": 31.237194444444444,
@@ -1655,7 +1655,7 @@
       "image_local": "images/Kagoshima/1.png"
     }
   ],
-  "Kanagawa": [
+  "kanagawa": [
     {
       "name": "Yokohama",
       "lat": 35.45333333333333,
@@ -1697,7 +1697,7 @@
       "image_local": "images/Kanagawa/1.png"
     }
   ],
-  "Kochi": [
+  "kochi": [
     {
       "name": "Mihara",
       "lat": 32.92252777777777,
@@ -1803,7 +1803,7 @@
       "image_local": "images/Kochi/13.png"
     }
   ],
-  "Kyoto": [
+  "kyoto": [
     {
       "name": "Kyoto",
       "lat": 35.01186111111111,
@@ -1869,7 +1869,7 @@
       "image_local": "images/Kyoto/8.png"
     }
   ],
-  "Mie": [
+  "mie": [
     {
       "name": "Kiho",
       "lat": 33.76975,
@@ -2119,7 +2119,7 @@
       "image_local": "images/Mie/31.png"
     }
   ],
-  "Miyagi": [
+  "miyagi": [
     {
       "name": "Kasenuma Park",
       "lat": 38.311638888888886,
@@ -2409,7 +2409,7 @@
       "image_local": "images/Miyagi/1.png"
     }
   ],
-  "Miyazaki": [
+  "miyazaki": [
     {
       "name": "Miyazaki",
       "lat": 31.8075,
@@ -2619,7 +2619,7 @@
       "image_local": "images/Miyazaki/1.png"
     }
   ],
-  "Nagasaki": [
+  "nagasaki": [
     {
       "name": "Shinkamigoto",
       "lat": 32.98641666666667,
@@ -2701,7 +2701,7 @@
       "image_local": "images/Nagasaki/10.png"
     }
   ],
-  "Nara": [
+  "nara": [
     {
       "name": "Ikaruga",
       "lat": 34.601888888888894,
@@ -2743,7 +2743,7 @@
       "image_local": "images/Nara/1.png"
     }
   ],
-  "Niigata": [
+  "niigata": [
     {
       "name": "Ojiya",
       "lat": 37.31422222222222,
@@ -2777,7 +2777,7 @@
       "image_local": "images/Niigata/1.png"
     }
   ],
-  "Okayama": [
+  "okayama": [
     {
       "name": "Kurashiki",
       "lat": 34.43427777777777,
@@ -2811,7 +2811,7 @@
       "image_local": "images/Okayama/1.png"
     }
   ],
-  "Okinawa": [
+  "okinawa": [
     {
       "name": "Naha",
       "lat": 26.216416666666667,
@@ -2949,7 +2949,7 @@
       "image_local": "images/Okinawa/17.png"
     }
   ],
-  "Osaka": [
+  "osaka": [
     {
       "name": "Higashiosaka",
       "lat": 34.67977777777777,
@@ -2991,7 +2991,7 @@
       "image_local": "images/Osaka/1.png"
     }
   ],
-  "Saga": [
+  "saga": [
     {
       "name": "Saga",
       "lat": 33.25075,
@@ -3017,7 +3017,7 @@
       "image_local": "images/Saga/1.png"
     }
   ],
-  "Saitama": [
+  "saitama": [
     {
       "name": "Tokorozawa",
       "lat": 35.79747222222222,
@@ -3043,7 +3043,7 @@
       "image_local": "images/Saitama/1.png"
     }
   ],
-  "Shiga": [
+  "shiga": [
     {
       "name": "Otsu",
       "lat": 35.010194444444444,
@@ -3085,7 +3085,7 @@
       "image_local": "images/Shiga/1.png"
     }
   ],
-  "Shimane": [
+  "shimane": [
     {
       "name": "Okinoshima",
       "lat": 36.17725,
@@ -3127,7 +3127,7 @@
       "image_local": "images/Shimane/1.png"
     }
   ],
-  "Shizuoka": [
+  "shizuoka": [
     {
       "name": "Izu",
       "lat": 34.97027777777778,
@@ -3169,7 +3169,7 @@
       "image_local": "images/Shizuoka/5.png"
     }
   ],
-  "Tochigi": [
+  "tochigi": [
     {
       "name": "Utsunomiya",
       "lat": 36.56077777777777,
@@ -3195,7 +3195,7 @@
       "image_local": "images/Tochigi/1.png"
     }
   ],
-  "Tokushima": [
+  "tokushima": [
     {
       "name": "Naruto City",
       "lat": 34.16808333333333,
@@ -3221,15 +3221,15 @@
       "image_local": "images/Tokushima/1.png"
     }
   ],
-  "Tokyo": [
-	{
-	  "name": "PokéPark KANTO",
-	  "lat": 35.62637,
-	  "lng": 139.521513,
-	  "dms": "35°37'34.9\"N 139°31'17.5\"E",
-	  "image_url": "https://www.serebii.net/pokelids/th/tokyo/13.png",
-	  "image_local": "images/Tokyo/12.png"
-	},
+  "tokyo": [
+    {
+      "name": "PokéPark KANTO",
+      "lat": 35.62637,
+      "lng": 139.521513,
+      "dms": "35°37'34.9\"N 139°31'17.5\"E",
+      "image_url": "https://www.serebii.net/pokelids/th/tokyo/13.png",
+      "image_local": "images/Tokyo/12.png"
+    },
     {
       "name": "Machida",
       "lat": 35.54811111111111,
@@ -3327,7 +3327,7 @@
       "image_local": "images/Tokyo/1.png"
     }
   ],
-  "Tottori": [
+  "tottori": [
     {
       "name": "Tottori",
       "lat": 35.53966666666666,
@@ -3489,7 +3489,7 @@
       "image_local": "images/Tottori/20.png"
     }
   ],
-  "Toyama": [
+  "toyama": [
     {
       "name": "Toyama",
       "lat": 36.715611111111116,
@@ -3515,7 +3515,7 @@
       "image_local": "images/Toyama/1.png"
     }
   ],
-  "Wakayama": [
+  "wakayama": [
     {
       "name": "Nachikatsuura",
       "lat": 33.66897222222222,
@@ -3549,8 +3549,8 @@
       "image_local": "images/Wakayama/4.png"
     }
   ],
-  "Yamagata": [],
-  "Yamaguchi": [
+  "yamagata": [],
+  "yamaguchi": [
     {
       "name": "Shimonoseki",
       "lat": 33.958222222222226,

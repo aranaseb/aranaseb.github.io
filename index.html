@@ -10,10 +10,16 @@
 	</head>
 	<body>
 	    <svg></svg>
-	    
+
 	    <!-- Tooltip -->
 	    <div id="tooltip"></div>
-	    
+
+	    <!-- Pokélid Counter -->
+	    <div id="pokelid-counter"></div>
+
+	    <!-- Language Toggle -->
+	    <button id="lang-toggle">日本語</button>
+
 	    <!-- Pokélid Modal -->
 		<div id="pokelid-modal" class="modal">
 	        <div class="modal-content">
@@ -22,41 +28,36 @@
     	        <p class="modal-prefecture-label">Prefecture: <span class="modal-prefecture"></span></p>
     	        <img class="modal-image" src="" alt="Pokélid">
     	        <div class="modal-links">
-    	            <a class="modal-maps-link" href="#" target="_blank" rel="noopener noreferrer">
-    	                📍 View on Google Maps
-    	            </a>
-    	            <a class="modal-pokemon-link" href="#" target="_blank" rel="noopener noreferrer">
-    	                Pokemon Local Acts Page
-    	            </a>
+    	            <a class="modal-maps-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+    	            <a class="modal-pokemon-link" href="#" target="_blank" rel="noopener noreferrer"></a>
 	            </div>
 	        </div>
 	    </div>
-	    
+
 	    <!-- Cluster Modal -->
 	    <div id="cluster-modal" class="modal">
 	        <div class="modal-content">
 	            <span class="cluster-modal-close">&times;</span>
 	            <h2 class="cluster-modal-title">Multiple Pokélids</h2>
-	            <p style="color: #666; margin-bottom: 15px;">Click a Pokélid to view details:</p>
+	            <p class="cluster-modal-subtitle" style="color: #666; margin-bottom: 15px;">Click a Pokélid to view details:</p>
 	            <div class="cluster-list"></div>
 	        </div>
 	    </div>
-	
+
 	    <script src="d3.js"></script>
 	    <script src="regions.js"></script>
+	    <script src="state.js"></script>
+	    <script src="cluster.js"></script>
+	    <script src="render.js"></script>
+	    <script src="modals.js"></script>
 	    <script src="map.js"></script>
+
 	    <script>
-	        // Ensure modal starts hidden on page load
 	        (function() {
 	            const modal = document.getElementById('pokelid-modal');
 	            if (modal) {
-	                // Force remove show class
 	                modal.classList.remove('show');
-	                // Force display none
 	                modal.style.display = 'none';
-	                console.log('Modal initialized - hidden');
-	                console.log('Modal classes:', modal.className);
-	                console.log('Modal display:', window.getComputedStyle(modal).display);
 	            }
 	        })();
 	    </script>
