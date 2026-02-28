@@ -15,7 +15,8 @@ const screenScale = Math.min(WIDTH, HEIGHT) / 1000;
 const baseFontSize = 3 * screenScale;
 const baseCityRadius = 0.5 * screenScale;
 const basePokelidRadius = 0.8 * screenScale;
-const baseClusterRadius = 1.4 * screenScale;
+const baseClusterRadius = 2.0 * screenScale;
+const imageRadius = 2.2 * basePokelidRadius;
 const baseCountSize = 2.5 * screenScale;
 
 /*  */

@@ -60,13 +60,33 @@ function updateCounter() {
 
 /*  */
 function renderClusterCircle(enter) {
-	enter.append("circle")
+	// Clusters: red circle with count
+	enter.filter(d => d.lids.length > 1)
+		.append("circle")
 		.attr("class", "pokelid-circle")
-		.attr("r", d => d.lids.length > 1 ? baseClusterRadius : basePokelidRadius)
-		.attr("fill", d => d.lids.length > 1 ? "#ff6b6b" : "red")
+		.attr("r", baseClusterRadius)
+		.attr("fill", "#ff6b6b")
 		.attr("stroke", "black")
 		.attr("stroke-width", 0.25 * screenScale)
 		.attr("opacity", 0.9);
+
+	// Single lids: circular image
+	enter.filter(d => d.lids.length === 1).each(function(d) {
+		const g = d3.select(this);
+		const clipId = "clip-" + d.lids[0].image_local.replace(/[^a-z0-9]/gi, "-");
+		g.append("clipPath")
+			.attr("id", clipId)
+			.append("circle")
+			.attr("r", imageRadius);
+		g.append("image")
+			.attr("class", "pokelid-image")
+			.attr("href", d.lids[0].image_local)
+			.attr("x", -imageRadius)
+			.attr("y", -imageRadius)
+			.attr("width", imageRadius * 2)
+			.attr("height", imageRadius * 2)
+			.attr("clip-path", `url(#${clipId})`);
+	});
 }
 
 /*  */
