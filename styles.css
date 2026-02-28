@@ -18,7 +18,7 @@ svg {
     top: 0;
     left: 0;
     touch-action: none;
-	background-image: radial-gradient(circle,rgba(104, 149, 186, 1) 0%, rgba(67, 100, 161, 1) 46%, rgba(17, 19, 133, 1) 100%);
+	background-image: radial-gradient(circle,rgba(104, 149, 186, 1) 0%, rgba(67, 100, 161, 1) 46%, rgba(46, 46, 112, 1) 100%);
 }
 
 .prefecture {
@@ -106,6 +106,59 @@ svg {
     display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+/* Pokelid modal header with image + title side by side */
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.modal-pokelid-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ddd;
+}
+
+.modal-header-text h2 {
+    margin: 0 0 4px 0;
+}
+
+.modal-header-text p {
+    margin: 0;
+}
+
+/* Cluster list items with image */
+.cluster-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cluster-item:last-child {
+    border-bottom: none;
+}
+
+.cluster-item-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ddd;
+}
+
+.cluster-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .modal-content {

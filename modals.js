@@ -28,6 +28,9 @@ function showPokelidModal(pokelid) {
 	modal.select(".modal-prefecture").text(prefNameLocale);
 	modal.select(".modal-prefecture-label").node().firstChild.textContent =
 		t("ui", "prefecture_label", state.locale) + " ";
+	modal.select(".modal-pokelid-image")
+		.attr("src", pokelid.image_local)
+		.attr("alt", pokelid.name);
 	modal.select(".modal-image")
 		.attr("src", `backgrounds/Location_Background_Pokelid_${prefNameEn}.png`)
 		.attr("alt", `${prefNameLocale} Pokélid`);
@@ -63,8 +66,13 @@ function showClusterModal(cluster) {
 			.attr("class", "cluster-item")
 			.style("cursor", "pointer")
 			.on("click", () => { closeClusterModal(); showPokelidModal(lid); });
-		item.append("div").attr("class", "cluster-item-name").text(lid.name_ja && state.locale === "ja" ? lid.name_ja : lid.name);
-		item.append("div").attr("class", "cluster-item-coords").text(lid.dms);
+		item.append("img")
+			.attr("class", "cluster-item-image")
+			.attr("src", lid.image_local)
+			.attr("alt", lid.name);
+		const text = item.append("div").attr("class", "cluster-item-text");
+		text.append("div").attr("class", "cluster-item-name").text(lid.name_ja && state.locale === "ja" ? lid.name_ja : lid.name);
+		text.append("div").attr("class", "cluster-item-coords").text(lid.dms);
 	});
 
 	openModal("#cluster-modal");

@@ -7,8 +7,7 @@
    	"click_to_view":    { "en": "Click a Pokélid to view details:", "ja": "ポケふたをクリックして詳細を見る：" },
    	"pokelids_total":   { "en": "Pokélids total", "ja": "ポケふた合計" },
    	"lang_toggle":      { "en": "日本語", "ja": "English" },
-   	"multiple_pokelids":{ "en": "Multiple Pokélids", "ja": "複数のポケふた" },
-   	"pokelid_count":    { "en": "Pokélids", "ja": "ポケふた" }
+   	"multiple_pokelids":{ "en": "Multiple Pokélids", "ja": "複数のポケふた" }
 },
 "prefectures": {
     "hokkaido": {

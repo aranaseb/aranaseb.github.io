@@ -13,7 +13,7 @@ const regionColors = d3.scaleOrdinal()
 		"chugoku-shikoku",
 		"kyushu-okinawa"
 	])
-	.range(["#048c28"]);
+	.range(["#3fa34d"]);
 
 /*  */
 const projection = d3.geoEquirectangular();
@@ -53,7 +53,7 @@ function updateCounter() {
 	const count = sel.size === 0
 		? Object.values(state.pokelids).reduce((s, a) => s + a.length, 0)
 		: Array.from(sel).reduce((s, slug) => s + (state.pokelids[slug]?.length ?? 0), 0);
-	counter.text(`${count} ${t("ui", "pokelid_count", state.locale)} ${t("ui", "pokelids_total", state.locale)}`);
+	counter.text(`${count} ${t("ui", "pokelids_total", state.locale)}`);
 }
 
 // ─── Pokelid clusters ─────────────────────────────────────────────────────────
