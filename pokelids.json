@@ -7,7 +7,7 @@
       "dms": "34°45'45.4\"N 137°22'58.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/4.png",
       "image_local": "images/Aichi/4.png",
-      "name_ja": "西尾市"
+      "name_ja": "豊橋市"
     },
     {
       "name": "Toyohashi",
@@ -16,7 +16,7 @@
       "dms": "34°43'15.5\"N 137°25'46.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/3.png",
       "image_local": "images/Aichi/3.png",
-      "name_ja": "刈谷市"
+      "name_ja": "豊橋市"
     },
     {
       "name": "Toyohashi",
@@ -25,7 +25,7 @@
       "dms": "34°41'45.2\"N 137°24'50.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/2.png",
       "image_local": "images/Aichi/2.png",
-      "name_ja": "常滑市"
+      "name_ja": "豊橋市"
     },
     {
       "name": "Toyohashi",
@@ -34,7 +34,7 @@
       "dms": "34°46'07.9\"N 137°23'37.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/1.png",
       "image_local": "images/Aichi/1.png",
-      "name_ja": "瀬戸市"
+      "name_ja": "豊橋市"
     },
     {
       "name": "Nagoya",
@@ -52,7 +52,7 @@
       "dms": "35°13'32.6\"N 137°06'03.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/6.png",
       "image_local": "images/Aichi/6.png",
-      "name_ja": "豊橋市"
+      "name_ja": "瀬戸市"
     },
     {
       "name": "Tokoname",
@@ -61,7 +61,7 @@
       "dms": "34°53'08.4\"N 136°49'23.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/7.png",
       "image_local": "images/Aichi/7.png",
-      "name_ja": "豊橋市"
+      "name_ja": "西尾市"
     },
     {
       "name": "Kariya",
@@ -70,7 +70,7 @@
       "dms": "35°02'27.4\"N 137°02'53.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/8.png",
       "image_local": "images/Aichi/8.png",
-      "name_ja": "豊橋市"
+      "name_ja": "刈谷市"
     },
     {
       "name": "Nishio",
@@ -79,7 +79,7 @@
       "dms": "34°52'02.0\"N 137°02'53.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aichi/9.png",
       "image_local": "images/Aichi/9.png",
-      "name_ja": "豊橋市"
+      "name_ja": "常滑市"
     }
   ],
   "akita": [
@@ -90,7 +90,7 @@
       "dms": "39°41'60.0\"N 140°39'45.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/akita/1.png",
       "image_local": "images/Akita/1.png",
-      "name_ja": "仙北市"
+      "name_ja": "秋田市"
     },
     {
       "name": "Kazuno",
@@ -99,7 +99,7 @@
       "dms": "40°10'52.4\"N 140°47'07.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/akita/2.png",
       "image_local": "images/Akita/2.png",
-      "name_ja": "鹿角市"
+      "name_ja": "横手市"
     },
     {
       "name": "Oga",
@@ -117,7 +117,7 @@
       "dms": "39°17'36.8\"N 140°32'45.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/akita/4.png",
       "image_local": "images/Akita/4.png",
-      "name_ja": "横手市"
+      "name_ja": "鹿角市"
     },
     {
       "name": "Akita",
@@ -126,7 +126,7 @@
       "dms": "39°45'09.5\"N 140°03'40.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/akita/5.png",
       "image_local": "images/Akita/5.png",
-      "name_ja": "秋田市"
+      "name_ja": "仙北市"
     }
   ],
   "aomori": [
@@ -137,7 +137,7 @@
       "dms": "40°32'16.6\"N 141°33'28.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aomori/2.png",
       "image_local": "images/Aomori/2.png",
-      "name_ja": "階上町"
+      "name_ja": "八戸市"
     },
     {
       "name": "Hasikami",
@@ -146,7 +146,7 @@
       "dms": "40°27'30.4\"N 141°36'30.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/aomori/1.png",
       "image_local": "images/Aomori/1.png",
-      "name_ja": "八戸市"
+      "name_ja": "階上町"
     }
   ],
   "chiba": [
@@ -215,7 +215,7 @@
       "dms": "35°36'16.2\"N 135°56'12.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/1.png",
       "image_local": "images/Fukui/1.png",
-      "name_ja": "越前町"
+      "name_ja": "敦賀市"
     },
     {
       "name": "Takahama",
@@ -224,7 +224,7 @@
       "dms": "35°29'34.6\"N 135°32'44.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/2.png",
       "image_local": "images/Fukui/2.png",
-      "name_ja": "若狭町"
+      "name_ja": "高浜町"
     },
     {
       "name": "Eiheiji-cho",
@@ -233,7 +233,7 @@
       "dms": "36°04'47.6\"N 136°23'57.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/3.png",
       "image_local": "images/Fukui/3.png",
-      "name_ja": "鯖江市"
+      "name_ja": "南越前町"
     },
     {
       "name": "Echizen-shi",
@@ -242,7 +242,7 @@
       "dms": "35°53'43.0\"N 136°11'55.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/4.png",
       "image_local": "images/Fukui/4.png",
-      "name_ja": "おおい町"
+      "name_ja": "勝山市"
     },
     {
       "name": "Awara",
@@ -251,7 +251,7 @@
       "dms": "36°12'56.2\"N 136°14'03.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/5.png",
       "image_local": "images/Fukui/5.png",
-      "name_ja": "福井市"
+      "name_ja": "越前市"
     },
     {
       "name": "Katsuyama",
@@ -260,7 +260,7 @@
       "dms": "36°03'24.4\"N 136°29'31.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/6.png",
       "image_local": "images/Fukui/6.png",
-      "name_ja": "坂井市"
+      "name_ja": "小浜市"
     },
     {
       "name": "Ono",
@@ -269,7 +269,7 @@
       "dms": "35°59'04.2\"N 136°29'09.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/7.png",
       "image_local": "images/Fukui/7.png",
-      "name_ja": "池田町"
+      "name_ja": "美浜町"
     },
     {
       "name": "Tsuruga",
@@ -278,7 +278,7 @@
       "dms": "35°39'42.7\"N 136°04'27.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/8.png",
       "image_local": "images/Fukui/8.png",
-      "name_ja": "小浜市"
+      "name_ja": "鯖江市"
     },
     {
       "name": "Minami Echizen",
@@ -287,7 +287,7 @@
       "dms": "35°49'53.2\"N 136°12'04.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/9.png",
       "image_local": "images/Fukui/9.png",
-      "name_ja": "南越前町"
+      "name_ja": "永平寺町"
     },
     {
       "name": "Obama",
@@ -296,7 +296,7 @@
       "dms": "35°29'41.9\"N 135°44'30.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/10.png",
       "image_local": "images/Fukui/10.png",
-      "name_ja": "敦賀市"
+      "name_ja": "池田町"
     },
     {
       "name": "Ikeda",
@@ -314,7 +314,7 @@
       "dms": "36°09'42.5\"N 136°19'59.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/12.png",
       "image_local": "images/Fukui/12.png",
-      "name_ja": "美浜町"
+      "name_ja": "越前町"
     },
     {
       "name": "Fukui",
@@ -323,7 +323,7 @@
       "dms": "36°03'41.3\"N 136°13'25.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/13.png",
       "image_local": "images/Fukui/13.png",
-      "name_ja": "高浜町"
+      "name_ja": "坂井市"
     },
     {
       "name": "Ohira",
@@ -332,7 +332,7 @@
       "dms": "35°28'54.4\"N 135°37'42.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/14.png",
       "image_local": "images/Fukui/14.png",
-      "name_ja": "永平寺町"
+      "name_ja": "福井市"
     },
     {
       "name": "Sabaee",
@@ -341,7 +341,7 @@
       "dms": "35°57'00.4\"N 136°10'52.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/15.png",
       "image_local": "images/Fukui/15.png",
-      "name_ja": "越前市"
+      "name_ja": "若狭町"
     },
     {
       "name": "Wakasa",
@@ -359,7 +359,7 @@
       "dms": "35°56'04.9\"N 136°03'31.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukui/17.png",
       "image_local": "images/Fukui/17.png",
-      "name_ja": "勝山市"
+      "name_ja": "あわら市"
     }
   ],
   "fukuoka": [
@@ -444,7 +444,7 @@
       "dms": "37°52'21.5\"N 140°32'48.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/34.png",
       "image_local": "images/Fukushima/34.png",
-      "name_ja": "白河市"
+      "name_ja": "いわき市"
     },
     {
       "name": "Shirakawa",
@@ -453,7 +453,7 @@
       "dms": "37°07'46.6\"N 140°12'46.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/33.png",
       "image_local": "images/Fukushima/33.png",
-      "name_ja": "平田村"
+      "name_ja": "白河市"
     },
     {
       "name": "Hirata",
@@ -462,7 +462,7 @@
       "dms": "37°15'43.7\"N 140°32'51.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/32.png",
       "image_local": "images/Fukushima/32.png",
-      "name_ja": "広野町"
+      "name_ja": "南会津町"
     },
     {
       "name": "Hirono",
@@ -471,7 +471,7 @@
       "dms": "37°13'58.7\"N 141°00'06.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/31.png",
       "image_local": "images/Fukushima/31.png",
-      "name_ja": "国見町"
+      "name_ja": "南相馬市"
     },
     {
       "name": "Kunimi",
@@ -480,7 +480,7 @@
       "dms": "37°33'26.7\"N 139°51'43.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/30.png",
       "image_local": "images/Fukushima/30.png",
-      "name_ja": "湯川村"
+      "name_ja": "いわき市"
     },
     {
       "name": "Yuguwa",
@@ -489,7 +489,7 @@
       "dms": "37°01'45.3\"N 140°23'13.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/29.png",
       "image_local": "images/Fukushima/29.png",
-      "name_ja": "棚倉町"
+      "name_ja": "鏡石町"
     },
     {
       "name": "Aizubange",
@@ -498,7 +498,7 @@
       "dms": "37°33'37.7\"N 139°49'16.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/28.png",
       "image_local": "images/Fukushima/28.png",
-      "name_ja": "鏡石町"
+      "name_ja": "三春町"
     },
     {
       "name": "Kagamiishi",
@@ -507,7 +507,7 @@
       "dms": "37°15'04.0\"N 140°20'49.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/27.png",
       "image_local": "images/Fukushima/27.png",
-      "name_ja": "会津坂下町"
+      "name_ja": "川俣町"
     },
     {
       "name": "Shinchi",
@@ -516,7 +516,7 @@
       "dms": "37°52'43.5\"N 140°55'30.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/26.png",
       "image_local": "images/Fukushima/26.png",
-      "name_ja": "三春町"
+      "name_ja": "田村市"
     },
     {
       "name": "Soma",
@@ -525,7 +525,7 @@
       "dms": "37°49'39.8\"N 140°57'47.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/25.png",
       "image_local": "images/Fukushima/25.png",
-      "name_ja": "古殿町"
+      "name_ja": "矢吹町"
     },
     {
       "name": "Minamisoma",
@@ -534,7 +534,7 @@
       "dms": "37°38'08.8\"N 140°58'59.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/24.png",
       "image_local": "images/Fukushima/24.png",
-      "name_ja": "矢吹町"
+      "name_ja": "棚倉町"
     },
     {
       "name": "Namie",
@@ -543,7 +543,7 @@
       "dms": "37°29'47.0\"N 141°00'03.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/23.png",
       "image_local": "images/Fukushima/23.png",
-      "name_ja": "西郷村"
+      "name_ja": "楢葉町"
     },
     {
       "name": "Naraha",
@@ -552,7 +552,7 @@
       "dms": "37°15'00.5\"N 140°59'51.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/22.png",
       "image_local": "images/Fukushima/22.png",
-      "name_ja": "会津美里町"
+      "name_ja": "浪江町"
     },
     {
       "name": "Iwaki",
@@ -561,7 +561,7 @@
       "dms": "37°06'26.3\"N 140°59'35.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/21.png",
       "image_local": "images/Fukushima/21.png",
-      "name_ja": "猪苗代町"
+      "name_ja": "国見町"
     },
     {
       "name": "Kawamata",
@@ -570,7 +570,7 @@
       "dms": "37°40'03.6\"N 140°34'36.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/20.png",
       "image_local": "images/Fukushima/20.png",
-      "name_ja": "北塩原村"
+      "name_ja": "川内村"
     },
     {
       "name": "Tamura",
@@ -579,7 +579,7 @@
       "dms": "37°20'39.9\"N 140°40'27.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/19.png",
       "image_local": "images/Fukushima/19.png",
-      "name_ja": "伊達市"
+      "name_ja": "福島市"
     },
     {
       "name": "Kawauchi",
@@ -588,7 +588,7 @@
       "dms": "37°19'46.1\"N 140°49'17.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/18.png",
       "image_local": "images/Fukushima/18.png",
-      "name_ja": "二本松市"
+      "name_ja": "平田村"
     },
     {
       "name": "Fukushima",
@@ -597,7 +597,7 @@
       "dms": "37°48'15.9\"N 140°24'39.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/17.png",
       "image_local": "images/Fukushima/17.png",
-      "name_ja": "飯舘村"
+      "name_ja": "会津美里町"
     },
     {
       "name": "Aizuwakamatsu",
@@ -606,7 +606,7 @@
       "dms": "37°27'40.1\"N 139°55'38.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/16.png",
       "image_local": "images/Fukushima/16.png",
-      "name_ja": "双葉町"
+      "name_ja": "伊達市"
     },
     {
       "name": "Koriyama",
@@ -615,7 +615,7 @@
       "dms": "37°23'48.4\"N 140°21'22.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/15.png",
       "image_local": "images/Fukushima/15.png",
-      "name_ja": "昭和村"
+      "name_ja": "新地町"
     },
     {
       "name": "Minamiaizu",
@@ -633,7 +633,7 @@
       "dms": "37°31'41.5\"N 139°43'21.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/13.png",
       "image_local": "images/Fukushima/13.png",
-      "name_ja": "南会津町"
+      "name_ja": "郡山市"
     },
     {
       "name": "Showa",
@@ -642,7 +642,7 @@
       "dms": "37°19'32.5\"N 139°37'50.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/12.png",
       "image_local": "images/Fukushima/12.png",
-      "name_ja": "郡山市"
+      "name_ja": "相馬市"
     },
     {
       "name": "Futaba",
@@ -651,7 +651,7 @@
       "dms": "37°27'26.8\"N 141°01'36.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/11.png",
       "image_local": "images/Fukushima/11.png",
-      "name_ja": "会津若松市"
+      "name_ja": "北塩原村"
     },
     {
       "name": "Iitate",
@@ -660,7 +660,7 @@
       "dms": "37°41'53.3\"N 140°44'08.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/10.png",
       "image_local": "images/Fukushima/10.png",
-      "name_ja": "福島市"
+      "name_ja": "双葉町"
     },
     {
       "name": "Nihomatsu",
@@ -669,7 +669,7 @@
       "dms": "37°35'36.1\"N 140°27'50.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/9.png",
       "image_local": "images/Fukushima/9.png",
-      "name_ja": "川内村"
+      "name_ja": "湯川村"
     },
     {
       "name": "Date",
@@ -678,7 +678,7 @@
       "dms": "37°45'38.9\"N 140°41'29.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/8.png",
       "image_local": "images/Fukushima/8.png",
-      "name_ja": "田村市"
+      "name_ja": "会津坂下町"
     },
     {
       "name": "Kitashiobara",
@@ -687,7 +687,7 @@
       "dms": "37°39'22.2\"N 140°05'21.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/7.png",
       "image_local": "images/Fukushima/7.png",
-      "name_ja": "川俣町"
+      "name_ja": "広野町"
     },
     {
       "name": "Inawashiro",
@@ -696,7 +696,7 @@
       "dms": "37°32'17.2\"N 140°06'27.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/6.png",
       "image_local": "images/Fukushima/6.png",
-      "name_ja": "いわき市"
+      "name_ja": "古殿町"
     },
     {
       "name": "Aizumisato",
@@ -705,7 +705,7 @@
       "dms": "37°27'18.6\"N 139°50'25.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/5.png",
       "image_local": "images/Fukushima/5.png",
-      "name_ja": "楢葉町"
+      "name_ja": "二本松市"
     },
     {
       "name": "Nishigo",
@@ -714,7 +714,7 @@
       "dms": "37°08'23.6\"N 140°09'16.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/4.png",
       "image_local": "images/Fukushima/4.png",
-      "name_ja": "浪江町"
+      "name_ja": "猪苗代町"
     },
     {
       "name": "Yabuki",
@@ -723,7 +723,7 @@
       "dms": "37°13'06.3\"N 140°20'08.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/3.png",
       "image_local": "images/Fukushima/3.png",
-      "name_ja": "南相馬市"
+      "name_ja": "西郷村"
     },
     {
       "name": "Furudono",
@@ -732,7 +732,7 @@
       "dms": "37°05'34.4\"N 140°31'45.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/2.png",
       "image_local": "images/Fukushima/2.png",
-      "name_ja": "相馬市"
+      "name_ja": "会津若松市"
     },
     {
       "name": "Miharu",
@@ -741,7 +741,7 @@
       "dms": "37°26'35.9\"N 140°29'28.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/fukushima/1.png",
       "image_local": "images/Fukushima/1.png",
-      "name_ja": "新地町"
+      "name_ja": "昭和村"
     }
   ],
   "gifu": [
@@ -752,7 +752,7 @@
       "dms": "35°22'14.4\"N 136°48'28.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/gifu/1.png",
       "image_local": "images/Gifu/1.png",
-      "name_ja": "高山市"
+      "name_ja": "各務原市"
     },
     {
       "name": "Gero",
@@ -761,7 +761,7 @@
       "dms": "35°48'28.0\"N 137°14'34.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/gifu/2.png",
       "image_local": "images/Gifu/2.png",
-      "name_ja": "関ケ原町"
+      "name_ja": "下呂市"
     },
     {
       "name": "Seki",
@@ -770,7 +770,7 @@
       "dms": "35°29'25.7\"N 136°54'44.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/gifu/3.png",
       "image_local": "images/Gifu/3.png",
-      "name_ja": "関市"
+      "name_ja": "関ケ原町"
     },
     {
       "name": "Sekigahara",
@@ -779,7 +779,7 @@
       "dms": "35°21'50.5\"N 136°28'06.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/gifu/4.png",
       "image_local": "images/Gifu/4.png",
-      "name_ja": "下呂市"
+      "name_ja": "関市"
     },
     {
       "name": "Takayama",
@@ -788,7 +788,7 @@
       "dms": "36°08'41.7\"N 137°15'26.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/gifu/5.png",
       "image_local": "images/Gifu/5.png",
-      "name_ja": "各務原市"
+      "name_ja": "高山市"
     }
   ],
   "hokkaido": [
@@ -808,7 +808,7 @@
       "dms": "43°35'09.1\"N 141°25'26.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/35.png",
       "image_local": "images/Hokkaido/35.png",
-      "name_ja": "湧別町"
+      "name_ja": "帯広市"
     },
     {
       "name": "Eniwa",
@@ -817,7 +817,7 @@
       "dms": "42°53'49.7\"N 141°35'08.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/34.png",
       "image_local": "images/Hokkaido/34.png",
-      "name_ja": "津別町"
+      "name_ja": "厚沢部町"
     },
     {
       "name": "Toyako",
@@ -826,7 +826,7 @@
       "dms": "42°33'58.0\"N 140°49'08.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/33.png",
       "image_local": "images/Hokkaido/33.png",
-      "name_ja": "幌延町"
+      "name_ja": "苫小牧市"
     },
     {
       "name": "Mori",
@@ -835,7 +835,7 @@
       "dms": "42°06'31.9\"N 140°34'22.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/32.png",
       "image_local": "images/Hokkaido/32.png",
-      "name_ja": "厚沢部町"
+      "name_ja": "札幌市"
     },
     {
       "name": "Kaminokuni",
@@ -844,7 +844,7 @@
       "dms": "41°48'30.2\"N 140°05'43.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/31.png",
       "image_local": "images/Hokkaido/31.png",
-      "name_ja": "由仁町"
+      "name_ja": "当別町"
     },
     {
       "name": "Shibetsu",
@@ -862,7 +862,7 @@
       "dms": "43°52'30.1\"N 142°28'18.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/29.png",
       "image_local": "images/Hokkaido/29.png",
-      "name_ja": "札幌市"
+      "name_ja": "湧別町"
     },
     {
       "name": "Teshio",
@@ -871,7 +871,7 @@
       "dms": "44°53'04.3\"N 141°44'52.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/28.png",
       "image_local": "images/Hokkaido/28.png",
-      "name_ja": "美瑛町"
+      "name_ja": "網走市"
     },
     {
       "name": "Wakkanai",
@@ -880,7 +880,7 @@
       "dms": "45°25'02.1\"N 141°40'37.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/27.png",
       "image_local": "images/Hokkaido/27.png",
-      "name_ja": "美幌町"
+      "name_ja": "遠軽町"
     },
     {
       "name": "Toyotomi",
@@ -889,7 +889,7 @@
       "dms": "45°06'11.7\"N 141°46'43.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/26.png",
       "image_local": "images/Hokkaido/26.png",
-      "name_ja": "猿払村"
+      "name_ja": "豊富町"
     },
     {
       "name": "Mombetsu",
@@ -898,7 +898,7 @@
       "dms": "44°20'04.7\"N 143°22'20.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/25.png",
       "image_local": "images/Hokkaido/25.png",
-      "name_ja": "木古内町"
+      "name_ja": "本別町"
     },
     {
       "name": "Engaru",
@@ -907,7 +907,7 @@
       "dms": "44°01'18.8\"N 143°29'49.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/24.png",
       "image_local": "images/Hokkaido/24.png",
-      "name_ja": "歌志内市"
+      "name_ja": "北見市"
     },
     {
       "name": "Ohzora",
@@ -916,7 +916,7 @@
       "dms": "43°54'56.0\"N 144°10'16.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/23.png",
       "image_local": "images/Hokkaido/23.png",
-      "name_ja": "北見市"
+      "name_ja": "洞爺湖町"
     },
     {
       "name": "Shintoku",
@@ -925,7 +925,7 @@
       "dms": "43°04'57.7\"N 142°49'58.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/22.png",
       "image_local": "images/Hokkaido/22.png",
-      "name_ja": "室蘭市"
+      "name_ja": "稚内市"
     },
     {
       "name": "Ashoro",
@@ -934,7 +934,7 @@
       "dms": "43°14'39.2\"N 143°32'48.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/21.png",
       "image_local": "images/Hokkaido/21.png",
-      "name_ja": "当別町"
+      "name_ja": "上富良野町"
     },
     {
       "name": "Tomakomai",
@@ -943,7 +943,7 @@
       "dms": "42°38'08.7\"N 141°36'36.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/20.png",
       "image_local": "images/Hokkaido/20.png",
-      "name_ja": "えりも町"
+      "name_ja": "美瑛町"
     },
     {
       "name": "Mikasa",
@@ -952,7 +952,7 @@
       "dms": "43°15'40.7\"N 141°57'45.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/19.png",
       "image_local": "images/Hokkaido/19.png",
-      "name_ja": "斜里町"
+      "name_ja": "木古内町"
     },
     {
       "name": "Kamifurano",
@@ -961,7 +961,7 @@
       "dms": "43°27'44.1\"N 142°28'44.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/18.png",
       "image_local": "images/Hokkaido/18.png",
-      "name_ja": "東川町"
+      "name_ja": "幌延町"
     },
     {
       "name": "Kembuchi",
@@ -970,7 +970,7 @@
       "dms": "44°06'00.1\"N 142°21'33.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/17.png",
       "image_local": "images/Hokkaido/17.png",
-      "name_ja": "赤井川村"
+      "name_ja": "恵庭市"
     },
     {
       "name": "Hakodate",
@@ -979,7 +979,7 @@
       "dms": "41°45'21.3\"N 140°42'56.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/16.png",
       "image_local": "images/Hokkaido/16.png",
-      "name_ja": "網走市"
+      "name_ja": "大空町"
     },
     {
       "name": "Otaru",
@@ -988,7 +988,7 @@
       "dms": "43°11'44.0\"N 140°59'53.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/15.png",
       "image_local": "images/Hokkaido/15.png",
-      "name_ja": "帯広市"
+      "name_ja": "津別町"
     },
     {
       "name": "Nemuro",
@@ -997,7 +997,7 @@
       "dms": "43°20'09.4\"N 145°35'53.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/14.png",
       "image_local": "images/Hokkaido/14.png",
-      "name_ja": "釧路市"
+      "name_ja": "森町"
     },
     {
       "name": "Noboribetsu",
@@ -1006,7 +1006,7 @@
       "dms": "42°27'18.2\"N 141°10'54.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/13.png",
       "image_local": "images/Hokkaido/13.png",
-      "name_ja": "旭川市"
+      "name_ja": "歌志内市"
     },
     {
       "name": "Honbetsu",
@@ -1015,7 +1015,7 @@
       "dms": "43°07'32.8\"N 143°36'48.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/12.png",
       "image_local": "images/Hokkaido/12.png",
-      "name_ja": "中標津町"
+      "name_ja": "室蘭市"
     },
     {
       "name": "Rikubetsu",
@@ -1024,7 +1024,7 @@
       "dms": "43°28'03.7\"N 143°44'33.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/11.png",
       "image_local": "images/Hokkaido/11.png",
-      "name_ja": "陸別町"
+      "name_ja": "猿払村"
     },
     {
       "name": "Nakashibetsu",
@@ -1033,7 +1033,7 @@
       "dms": "43°33'16.4\"N 144°58'10.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/10.png",
       "image_local": "images/Hokkaido/10.png",
-      "name_ja": "本別町"
+      "name_ja": "根室市"
     },
     {
       "name": "Asahikawa",
@@ -1042,7 +1042,7 @@
       "dms": "43°45'34.5\"N 142°20'54.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/9.png",
       "image_local": "images/Hokkaido/9.png",
-      "name_ja": "登別市"
+      "name_ja": "上ノ国町"
     },
     {
       "name": "Kushiro",
@@ -1051,7 +1051,7 @@
       "dms": "43°08'38.5\"N 144°08'43.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/8.png",
       "image_local": "images/Hokkaido/8.png",
-      "name_ja": "根室市"
+      "name_ja": "旭川市"
     },
     {
       "name": "Obihiro",
@@ -1060,7 +1060,7 @@
       "dms": "42°55'05.5\"N 143°12'09.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/7.png",
       "image_local": "images/Hokkaido/7.png",
-      "name_ja": "小樽市"
+      "name_ja": "比布町"
     },
     {
       "name": "Abashiri",
@@ -1069,7 +1069,7 @@
       "dms": "44°01'19.0\"N 144°16'27.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/6.png",
       "image_local": "images/Hokkaido/6.png",
-      "name_ja": "函館市"
+      "name_ja": "えりも町"
     },
     {
       "name": "Akaigawa",
@@ -1078,7 +1078,7 @@
       "dms": "43°03'04.5\"N 140°50'39.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/5.png",
       "image_local": "images/Hokkaido/5.png",
-      "name_ja": "剣淵町"
+      "name_ja": "三笠市"
     },
     {
       "name": "Higasikawa",
@@ -1087,7 +1087,7 @@
       "dms": "43°41'54.3\"N 142°30'25.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/4.png",
       "image_local": "images/Hokkaido/4.png",
-      "name_ja": "上富良野町"
+      "name_ja": "天塩町"
     },
     {
       "name": "Shari",
@@ -1096,7 +1096,7 @@
       "dms": "44°04'07.8\"N 144°59'26.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/3.png",
       "image_local": "images/Hokkaido/3.png",
-      "name_ja": "三笠市"
+      "name_ja": "石狩市"
     },
     {
       "name": "Erimo",
@@ -1105,7 +1105,7 @@
       "dms": "42°01'04.2\"N 143°08'46.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/2.png",
       "image_local": "images/Hokkaido/2.png",
-      "name_ja": "苫小牧市"
+      "name_ja": "士別市"
     },
     {
       "name": "Tobetsu",
@@ -1114,7 +1114,7 @@
       "dms": "43°10'37.8\"N 141°26'54.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/1.png",
       "image_local": "images/Hokkaido/1.png",
-      "name_ja": "足寄町"
+      "name_ja": "美幌町"
     },
     {
       "name": "Muroan",
@@ -1123,7 +1123,7 @@
       "dms": "42°18'49.8\"N 140°58'26.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/36.png",
       "image_local": "images/Hokkaido/36.png",
-      "name_ja": "新得町"
+      "name_ja": "東川町"
     },
     {
       "name": "Kitami",
@@ -1132,7 +1132,7 @@
       "dms": "43°45'12.9\"N 143°30'02.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/37.png",
       "image_local": "images/Hokkaido/37.png",
-      "name_ja": "大空町"
+      "name_ja": "新得町"
     },
     {
       "name": "Utashinai",
@@ -1141,7 +1141,7 @@
       "dms": "43°30'11.5\"N 142°00'21.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/38.png",
       "image_local": "images/Hokkaido/38.png",
-      "name_ja": "遠軽町"
+      "name_ja": "足寄町"
     },
     {
       "name": "Kikonai",
@@ -1150,7 +1150,7 @@
       "dms": "41°40'40.9\"N 140°26'08.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/39.png",
       "image_local": "images/Hokkaido/39.png",
-      "name_ja": "紋別市"
+      "name_ja": "斜里町"
     },
     {
       "name": "Saurfutsu",
@@ -1159,7 +1159,7 @@
       "dms": "45°19'45.1\"N 142°10'38.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/40.png",
       "image_local": "images/Hokkaido/40.png",
-      "name_ja": "豊富町"
+      "name_ja": "登別市"
     },
     {
       "name": "Bihoro",
@@ -1168,7 +1168,7 @@
       "dms": "43°50'11.2\"N 144°06'21.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/41.png",
       "image_local": "images/Hokkaido/41.png",
-      "name_ja": "稚内市"
+      "name_ja": "剣淵町"
     },
     {
       "name": "Sapporo",
@@ -1177,7 +1177,7 @@
       "dms": "42°57'58.2\"N 141°10'01.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/43.png",
       "image_local": "images/Hokkaido/43.png",
-      "name_ja": "天塩町"
+      "name_ja": "由仁町"
     },
     {
       "name": "Sunagawa",
@@ -1186,7 +1186,7 @@
       "dms": "43°29'34.8\"N 141°54'26.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/44.png",
       "image_local": "images/Hokkaido/44.png",
-      "name_ja": "比布町"
+      "name_ja": "紋別市"
     },
     {
       "name": "Yuni",
@@ -1195,7 +1195,7 @@
       "dms": "43°00'42.7\"N 141°47'13.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/45.png",
       "image_local": "images/Hokkaido/45.png",
-      "name_ja": "士別市"
+      "name_ja": "陸別町"
     },
     {
       "name": "Assabu",
@@ -1204,7 +1204,7 @@
       "dms": "41°55'00.4\"N 140°12'59.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/46.png",
       "image_local": "images/Hokkaido/46.png",
-      "name_ja": "上ノ国町"
+      "name_ja": "中標津町"
     },
     {
       "name": "Horonobe",
@@ -1213,7 +1213,7 @@
       "dms": "45°02'26.9\"N 141°51'40.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/47.png",
       "image_local": "images/Hokkaido/47.png",
-      "name_ja": "森町"
+      "name_ja": "小樽市"
     },
     {
       "name": "Tsubetsu",
@@ -1222,7 +1222,7 @@
       "dms": "43°41'41.8\"N 144°01'46.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/48.png",
       "image_local": "images/Hokkaido/48.png",
-      "name_ja": "洞爺湖町"
+      "name_ja": "赤井川村"
     },
     {
       "name": "Yubetsu",
@@ -1231,7 +1231,7 @@
       "dms": "44°11'04.9\"N 143°35'41.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/49.png",
       "image_local": "images/Hokkaido/49.png",
-      "name_ja": "恵庭市"
+      "name_ja": "釧路市"
     },
     {
       "name": "Betsukai",
@@ -1240,7 +1240,7 @@
       "dms": "43°31'59.8\"N 145°14'13.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/hokkaido/50.png",
       "image_local": "images/Hokkaido/50.png",
-      "name_ja": "石狩市"
+      "name_ja": "函館市"
     }
   ],
   "hyogo": [
@@ -1289,7 +1289,7 @@
       "dms": "36°19'20.8\"N 139°59'38.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/ibaraki/2.png",
       "image_local": "images/Ibaraki/2.png",
-      "name_ja": "常陸太田市"
+      "name_ja": "つくば市"
     },
     {
       "name": "Tsukuba",
@@ -1298,7 +1298,7 @@
       "dms": "36°05'08.9\"N 140°06'39.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/ibaraki/3.png",
       "image_local": "images/Ibaraki/3.png",
-      "name_ja": "つくば市"
+      "name_ja": "筑西市"
     },
     {
       "name": "Hitachiota",
@@ -1307,7 +1307,7 @@
       "dms": "36°30'38.4\"N 140°31'32.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/ibaraki/4.png",
       "image_local": "images/Ibaraki/4.png",
-      "name_ja": "筑西市"
+      "name_ja": "常陸太田市"
     },
     {
       "name": "Mito",
@@ -1338,7 +1338,7 @@
       "dms": "40°24'22.0\"N 141°43'10.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/26.png",
       "image_local": "images/Iwate/26.png",
-      "name_ja": "葛巻町"
+      "name_ja": "住田町"
     },
     {
       "name": "Kuji",
@@ -1347,7 +1347,7 @@
       "dms": "40°11'23.1\"N 141°45'57.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/25.png",
       "image_local": "images/Iwate/25.png",
-      "name_ja": "盛岡市"
+      "name_ja": "北上市"
     },
     {
       "name": "Noda",
@@ -1356,7 +1356,7 @@
       "dms": "40°04'57.8\"N 141°49'43.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/24.png",
       "image_local": "images/Iwate/24.png",
-      "name_ja": "北上市"
+      "name_ja": "盛岡市"
     },
     {
       "name": "Fudai",
@@ -1365,7 +1365,7 @@
       "dms": "40°00'10.2\"N 141°53'08.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/23.png",
       "image_local": "images/Iwate/23.png",
-      "name_ja": "北上市"
+      "name_ja": "一戸町"
     },
     {
       "name": "Iwaizumi",
@@ -1374,7 +1374,7 @@
       "dms": "39°51'37.6\"N 141°47'47.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/22.png",
       "image_local": "images/Iwate/22.png",
-      "name_ja": "久慈市"
+      "name_ja": "大船渡市"
     },
     {
       "name": "Tanohata",
@@ -1383,7 +1383,7 @@
       "dms": "39°55'00.1\"N 141°56'19.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/21.png",
       "image_local": "images/Iwate/21.png",
-      "name_ja": "一戸町"
+      "name_ja": "野田村"
     },
     {
       "name": "Miyako",
@@ -1392,7 +1392,7 @@
       "dms": "39°38'22.1\"N 141°58'10.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/20.png",
       "image_local": "images/Iwate/20.png",
-      "name_ja": "九戸村"
+      "name_ja": "普代村"
     },
     {
       "name": "Yamada",
@@ -1401,7 +1401,7 @@
       "dms": "39°27'51.1\"N 141°57'03.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/19.png",
       "image_local": "images/Iwate/19.png",
-      "name_ja": "軽米町"
+      "name_ja": "陸前高田市"
     },
     {
       "name": "Otsuchi",
@@ -1410,7 +1410,7 @@
       "dms": "39°21'26.1\"N 141°54'11.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/18.png",
       "image_local": "images/Iwate/18.png",
-      "name_ja": "平泉町"
+      "name_ja": "花巻市"
     },
     {
       "name": "Kamaishi",
@@ -1419,7 +1419,7 @@
       "dms": "39°19'36.7\"N 141°53'16.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/17.png",
       "image_local": "images/Iwate/17.png",
-      "name_ja": "西和賀町"
+      "name_ja": "山田町"
     },
     {
       "name": "Ofunato",
@@ -1437,7 +1437,7 @@
       "dms": "39°01'00.3\"N 141°37'43.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/15.png",
       "image_local": "images/Iwate/15.png",
-      "name_ja": "岩手町"
+      "name_ja": "葛巻町"
     },
     {
       "name": "Sumita",
@@ -1446,7 +1446,7 @@
       "dms": "39°08'32.2\"N 141°34'28.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/14.png",
       "image_local": "images/Iwate/14.png",
-      "name_ja": "滝沢市"
+      "name_ja": "軽米町"
     },
     {
       "name": "Hanamaki",
@@ -1455,7 +1455,7 @@
       "dms": "39°23'31.3\"N 141°06'42.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/13.png",
       "image_local": "images/Iwate/13.png",
-      "name_ja": "八幡平市"
+      "name_ja": "九戸村"
     },
     {
       "name": "Tono",
@@ -1464,7 +1464,7 @@
       "dms": "39°19'50.3\"N 141°31'43.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/12.png",
       "image_local": "images/Iwate/12.png",
-      "name_ja": "二戸市"
+      "name_ja": "釜石市"
     },
     {
       "name": "Ichonoseki",
@@ -1473,7 +1473,7 @@
       "dms": "38°59'22.5\"N 141°15'19.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/11.png",
       "image_local": "images/Iwate/11.png",
-      "name_ja": "一関市"
+      "name_ja": "大槌町"
     },
     {
       "name": "Ninohe",
@@ -1482,7 +1482,7 @@
       "dms": "40°19'13.2\"N 141°19'07.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/10.png",
       "image_local": "images/Iwate/10.png",
-      "name_ja": "遠野市"
+      "name_ja": "滝沢市"
     },
     {
       "name": "Hacimantai",
@@ -1491,7 +1491,7 @@
       "dms": "39°52'46.5\"N 141°05'57.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/9.png",
       "image_local": "images/Iwate/9.png",
-      "name_ja": "花巻市"
+      "name_ja": "一関市"
     },
     {
       "name": "Takizawa",
@@ -1500,7 +1500,7 @@
       "dms": "39°44'02.4\"N 141°04'41.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/8.png",
       "image_local": "images/Iwate/8.png",
-      "name_ja": "住田町"
+      "name_ja": "遠野市"
     },
     {
       "name": "Iwate",
@@ -1509,7 +1509,7 @@
       "dms": "39°58'06.9\"N 141°12'49.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/7.png",
       "image_local": "images/Iwate/7.png",
-      "name_ja": "陸前高田市"
+      "name_ja": "宮古市"
     },
     {
       "name": "Shiwa",
@@ -1518,7 +1518,7 @@
       "dms": "39°33'16.7\"N 141°09'29.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/6.png",
       "image_local": "images/Iwate/6.png",
-      "name_ja": "大船渡市"
+      "name_ja": "西和賀町"
     },
     {
       "name": "Nishiwaga",
@@ -1527,7 +1527,7 @@
       "dms": "39°18'52.1\"N 140°46'35.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/5.png",
       "image_local": "images/Iwate/5.png",
-      "name_ja": "釜石市"
+      "name_ja": "田野畑村"
     },
     {
       "name": "Hiraizumi",
@@ -1536,7 +1536,7 @@
       "dms": "38°59'11.9\"N 141°06'29.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/4.png",
       "image_local": "images/Iwate/4.png",
-      "name_ja": "大槌町"
+      "name_ja": "二戸市"
     },
     {
       "name": "Karumai",
@@ -1545,7 +1545,7 @@
       "dms": "40°19'21.5\"N 141°22'54.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/3.png",
       "image_local": "images/Iwate/3.png",
-      "name_ja": "山田町"
+      "name_ja": "岩手町"
     },
     {
       "name": "Kunohe",
@@ -1554,7 +1554,7 @@
       "dms": "40°14'54.7\"N 141°25'00.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/2.png",
       "image_local": "images/Iwate/2.png",
-      "name_ja": "宮古市"
+      "name_ja": "岩泉町"
     },
     {
       "name": "Ichinohe",
@@ -1563,7 +1563,7 @@
       "dms": "40°12'31.9\"N 141°18'16.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/1.png",
       "image_local": "images/Iwate/1.png",
-      "name_ja": "田野畑村"
+      "name_ja": "八幡平市"
     },
     {
       "name": "Kuji",
@@ -1572,7 +1572,7 @@
       "dms": "40°13'31.9\"N 141°46'54.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/27.png",
       "image_local": "images/Iwate/27.png",
-      "name_ja": "岩泉町"
+      "name_ja": "北上市"
     },
     {
       "name": "Kitakami",
@@ -1581,7 +1581,7 @@
       "dms": "39°16'52.0\"N 141°07'21.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/28.png",
       "image_local": "images/Iwate/28.png",
-      "name_ja": "普代村"
+      "name_ja": "久慈市"
     },
     {
       "name": "Morioka",
@@ -1590,7 +1590,7 @@
       "dms": "39°50'46.8\"N 141°10'23.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/29.png",
       "image_local": "images/Iwate/29.png",
-      "name_ja": "野田村"
+      "name_ja": "洋野町"
     },
     {
       "name": "Kitakami",
@@ -1608,7 +1608,7 @@
       "dms": "39°59'04.1\"N 141°20'23.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/iwate/31.png",
       "image_local": "images/Iwate/31.png",
-      "name_ja": "洋野町"
+      "name_ja": "平泉町"
     }
   ],
   "kagawa": [
@@ -1619,7 +1619,7 @@
       "dms": "34°20'20.0\"N 134°02'56.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/17.png",
       "image_local": "images/Kagawa/17.png",
-      "name_ja": "綾川町"
+      "name_ja": "直島町"
     },
     {
       "name": "Marugame",
@@ -1628,7 +1628,7 @@
       "dms": "34°17'31.3\"N 133°47'38.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/16.png",
       "image_local": "images/Kagawa/16.png",
-      "name_ja": "宇多津町"
+      "name_ja": "善通寺市"
     },
     {
       "name": "Sakaide",
@@ -1637,7 +1637,7 @@
       "dms": "34°18'46.8\"N 133°51'22.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/15.png",
       "image_local": "images/Kagawa/15.png",
-      "name_ja": "まんのう町"
+      "name_ja": "宇多津町"
     },
     {
       "name": "Zentsuji",
@@ -1655,7 +1655,7 @@
       "dms": "34°07'31.0\"N 133°39'18.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/13.png",
       "image_local": "images/Kagawa/13.png",
-      "name_ja": "琴平町"
+      "name_ja": "三木町"
     },
     {
       "name": "Sanuki",
@@ -1664,7 +1664,7 @@
       "dms": "34°19'16.7\"N 134°10'23.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/12.png",
       "image_local": "images/Kagawa/12.png",
-      "name_ja": "綾川町"
+      "name_ja": "小豆島町"
     },
     {
       "name": "Higashikagawa",
@@ -1673,7 +1673,7 @@
       "dms": "34°15'04.2\"N 134°20'00.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/11.png",
       "image_local": "images/Kagawa/11.png",
-      "name_ja": "直島町"
+      "name_ja": "まんのう町"
     },
     {
       "name": "Mitoyo",
@@ -1682,7 +1682,7 @@
       "dms": "34°16'07.7\"N 133°37'56.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/10.png",
       "image_local": "images/Kagawa/10.png",
-      "name_ja": "三木町"
+      "name_ja": "坂出市"
     },
     {
       "name": "Tonosho",
@@ -1691,7 +1691,7 @@
       "dms": "34°28'57.7\"N 134°11'15.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/9.png",
       "image_local": "images/Kagawa/9.png",
-      "name_ja": "小豆島町"
+      "name_ja": "観音寺市"
     },
     {
       "name": "Shodoshima",
@@ -1700,7 +1700,7 @@
       "dms": "34°28'15.1\"N 134°14'09.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/8.png",
       "image_local": "images/Kagawa/8.png",
-      "name_ja": "土庄町"
+      "name_ja": "東かがわ市"
     },
     {
       "name": "Miki",
@@ -1709,7 +1709,7 @@
       "dms": "34°16'06.9\"N 134°08'04.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/7.png",
       "image_local": "images/Kagawa/7.png",
-      "name_ja": "三豊市"
+      "name_ja": "土庄町"
     },
     {
       "name": "Naoshima",
@@ -1718,7 +1718,7 @@
       "dms": "34°27'21.0\"N 133°58'31.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/6.png",
       "image_local": "images/Kagawa/6.png",
-      "name_ja": "東かがわ市"
+      "name_ja": "多度津町"
     },
     {
       "name": "Ayahawa",
@@ -1736,7 +1736,7 @@
       "dms": "34°11'15.9\"N 133°49'11.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/4.png",
       "image_local": "images/Kagawa/4.png",
-      "name_ja": "観音寺市"
+      "name_ja": "三豊市"
     },
     {
       "name": "Tadotsu",
@@ -1745,7 +1745,7 @@
       "dms": "34°16'20.2\"N 133°45'26.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/3.png",
       "image_local": "images/Kagawa/3.png",
-      "name_ja": "善通寺市"
+      "name_ja": "琴平町"
     },
     {
       "name": "Manno",
@@ -1754,7 +1754,7 @@
       "dms": "34°10'24.0\"N 133°52'17.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/2.png",
       "image_local": "images/Kagawa/2.png",
-      "name_ja": "坂出市"
+      "name_ja": "丸亀市"
     },
     {
       "name": "Utazu",
@@ -1763,7 +1763,7 @@
       "dms": "34°18'48.3\"N 133°48'27.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/1.png",
       "image_local": "images/Kagawa/1.png",
-      "name_ja": "丸亀市"
+      "name_ja": "高松市"
     },
     {
       "name": "Ayagawa",
@@ -1772,7 +1772,7 @@
       "dms": "34°14'50.6\"N 133°55'58.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kagawa/18.png",
       "image_local": "images/Kagawa/18.png",
-      "name_ja": "高松市"
+      "name_ja": "綾川町"
     }
   ],
   "kagoshima": [
@@ -1913,7 +1913,7 @@
       "dms": "32°55'21.1\"N 132°50'23.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/7.png",
       "image_local": "images/Kochi/7.png",
-      "name_ja": "東洋町"
+      "name_ja": "安芸市"
     },
     {
       "name": "Otsuki",
@@ -1922,7 +1922,7 @@
       "dms": "32°46'03.6\"N 132°37'38.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/6.png",
       "image_local": "images/Kochi/6.png",
-      "name_ja": "香南市"
+      "name_ja": "東洋町"
     },
     {
       "name": "Tsuno",
@@ -1931,7 +1931,7 @@
       "dms": "33°28'36.7\"N 133°00'15.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/5.png",
       "image_local": "images/Kochi/5.png",
-      "name_ja": "宿毛市"
+      "name_ja": "香美市"
     },
     {
       "name": "Hidaka",
@@ -1940,7 +1940,7 @@
       "dms": "33°32'00.8\"N 133°22'16.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/4.png",
       "image_local": "images/Kochi/4.png",
-      "name_ja": "須崎市"
+      "name_ja": "大月町"
     },
     {
       "name": "Otoyo",
@@ -1949,7 +1949,7 @@
       "dms": "33°44'56.6\"N 133°41'03.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/3.png",
       "image_local": "images/Kochi/3.png",
-      "name_ja": "安芸市"
+      "name_ja": "日高村"
     },
     {
       "name": "Nahari",
@@ -1958,7 +1958,7 @@
       "dms": "33°25'30.9\"N 134°01'04.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/2.png",
       "image_local": "images/Kochi/2.png",
-      "name_ja": "室戸市"
+      "name_ja": "宿毛市"
     },
     {
       "name": "Kami",
@@ -1967,7 +1967,7 @@
       "dms": "33°41'44.2\"N 133°52'29.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/1.png",
       "image_local": "images/Kochi/1.png",
-      "name_ja": "三原村"
+      "name_ja": "大豊町"
     },
     {
       "name": "Muroto",
@@ -1976,7 +1976,7 @@
       "dms": "33°19'32.5\"N 134°11'42.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/8.png",
       "image_local": "images/Kochi/8.png",
-      "name_ja": "大月町"
+      "name_ja": "室戸市"
     },
     {
       "name": "Akita",
@@ -1985,7 +1985,7 @@
       "dms": "33°30'15.6\"N 133°54'23.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/9.png",
       "image_local": "images/Kochi/9.png",
-      "name_ja": "津野町"
+      "name_ja": "三原村"
     },
     {
       "name": "Susaki",
@@ -1994,7 +1994,7 @@
       "dms": "33°23'32.6\"N 133°17'33.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/10.png",
       "image_local": "images/Kochi/10.png",
-      "name_ja": "日高村"
+      "name_ja": "須崎市"
     },
     {
       "name": "Sukumo",
@@ -2003,7 +2003,7 @@
       "dms": "32°54'57.4\"N 132°42'45.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/11.png",
       "image_local": "images/Kochi/11.png",
-      "name_ja": "大豊町"
+      "name_ja": "津野町"
     },
     {
       "name": "Konan",
@@ -2021,7 +2021,7 @@
       "dms": "33°32'35.4\"N 134°17'41.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kochi/13.png",
       "image_local": "images/Kochi/13.png",
-      "name_ja": "香美市"
+      "name_ja": "香南市"
     }
   ],
   "kyoto": [
@@ -2032,7 +2032,7 @@
       "dms": "35°00'42.7\"N 135°40'43.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/5.png",
       "image_local": "images/Kyoto/5.png",
-      "name_ja": "ニンテンドーミュージアム"
+      "name_ja": "京都市"
     },
     {
       "name": "Kyoto",
@@ -2041,7 +2041,7 @@
       "dms": "35°00'12.1\"N 135°46'50.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/4.png",
       "image_local": "images/Kyoto/4.png",
-      "name_ja": "宇治市"
+      "name_ja": "京都市"
     },
     {
       "name": "Kyoto",
@@ -2050,7 +2050,7 @@
       "dms": "34°59'41.2\"N 135°42'51.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/3.png",
       "image_local": "images/Kyoto/3.png",
-      "name_ja": "宇治市"
+      "name_ja": "京都市"
     },
     {
       "name": "Kyoto",
@@ -2077,7 +2077,7 @@
       "dms": "34°53'26.3\"N 135°48'35.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/6.png",
       "image_local": "images/Kyoto/6.png",
-      "name_ja": "京都市"
+      "name_ja": "宇治市"
     },
     {
       "name": "Uji",
@@ -2086,7 +2086,7 @@
       "dms": "34°53'44.0\"N 135°48'21.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/7.png",
       "image_local": "images/Kyoto/7.png",
-      "name_ja": "京都市"
+      "name_ja": "宇治市"
     },
     {
       "name": "Uji",
@@ -2095,7 +2095,7 @@
       "dms": "34°53'33.2\"N 135°47'04.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/kyoto/8.png",
       "image_local": "images/Kyoto/8.png",
-      "name_ja": "京都市"
+      "name_ja": "宇治市"
     }
   ],
   "mie": [
@@ -2106,7 +2106,7 @@
       "dms": "33°46'11.1\"N 136°01'43.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/8.png",
       "image_local": "images/Mie/8.png",
-      "name_ja": "鈴鹿市"
+      "name_ja": "四日市市"
     },
     {
       "name": "Watarai",
@@ -2115,7 +2115,7 @@
       "dms": "34°25'55.5\"N 136°37'52.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/9.png",
       "image_local": "images/Mie/9.png",
-      "name_ja": "鳥羽市"
+      "name_ja": "紀宝町"
     },
     {
       "name": "Odai",
@@ -2124,7 +2124,7 @@
       "dms": "34°21'21.6\"N 136°20'51.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/10.png",
       "image_local": "images/Mie/10.png",
-      "name_ja": "御浜町"
+      "name_ja": "木曽岬町"
     },
     {
       "name": "Meiwa",
@@ -2133,7 +2133,7 @@
       "dms": "34°32'23.8\"N 136°37'06.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/11.png",
       "image_local": "images/Mie/11.png",
-      "name_ja": "紀北町"
+      "name_ja": "御浜町"
     },
     {
       "name": "Asahi",
@@ -2142,7 +2142,7 @@
       "dms": "35°02'14.2\"N 136°39'31.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/12.png",
       "image_local": "images/Mie/12.png",
-      "name_ja": "大紀町"
+      "name_ja": "いなべ市"
     },
     {
       "name": "Kameyama",
@@ -2151,7 +2151,7 @@
       "dms": "34°51'34.1\"N 136°26'50.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/13.png",
       "image_local": "images/Mie/13.png",
-      "name_ja": "菰野町"
+      "name_ja": "南伊勢町"
     },
     {
       "name": "Tsu",
@@ -2160,7 +2160,7 @@
       "dms": "34°43'06.6\"N 136°30'38.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/7.png",
       "image_local": "images/Mie/7.png",
-      "name_ja": "いなべ市"
+      "name_ja": "紀北町"
     },
     {
       "name": "Yokkaichi",
@@ -2169,7 +2169,7 @@
       "dms": "34°57'08.7\"N 136°36'43.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/6.png",
       "image_local": "images/Mie/6.png",
-      "name_ja": "尾鷲市"
+      "name_ja": "菰野町"
     },
     {
       "name": "Ise",
@@ -2178,7 +2178,7 @@
       "dms": "34°29'16.0\"N 136°42'25.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/5.png",
       "image_local": "images/Mie/5.png",
-      "name_ja": "桑名市"
+      "name_ja": "伊賀市"
     },
     {
       "name": "Toba",
@@ -2187,7 +2187,7 @@
       "dms": "34°29'12.9\"N 136°50'41.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/4.png",
       "image_local": "images/Mie/4.png",
-      "name_ja": "南伊勢町"
+      "name_ja": "鳥羽市"
     },
     {
       "name": "Kumano",
@@ -2196,7 +2196,7 @@
       "dms": "33°53'30.3\"N 136°06'58.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/3.png",
       "image_local": "images/Mie/3.png",
-      "name_ja": "玉城町"
+      "name_ja": "尾鷲市"
     },
     {
       "name": "Shima",
@@ -2214,7 +2214,7 @@
       "dms": "34°46'03.2\"N 136°07'48.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/1.png",
       "image_local": "images/Mie/1.png",
-      "name_ja": "多気町"
+      "name_ja": "亀山市"
     },
     {
       "name": "Nabari City",
@@ -2223,7 +2223,7 @@
       "dms": "34°37'34.4\"N 136°05'20.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/14.png",
       "image_local": "images/Mie/14.png",
-      "name_ja": "川越町"
+      "name_ja": "朝日町"
     },
     {
       "name": "Kisosaki",
@@ -2232,7 +2232,7 @@
       "dms": "35°04'32.1\"N 136°43'54.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/15.png",
       "image_local": "images/Mie/15.png",
-      "name_ja": "鈴鹿市"
+      "name_ja": "大台町"
     },
     {
       "name": "Toin",
@@ -2241,7 +2241,7 @@
       "dms": "35°04'25.7\"N 136°34'52.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/16.png",
       "image_local": "images/Mie/16.png",
-      "name_ja": "東員町"
+      "name_ja": "玉城町"
     },
     {
       "name": "Minamiise",
@@ -2250,7 +2250,7 @@
       "dms": "34°16'08.4\"N 136°32'56.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/17.png",
       "image_local": "images/Mie/17.png",
-      "name_ja": "木曽岬町"
+      "name_ja": "明和町"
     },
     {
       "name": "Tamashiro",
@@ -2259,7 +2259,7 @@
       "dms": "34°28'04.7\"N 136°35'15.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/18.png",
       "image_local": "images/Mie/18.png",
-      "name_ja": "名張市"
+      "name_ja": "熊野市"
     },
     {
       "name": "Matsusaka",
@@ -2268,7 +2268,7 @@
       "dms": "34°34'43.2\"N 136°31'11.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/19.png",
       "image_local": "images/Mie/19.png",
-      "name_ja": "紀宝町"
+      "name_ja": "度会町"
     },
     {
       "name": "Takizawa",
@@ -2277,7 +2277,7 @@
       "dms": "34°27'58.0\"N 136°33'13.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/20.png",
       "image_local": "images/Mie/20.png",
-      "name_ja": "度会町"
+      "name_ja": "津市"
     },
     {
       "name": "Kawagoe",
@@ -2286,7 +2286,7 @@
       "dms": "35°01'02.3\"N 136°39'35.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/21.png",
       "image_local": "images/Mie/21.png",
-      "name_ja": "大台町"
+      "name_ja": "名張市"
     },
     {
       "name": "Suzuka",
@@ -2295,7 +2295,7 @@
       "dms": "34°49'23.0\"N 136°35'04.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/22.png",
       "image_local": "images/Mie/22.png",
-      "name_ja": "明和町"
+      "name_ja": "鈴鹿市"
     },
     {
       "name": "Kuwana",
@@ -2304,7 +2304,7 @@
       "dms": "35°04'58.9\"N 136°42'10.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/23.png",
       "image_local": "images/Mie/23.png",
-      "name_ja": "朝日町"
+      "name_ja": "川越町"
     },
     {
       "name": "Owasa",
@@ -2313,7 +2313,7 @@
       "dms": "34°03'38.8\"N 136°12'57.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/24.png",
       "image_local": "images/Mie/24.png",
-      "name_ja": "亀山市"
+      "name_ja": "東員町"
     },
     {
       "name": "Inabe",
@@ -2322,7 +2322,7 @@
       "dms": "35°09'28.4\"N 136°30'58.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/25.png",
       "image_local": "images/Mie/25.png",
-      "name_ja": "伊賀市"
+      "name_ja": "伊勢市"
     },
     {
       "name": "Komono",
@@ -2331,7 +2331,7 @@
       "dms": "35°01'10.5\"N 136°30'23.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/26.png",
       "image_local": "images/Mie/26.png",
-      "name_ja": "志摩市"
+      "name_ja": "大紀町"
     },
     {
       "name": "Taiki",
@@ -2340,7 +2340,7 @@
       "dms": "34°17'49.9\"N 136°23'56.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/27.png",
       "image_local": "images/Mie/27.png",
-      "name_ja": "熊野市"
+      "name_ja": "桑名市"
     },
     {
       "name": "Kihoku",
@@ -2349,7 +2349,7 @@
       "dms": "34°13'01.0\"N 136°20'46.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/28.png",
       "image_local": "images/Mie/28.png",
-      "name_ja": "鳥羽市"
+      "name_ja": "多気町"
     },
     {
       "name": "Mihama",
@@ -2358,7 +2358,7 @@
       "dms": "33°48'14.1\"N 136°02'36.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/29.png",
       "image_local": "images/Mie/29.png",
-      "name_ja": "伊勢市"
+      "name_ja": "志摩市"
     },
     {
       "name": "Toba",
@@ -2367,7 +2367,7 @@
       "dms": "34°29'26.8\"N 136°50'41.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/30.png",
       "image_local": "images/Mie/30.png",
-      "name_ja": "四日市市"
+      "name_ja": "鳥羽市"
     },
     {
       "name": "Suzuka",
@@ -2376,7 +2376,7 @@
       "dms": "34°51'08.0\"N 136°32'19.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/mie/31.png",
       "image_local": "images/Mie/31.png",
-      "name_ja": "津市"
+      "name_ja": "鈴鹿市"
     }
   ],
   "miyagi": [
@@ -2387,7 +2387,7 @@
       "dms": "38°18'41.9\"N 140°58'59.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/36.png",
       "image_local": "images/Miyagi/36.png",
-      "name_ja": "加瀬沼公園"
+      "name_ja": "利府町"
     },
     {
       "name": "Kesennuma",
@@ -2396,7 +2396,7 @@
       "dms": "38°54'20.5\"N 141°34'28.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/35.png",
       "image_local": "images/Miyagi/35.png",
-      "name_ja": "美里町"
+      "name_ja": "加美町"
     },
     {
       "name": "Minamisanriku",
@@ -2405,7 +2405,7 @@
       "dms": "38°43'01.4\"N 141°31'16.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/34.png",
       "image_local": "images/Miyagi/34.png",
-      "name_ja": "涌谷町"
+      "name_ja": "多賀城市"
     },
     {
       "name": "Onagawa",
@@ -2414,7 +2414,7 @@
       "dms": "38°26'44.5\"N 141°26'46.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/33.png",
       "image_local": "images/Miyagi/33.png",
-      "name_ja": "加美町"
+      "name_ja": "女川町"
     },
     {
       "name": "Ishinomaki",
@@ -2423,7 +2423,7 @@
       "dms": "38°26'01.8\"N 141°18'11.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/32.png",
       "image_local": "images/Miyagi/32.png",
-      "name_ja": "色麻町"
+      "name_ja": "七ヶ浜町"
     },
     {
       "name": "Higashimatsushima",
@@ -2432,7 +2432,7 @@
       "dms": "38°22'45.9\"N 141°09'24.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/31.png",
       "image_local": "images/Miyagi/31.png",
-      "name_ja": "大衡村"
+      "name_ja": "七ヶ宿町"
     },
     {
       "name": "Matsushima",
@@ -2441,7 +2441,7 @@
       "dms": "38°22'08.4\"N 141°03'40.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/30.png",
       "image_local": "images/Miyagi/30.png",
-      "name_ja": "大郷町"
+      "name_ja": "塩竈市"
     },
     {
       "name": "Shiogama",
@@ -2450,7 +2450,7 @@
       "dms": "38°19'05.6\"N 141°01'23.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/29.png",
       "image_local": "images/Miyagi/29.png",
-      "name_ja": "大和町"
+      "name_ja": "栗原市"
     },
     {
       "name": "Rifu",
@@ -2459,7 +2459,7 @@
       "dms": "38°19'46.2\"N 140°58'30.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/28.png",
       "image_local": "images/Miyagi/28.png",
-      "name_ja": "丸森町"
+      "name_ja": "岩沼市"
     },
     {
       "name": "Shigahama",
@@ -2468,7 +2468,7 @@
       "dms": "38°18'15.5\"N 141°05'00.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/27.png",
       "image_local": "images/Miyagi/27.png",
-      "name_ja": "川崎町"
+      "name_ja": "松島町"
     },
     {
       "name": "Tagajo",
@@ -2477,7 +2477,7 @@
       "dms": "38°17'31.0\"N 141°00'25.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/26.png",
       "image_local": "images/Miyagi/26.png",
-      "name_ja": "柴田町"
+      "name_ja": "涌谷町"
     },
     {
       "name": "Sendai",
@@ -2486,7 +2486,7 @@
       "dms": "38°15'30.9\"N 140°52'21.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/25.png",
       "image_local": "images/Miyagi/25.png",
-      "name_ja": "村田町"
+      "name_ja": "川崎町"
     },
     {
       "name": "Natori",
@@ -2504,7 +2504,7 @@
       "dms": "38°06'19.1\"N 140°51'58.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/23.png",
       "image_local": "images/Miyagi/23.png",
-      "name_ja": "七ヶ宿町"
+      "name_ja": "丸森町"
     },
     {
       "name": "Waari",
@@ -2513,7 +2513,7 @@
       "dms": "38°02'31.8\"N 140°54'56.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/22.png",
       "image_local": "images/Miyagi/22.png",
-      "name_ja": "蔵王町"
+      "name_ja": "美里町"
     },
     {
       "name": "Yamamoto",
@@ -2522,7 +2522,7 @@
       "dms": "37°55'26.4\"N 140°54'03.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/21.png",
       "image_local": "images/Miyagi/21.png",
-      "name_ja": "富谷市"
+      "name_ja": "蔵王町"
     },
     {
       "name": "Shiroishi",
@@ -2531,7 +2531,7 @@
       "dms": "38°00'09.0\"N 140°37'02.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/20.png",
       "image_local": "images/Miyagi/20.png",
-      "name_ja": "大崎市"
+      "name_ja": "気仙沼市"
     },
     {
       "name": "Kakuda",
@@ -2540,7 +2540,7 @@
       "dms": "37°58'07.3\"N 140°48'25.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/19.png",
       "image_local": "images/Miyagi/19.png",
-      "name_ja": "栗原市"
+      "name_ja": "亘理町"
     },
     {
       "name": "Tome",
@@ -2549,7 +2549,7 @@
       "dms": "38°36'59.9\"N 141°14'07.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/18.png",
       "image_local": "images/Miyagi/18.png",
-      "name_ja": "登米市"
+      "name_ja": "白石市"
     },
     {
       "name": "Kurihara",
@@ -2558,7 +2558,7 @@
       "dms": "38°47'40.1\"N 140°50'39.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/17.png",
       "image_local": "images/Miyagi/17.png",
-      "name_ja": "角田市"
+      "name_ja": "南三陸町"
     },
     {
       "name": "Osaki",
@@ -2567,7 +2567,7 @@
       "dms": "38°34'33.1\"N 140°57'21.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/16.png",
       "image_local": "images/Miyagi/16.png",
-      "name_ja": "白石市"
+      "name_ja": "富谷市"
     },
     {
       "name": "Tomiya",
@@ -2576,7 +2576,7 @@
       "dms": "38°23'54.0\"N 140°53'15.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/15.png",
       "image_local": "images/Miyagi/15.png",
-      "name_ja": "山元町"
+      "name_ja": "石巻市"
     },
     {
       "name": "Zao",
@@ -2585,7 +2585,7 @@
       "dms": "38°07'25.2\"N 140°34'37.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/14.png",
       "image_local": "images/Miyagi/14.png",
-      "name_ja": "亘理町"
+      "name_ja": "角田市"
     },
     {
       "name": "Shichikashuku",
@@ -2594,7 +2594,7 @@
       "dms": "37°58'57.1\"N 140°27'59.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/13.png",
       "image_local": "images/Miyagi/13.png",
-      "name_ja": "岩沼市"
+      "name_ja": "東松島市"
     },
     {
       "name": "Ogawara",
@@ -2603,7 +2603,7 @@
       "dms": "38°02'54.6\"N 140°44'17.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/12.png",
       "image_local": "images/Miyagi/12.png",
-      "name_ja": "名取市"
+      "name_ja": "大衡村"
     },
     {
       "name": "Murata",
@@ -2612,7 +2612,7 @@
       "dms": "38°07'08.7\"N 140°43'04.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/11.png",
       "image_local": "images/Miyagi/11.png",
-      "name_ja": "仙台市"
+      "name_ja": "大崎市"
     },
     {
       "name": "Shibata",
@@ -2621,7 +2621,7 @@
       "dms": "38°03'32.9\"N 140°46'05.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/10.png",
       "image_local": "images/Miyagi/10.png",
-      "name_ja": "多賀城市"
+      "name_ja": "村田町"
     },
     {
       "name": "Kawasaki",
@@ -2630,7 +2630,7 @@
       "dms": "38°10'39.0756\"N 140°38'37.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/9.png",
       "image_local": "images/Miyagi/9.png",
-      "name_ja": "七ヶ浜町"
+      "name_ja": "加瀬沼公園"
     },
     {
       "name": "Marumori",
@@ -2639,7 +2639,7 @@
       "dms": "37°54'49.9\"N 140°45'45.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/8.png",
       "image_local": "images/Miyagi/8.png",
-      "name_ja": "利府町"
+      "name_ja": "名取市"
     },
     {
       "name": "Taiwa",
@@ -2648,7 +2648,7 @@
       "dms": "38°26'14.5\"N 140°53'08.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/7.png",
       "image_local": "images/Miyagi/7.png",
-      "name_ja": "塩竈市"
+      "name_ja": "登米市"
     },
     {
       "name": "Osato",
@@ -2657,7 +2657,7 @@
       "dms": "38°25'26.5\"N 140°59'33.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/6.png",
       "image_local": "images/Miyagi/6.png",
-      "name_ja": "松島町"
+      "name_ja": "山元町"
     },
     {
       "name": "Ohira",
@@ -2666,7 +2666,7 @@
       "dms": "38°28'10.0\"N 140°53'24.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/5.png",
       "image_local": "images/Miyagi/5.png",
-      "name_ja": "東松島市"
+      "name_ja": "大郷町"
     },
     {
       "name": "Shikam",
@@ -2675,7 +2675,7 @@
       "dms": "38°31'48.5\"N 140°51'41.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/4.png",
       "image_local": "images/Miyagi/4.png",
-      "name_ja": "石巻市"
+      "name_ja": "柴田町"
     },
     {
       "name": "Kami",
@@ -2684,7 +2684,7 @@
       "dms": "38°34'19.7\"N 140°43'42.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/3.png",
       "image_local": "images/Miyagi/3.png",
-      "name_ja": "女川町"
+      "name_ja": "仙台市"
     },
     {
       "name": "Wakuya",
@@ -2693,7 +2693,7 @@
       "dms": "38°32'21.4\"N 141°07'36.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/2.png",
       "image_local": "images/Miyagi/2.png",
-      "name_ja": "南三陸町"
+      "name_ja": "色麻町"
     },
     {
       "name": "Misato",
@@ -2702,7 +2702,7 @@
       "dms": "38°29'20.6\"N 141°07'59.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyagi/1.png",
       "image_local": "images/Miyagi/1.png",
-      "name_ja": "気仙沼市"
+      "name_ja": "大和町"
     }
   ],
   "miyazaki": [
@@ -2713,7 +2713,7 @@
       "dms": "31°48'27.0\"N 131°27'28.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/26.png",
       "image_local": "images/Miyazaki/26.png",
-      "name_ja": "五ヶ瀬町"
+      "name_ja": "椎葉村"
     },
     {
       "name": "Miyakonojo",
@@ -2722,7 +2722,7 @@
       "dms": "31°43'30.8\"N 131°03'58.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/25.png",
       "image_local": "images/Miyazaki/25.png",
-      "name_ja": "日之影町"
+      "name_ja": "木城町"
     },
     {
       "name": "Nobeoka",
@@ -2731,7 +2731,7 @@
       "dms": "32°41'05.0\"N 131°48'04.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/24.png",
       "image_local": "images/Miyazaki/24.png",
-      "name_ja": "高千穂町"
+      "name_ja": "西都市"
     },
     {
       "name": "Nichinan",
@@ -2740,7 +2740,7 @@
       "dms": "31°35'16.6\"N 131°24'06.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/23.png",
       "image_local": "images/Miyazaki/23.png",
-      "name_ja": "椎葉村"
+      "name_ja": "美郷町"
     },
     {
       "name": "Kobayashi",
@@ -2749,7 +2749,7 @@
       "dms": "31°57'27.0\"N 131°07'33.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/22.png",
       "image_local": "images/Miyazaki/22.png",
-      "name_ja": "諸塚村"
+      "name_ja": "延岡市"
     },
     {
       "name": "Hyuga",
@@ -2758,7 +2758,7 @@
       "dms": "32°25'31.4\"N 131°37'39.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/21.png",
       "image_local": "images/Miyazaki/21.png",
-      "name_ja": "西米良村"
+      "name_ja": "国富町"
     },
     {
       "name": "Kushima",
@@ -2767,7 +2767,7 @@
       "dms": "31°21'58.6\"N 131°19'58.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/20.png",
       "image_local": "images/Miyazaki/20.png",
-      "name_ja": "綾町"
+      "name_ja": "日之影町"
     },
     {
       "name": "Saito",
@@ -2776,7 +2776,7 @@
       "dms": "32°06'23.9\"N 131°24'16.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/19.png",
       "image_local": "images/Miyazaki/19.png",
-      "name_ja": "国富町"
+      "name_ja": "諸塚村"
     },
     {
       "name": "Erbino",
@@ -2785,7 +2785,7 @@
       "dms": "32°03'01.1\"N 130°48'21.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/18.png",
       "image_local": "images/Miyazaki/18.png",
-      "name_ja": "高原町"
+      "name_ja": "三股町"
     },
     {
       "name": "Mimata",
@@ -2794,7 +2794,7 @@
       "dms": "31°44'01.5\"N 131°07'13.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/17.png",
       "image_local": "images/Miyazaki/17.png",
-      "name_ja": "美郷町"
+      "name_ja": "日南市"
     },
     {
       "name": "Takanabe",
@@ -2803,7 +2803,7 @@
       "dms": "32°06'57.4\"N 131°31'58.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/16.png",
       "image_local": "images/Miyazaki/16.png",
-      "name_ja": "門川町"
+      "name_ja": "高原町"
     },
     {
       "name": "Shintomi",
@@ -2830,7 +2830,7 @@
       "dms": "32°11'29.4\"N 131°31'44.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/13.png",
       "image_local": "images/Miyazaki/13.png",
-      "name_ja": "木城町"
+      "name_ja": "小林市"
     },
     {
       "name": "Tsuno",
@@ -2839,7 +2839,7 @@
       "dms": "32°15'39.3\"N 131°33'27.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/12.png",
       "image_local": "images/Miyazaki/12.png",
-      "name_ja": "新富町"
+      "name_ja": "高鍋町"
     },
     {
       "name": "Kadogawa",
@@ -2848,7 +2848,7 @@
       "dms": "32°29'13.3\"N 131°40'36.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/11.png",
       "image_local": "images/Miyazaki/11.png",
-      "name_ja": "高鍋町"
+      "name_ja": "宮崎市"
     },
     {
       "name": "Misato",
@@ -2857,7 +2857,7 @@
       "dms": "32°25'55.1\"N 131°28'03.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/10.png",
       "image_local": "images/Miyazaki/10.png",
-      "name_ja": "三股町"
+      "name_ja": "日向市"
     },
     {
       "name": "Takaharu",
@@ -2866,7 +2866,7 @@
       "dms": "31°54'26.0\"N 130°57'36.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/9.png",
       "image_local": "images/Miyazaki/9.png",
-      "name_ja": "えびの市"
+      "name_ja": "高千穂町"
     },
     {
       "name": "Kunitomi",
@@ -2875,7 +2875,7 @@
       "dms": "31°59'18.9\"N 131°19'18.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/8.png",
       "image_local": "images/Miyazaki/8.png",
-      "name_ja": "西都市"
+      "name_ja": "新富町"
     },
     {
       "name": "Aya",
@@ -2884,7 +2884,7 @@
       "dms": "31°59'56.3\"N 131°15'13.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/7.png",
       "image_local": "images/Miyazaki/7.png",
-      "name_ja": "串間市"
+      "name_ja": "えびの市"
     },
     {
       "name": "Nishimera",
@@ -2893,7 +2893,7 @@
       "dms": "32°13'23.7\"N 131°09'47.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/6.png",
       "image_local": "images/Miyazaki/6.png",
-      "name_ja": "日向市"
+      "name_ja": "西米良村"
     },
     {
       "name": "Morotsuka",
@@ -2902,7 +2902,7 @@
       "dms": "32°30'35.3\"N 131°19'53.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/5.png",
       "image_local": "images/Miyazaki/5.png",
-      "name_ja": "小林市"
+      "name_ja": "綾町"
     },
     {
       "name": "Shiiba",
@@ -2911,7 +2911,7 @@
       "dms": "32°27'29.4\"N 131°09'13.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/4.png",
       "image_local": "images/Miyazaki/4.png",
-      "name_ja": "日南市"
+      "name_ja": "都城市"
     },
     {
       "name": "Takachiho",
@@ -2920,7 +2920,7 @@
       "dms": "32°42'27.9\"N 131°18'21.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/3.png",
       "image_local": "images/Miyazaki/3.png",
-      "name_ja": "延岡市"
+      "name_ja": "門川町"
     },
     {
       "name": "Hinokage",
@@ -2929,7 +2929,7 @@
       "dms": "32°39'38.3\"N 131°23'19.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/2.png",
       "image_local": "images/Miyazaki/2.png",
-      "name_ja": "都城市"
+      "name_ja": "五ヶ瀬町"
     },
     {
       "name": "Gokase",
@@ -2938,7 +2938,7 @@
       "dms": "32°40'44.6\"N 131°12'36.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/miyazaki/1.png",
       "image_local": "images/Miyazaki/1.png",
-      "name_ja": "宮崎市"
+      "name_ja": "串間市"
     }
   ],
   "nagasaki": [
@@ -2949,7 +2949,7 @@
       "dms": "32°59'11.1\"N 129°06'45.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/1.png",
       "image_local": "images/Nagasaki/1.png",
-      "name_ja": "佐々町"
+      "name_ja": "東彼杵町"
     },
     {
       "name": "Unzen",
@@ -2958,7 +2958,7 @@
       "dms": "32°44'27.1\"N 130°15'40.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/2.png",
       "image_local": "images/Nagasaki/2.png",
-      "name_ja": "東彼杵町"
+      "name_ja": "雲仙市"
     },
     {
       "name": "Omura",
@@ -2967,7 +2967,7 @@
       "dms": "32°55'59.2\"N 129°57'29.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/3.png",
       "image_local": "images/Nagasaki/3.png",
-      "name_ja": "時津町"
+      "name_ja": "大村市"
     },
     {
       "name": "Sasebo",
@@ -2976,7 +2976,7 @@
       "dms": "33°09'50.4\"N 129°43'27.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/4.png",
       "image_local": "images/Nagasaki/4.png",
-      "name_ja": "壱岐市"
+      "name_ja": "島原市"
     },
     {
       "name": "Nagasaki",
@@ -2985,7 +2985,7 @@
       "dms": "32°45'13.4\"N 129°52'02.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/5.png",
       "image_local": "images/Nagasaki/5.png",
-      "name_ja": "島原市"
+      "name_ja": "壱岐市"
     },
     {
       "name": "Shimbara",
@@ -2994,7 +2994,7 @@
       "dms": "32°47'24.8\"N 130°22'14.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/6.png",
       "image_local": "images/Nagasaki/6.png",
-      "name_ja": "新上五島町"
+      "name_ja": "時津町"
     },
     {
       "name": "Iki",
@@ -3003,7 +3003,7 @@
       "dms": "33°48'43.1\"N 129°39'20.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/7.png",
       "image_local": "images/Nagasaki/7.png",
-      "name_ja": "雲仙市"
+      "name_ja": "佐世保市"
     },
     {
       "name": "Togitsu",
@@ -3012,7 +3012,7 @@
       "dms": "32°49'55.1\"N 129°50'56.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/8.png",
       "image_local": "images/Nagasaki/8.png",
-      "name_ja": "大村市"
+      "name_ja": "長崎市"
     },
     {
       "name": "Higashisonogi",
@@ -3021,7 +3021,7 @@
       "dms": "33°02'08.6\"N 129°55'10.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/9.png",
       "image_local": "images/Nagasaki/9.png",
-      "name_ja": "佐世保市"
+      "name_ja": "佐々町"
     },
     {
       "name": "Saza",
@@ -3030,7 +3030,7 @@
       "dms": "33°15'17.6\"N 129°39'32.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/nagasaki/10.png",
       "image_local": "images/Nagasaki/10.png",
-      "name_ja": "長崎市"
+      "name_ja": "新上五島町"
     }
   ],
   "nara": [
@@ -3182,7 +3182,7 @@
       "dms": "26°19'39.6\"N 127°48'10.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/10.png",
       "image_local": "images/Okinawa/10.png",
-      "name_ja": "座間味村"
+      "name_ja": "沖縄市"
     },
     {
       "name": "Uruma",
@@ -3191,7 +3191,7 @@
       "dms": "26°26'10.3\"N 127°49'34.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/9.png",
       "image_local": "images/Okinawa/9.png",
-      "name_ja": "渡嘉敷村"
+      "name_ja": "糸満市"
     },
     {
       "name": "Urasoe",
@@ -3200,7 +3200,7 @@
       "dms": "26°14'46.2\"N 127°41'18.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/8.png",
       "image_local": "images/Okinawa/8.png",
-      "name_ja": "北谷町"
+      "name_ja": "石垣市"
     },
     {
       "name": "Nago",
@@ -3209,7 +3209,7 @@
       "dms": "26°35'14.5\"N 127°59'08.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/7.png",
       "image_local": "images/Okinawa/7.png",
-      "name_ja": "宮古島市"
+      "name_ja": "座間味村"
     },
     {
       "name": "Itoman",
@@ -3218,7 +3218,7 @@
       "dms": "26°08'17.8\"N 127°39'40.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/6.png",
       "image_local": "images/Okinawa/6.png",
-      "name_ja": "石垣市"
+      "name_ja": "南城市"
     },
     {
       "name": "Motobu",
@@ -3227,7 +3227,7 @@
       "dms": "26°41'30.1\"N 127°52'40.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/5.png",
       "image_local": "images/Okinawa/5.png",
-      "name_ja": "南城市"
+      "name_ja": "宮古島市"
     },
     {
       "name": "Tomigusuku",
@@ -3236,7 +3236,7 @@
       "dms": "26°09'27.2\"N 127°39'22.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/4.png",
       "image_local": "images/Okinawa/4.png",
-      "name_ja": "豊見城市"
+      "name_ja": "渡嘉敷村"
     },
     {
       "name": "Nanjo",
@@ -3254,7 +3254,7 @@
       "dms": "24°20'14.7\"N 124°09'25.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/2.png",
       "image_local": "images/Okinawa/2.png",
-      "name_ja": "糸満市"
+      "name_ja": "北谷町"
     },
     {
       "name": "Miyakojima",
@@ -3263,7 +3263,7 @@
       "dms": "24°44'05.9\"N 125°15'47.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/1.png",
       "image_local": "images/Okinawa/1.png",
-      "name_ja": "名護市"
+      "name_ja": "宜野湾市"
     },
     {
       "name": "Chatan",
@@ -3272,7 +3272,7 @@
       "dms": "26°18'56.6\"N 127°45'13.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/13.png",
       "image_local": "images/Okinawa/13.png",
-      "name_ja": "浦添市"
+      "name_ja": "うるま市"
     },
     {
       "name": "Tokashiki",
@@ -3281,7 +3281,7 @@
       "dms": "26°08'56.8\"N 127°20'51.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/14.png",
       "image_local": "images/Okinawa/14.png",
-      "name_ja": "うるま市"
+      "name_ja": "浦添市"
     },
     {
       "name": "Zamami",
@@ -3290,7 +3290,7 @@
       "dms": "26°13'40.4\"N 127°18'05.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/15.png",
       "image_local": "images/Okinawa/15.png",
-      "name_ja": "沖縄市"
+      "name_ja": "豊見城市"
     },
     {
       "name": "Kumejima",
@@ -3299,7 +3299,7 @@
       "dms": "26°22'26.4\"N 126°47'20.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/okinawa/16.png",
       "image_local": "images/Okinawa/16.png",
-      "name_ja": "宜野湾市"
+      "name_ja": "名護市"
     },
     {
       "name": "Naha",
@@ -3424,7 +3424,7 @@
       "dms": "35°00'36.7\"N 135°52'11.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shiga/5.png",
       "image_local": "images/Shiga/5.png",
-      "name_ja": "甲賀市"
+      "name_ja": "大津市"
     },
     {
       "name": "Otsu",
@@ -3433,7 +3433,7 @@
       "dms": "34°59'53.2\"N 135°53'40.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shiga/4.png",
       "image_local": "images/Shiga/4.png",
-      "name_ja": "甲賀市"
+      "name_ja": "大津市"
     },
     {
       "name": "Koka",
@@ -3451,7 +3451,7 @@
       "dms": "34°57'37.9\"N 136°09'54.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shiga/2.png",
       "image_local": "images/Shiga/2.png",
-      "name_ja": "大津市"
+      "name_ja": "甲賀市"
     },
     {
       "name": "Koka",
@@ -3460,7 +3460,7 @@
       "dms": "34°54'01.6\"N 136°13'45.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shiga/1.png",
       "image_local": "images/Shiga/1.png",
-      "name_ja": "大津市"
+      "name_ja": "甲賀市"
     }
   ],
   "shimane": [
@@ -3471,7 +3471,7 @@
       "dms": "36°10'38.1\"N 133°19'48.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shimane/5.png",
       "image_local": "images/Shimane/5.png",
-      "name_ja": "隠岐の島町"
+      "name_ja": "浜田市"
     },
     {
       "name": "Yasugi",
@@ -3480,7 +3480,7 @@
       "dms": "35°25'42.3\"N 133°15'32.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shimane/4.png",
       "image_local": "images/Shimane/4.png",
-      "name_ja": "安来市"
+      "name_ja": "隠岐の島町"
     },
     {
       "name": "Odai",
@@ -3489,7 +3489,7 @@
       "dms": "35°08'44.8\"N 132°24'47.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shimane/3.png",
       "image_local": "images/Shimane/3.png",
-      "name_ja": "大田市"
+      "name_ja": "安来市"
     },
     {
       "name": "Izumo",
@@ -3498,7 +3498,7 @@
       "dms": "35°25'58.8\"N 132°37'45.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shimane/2.png",
       "image_local": "images/Shimane/2.png",
-      "name_ja": "出雲市"
+      "name_ja": "大田市"
     },
     {
       "name": "Hamada",
@@ -3507,7 +3507,7 @@
       "dms": "34°53'21.3\"N 132°04'16.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shimane/1.png",
       "image_local": "images/Shimane/1.png",
-      "name_ja": "浜田市"
+      "name_ja": "出雲市"
     }
   ],
   "shizuoka": [
@@ -3518,7 +3518,7 @@
       "dms": "34°58'13.0\"N 138°55'39.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shizuoka/1.png",
       "image_local": "images/Shizuoka/1.png",
-      "name_ja": "伊豆市"
+      "name_ja": "沼津市"
     },
     {
       "name": "Fuji",
@@ -3527,7 +3527,7 @@
       "dms": "35°09'41.5\"N 138°37'03.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shizuoka/2.png",
       "image_local": "images/Shizuoka/2.png",
-      "name_ja": "富士市"
+      "name_ja": "伊豆市"
     },
     {
       "name": "Numazu",
@@ -3536,7 +3536,7 @@
       "dms": "35°04'53.7\"N 138°51'17.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shizuoka/3.png",
       "image_local": "images/Shizuoka/3.png",
-      "name_ja": "沼津市"
+      "name_ja": "浜松市"
     },
     {
       "name": "Hamamatsu",
@@ -3545,7 +3545,7 @@
       "dms": "34°42'14.5\"N 137°43'57.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/shizuoka/4.png",
       "image_local": "images/Shizuoka/4.png",
-      "name_ja": "浜松市"
+      "name_ja": "富士市"
     },
     {
       "name": "Shizuoka",
@@ -3632,7 +3632,7 @@
       "dms": "35°32'53.2\"N 139°27'01.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/12.png",
       "image_local": "images/Tokyo/12.png",
-      "name_ja": "台東区上野"
+      "name_ja": "町田市"
     },
     {
       "name": "Machida",
@@ -3641,7 +3641,7 @@
       "dms": "35°32'53.4\"N 139°27'04.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/11.png",
       "image_local": "images/Tokyo/11.png",
-      "name_ja": "台東区上野"
+      "name_ja": "町田市"
     },
     {
       "name": "Machida",
@@ -3650,7 +3650,7 @@
       "dms": "35°32'43.1\"N 139°27'18.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/10.png",
       "image_local": "images/Tokyo/10.png",
-      "name_ja": "小笠原村"
+      "name_ja": "町田市"
     },
     {
       "name": "Machida",
@@ -3659,7 +3659,7 @@
       "dms": "35°32'46.0\"N 139°27'15.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/9.png",
       "image_local": "images/Tokyo/9.png",
-      "name_ja": "小笠原村"
+      "name_ja": "町田市"
     },
     {
       "name": "Machida",
@@ -3668,7 +3668,7 @@
       "dms": "35°32'44.3\"N 139°27'17.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/8.png",
       "image_local": "images/Tokyo/8.png",
-      "name_ja": "小笠原村"
+      "name_ja": "町田市"
     },
     {
       "name": "Machida",
@@ -3677,7 +3677,7 @@
       "dms": "35°32'48.2\"N 139°27'14.3\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/7.png",
       "image_local": "images/Tokyo/7.png",
-      "name_ja": "小笠原村"
+      "name_ja": "町田市"
     },
     {
       "name": "Ogasawara",
@@ -3686,7 +3686,7 @@
       "dms": "27°05'41.5\"N 142°11'38.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/6.png",
       "image_local": "images/Tokyo/6.png",
-      "name_ja": "町田市"
+      "name_ja": "小笠原村"
     },
     {
       "name": "Ogasawara",
@@ -3695,7 +3695,7 @@
       "dms": "27°05'41.0\"N 142°11'35.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/5.png",
       "image_local": "images/Tokyo/5.png",
-      "name_ja": "町田市"
+      "name_ja": "小笠原村"
     },
     {
       "name": "Ogasawara",
@@ -3704,7 +3704,7 @@
       "dms": "27°05'40.6\"N 142°11'34.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/4.png",
       "image_local": "images/Tokyo/4.png",
-      "name_ja": "町田市"
+      "name_ja": "小笠原村"
     },
     {
       "name": "Ogasawara",
@@ -3713,7 +3713,7 @@
       "dms": "27°05'40.1\"N 142°11'32.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/3.png",
       "image_local": "images/Tokyo/3.png",
-      "name_ja": "町田市"
+      "name_ja": "小笠原村"
     },
     {
       "name": "Ueno",
@@ -3722,7 +3722,7 @@
       "dms": "35°43'00.5\"N 139°46'35.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/2.png",
       "image_local": "images/Tokyo/2.png",
-      "name_ja": "町田市"
+      "name_ja": "台東区上野"
     },
     {
       "name": "Ueno",
@@ -3731,7 +3731,7 @@
       "dms": "35°43'03.8\"N 139°46'31.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tokyo/1.png",
       "image_local": "images/Tokyo/1.png",
-      "name_ja": "町田市"
+      "name_ja": "台東区上野"
     }
   ],
   "tottori": [
@@ -3751,7 +3751,7 @@
       "dms": "35°27'22.5\"N 133°21'41.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/18.png",
       "image_local": "images/Tottori/18.png",
-      "name_ja": "江府町"
+      "name_ja": "米子市"
     },
     {
       "name": "Kurayoshi",
@@ -3760,7 +3760,7 @@
       "dms": "35°27'15.4\"N 133°51'00.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/17.png",
       "image_local": "images/Tottori/17.png",
-      "name_ja": "日吉津村"
+      "name_ja": "日南町"
     },
     {
       "name": "Sakaiminato",
@@ -3769,7 +3769,7 @@
       "dms": "35°31'17.3\"N 133°15'30.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/16.png",
       "image_local": "images/Tottori/16.png",
-      "name_ja": "北栄町"
+      "name_ja": "江府町"
     },
     {
       "name": "Iwami",
@@ -3778,7 +3778,7 @@
       "dms": "35°35'27.4\"N 134°19'17.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/15.png",
       "image_local": "images/Tottori/15.png",
-      "name_ja": "八頭町"
+      "name_ja": "境港市"
     },
     {
       "name": "Wakasa",
@@ -3787,7 +3787,7 @@
       "dms": "35°20'38.2\"N 134°24'01.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/14.png",
       "image_local": "images/Tottori/14.png",
-      "name_ja": "智頭町"
+      "name_ja": "湯梨浜町"
     },
     {
       "name": "Misasa",
@@ -3796,7 +3796,7 @@
       "dms": "35°24'33.6\"N 133°53'39.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/13.png",
       "image_local": "images/Tottori/13.png",
-      "name_ja": "日野町"
+      "name_ja": "日吉津村"
     },
     {
       "name": "Yurihama",
@@ -3805,7 +3805,7 @@
       "dms": "35°28'41.4\"N 133°53'02.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/12.png",
       "image_local": "images/Tottori/12.png",
-      "name_ja": "日南町"
+      "name_ja": "若桜町"
     },
     {
       "name": "Kotoura",
@@ -3814,7 +3814,7 @@
       "dms": "35°30'25.0\"N 133°39'41.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/11.png",
       "image_local": "images/Tottori/11.png",
-      "name_ja": "伯耆町"
+      "name_ja": "岩美町"
     },
     {
       "name": "Daisen",
@@ -3823,7 +3823,7 @@
       "dms": "35°30'16.5\"N 133°30'07.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/10.png",
       "image_local": "images/Tottori/10.png",
-      "name_ja": "南部町"
+      "name_ja": "伯耆町"
     },
     {
       "name": "Nanbu",
@@ -3832,7 +3832,7 @@
       "dms": "35°20'50.9\"N 133°25'24.2\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/9.png",
       "image_local": "images/Tottori/9.png",
-      "name_ja": "大山町"
+      "name_ja": "日野町"
     },
     {
       "name": "Houki",
@@ -3841,7 +3841,7 @@
       "dms": "35°23'00.2\"N 133°27'30.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/8.png",
       "image_local": "images/Tottori/8.png",
-      "name_ja": "琴浦町"
+      "name_ja": "南部町"
     },
     {
       "name": "Nichinan",
@@ -3850,7 +3850,7 @@
       "dms": "35°10'13.9\"N 133°18'39.4\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/7.png",
       "image_local": "images/Tottori/7.png",
-      "name_ja": "湯梨浜町"
+      "name_ja": "智頭町"
     },
     {
       "name": "Hinokage",
@@ -3859,7 +3859,7 @@
       "dms": "35°14'30.9\"N 133°26'27.8\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/6.png",
       "image_local": "images/Tottori/6.png",
-      "name_ja": "三朝町"
+      "name_ja": "八頭町"
     },
     {
       "name": "Chizu",
@@ -3868,7 +3868,7 @@
       "dms": "35°15'55.5\"N 134°13'34.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/5.png",
       "image_local": "images/Tottori/5.png",
-      "name_ja": "若桜町"
+      "name_ja": "三朝町"
     },
     {
       "name": "Yazu",
@@ -3877,7 +3877,7 @@
       "dms": "35°21'59.2\"N 134°20'21.9\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/4.png",
       "image_local": "images/Tottori/4.png",
-      "name_ja": "岩美町"
+      "name_ja": "琴浦町"
     },
     {
       "name": "Hokuei",
@@ -3886,7 +3886,7 @@
       "dms": "35°29'57.3\"N 133°49'04.6\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/3.png",
       "image_local": "images/Tottori/3.png",
-      "name_ja": "境港市"
+      "name_ja": "北栄町"
     },
     {
       "name": "Hiezu",
@@ -3904,7 +3904,7 @@
       "dms": "35°17'45.0\"N 133°28'26.7\"E",
       "image_url": "https://www.serebii.net/pokelids/th/tottori/1.png",
       "image_local": "images/Tottori/1.png",
-      "name_ja": "米子市"
+      "name_ja": "大山町"
     },
     {
       "name": "Tottori",
@@ -3953,7 +3953,7 @@
       "dms": "33°40'08.3\"N 135°54'10.5\"E",
       "image_url": "https://www.serebii.net/pokelids/th/wakayama/1.png",
       "image_local": "images/Wakayama/1.png",
-      "name_ja": "那智勝浦町"
+      "name_ja": "白浜町"
     },
     {
       "name": "Kushimoto",
@@ -3962,25 +3962,25 @@
       "dms": "33°31'04.8\"N 135°49'23.1\"E",
       "image_url": "https://www.serebii.net/pokelids/th/wakayama/2.png",
       "image_local": "images/Wakayama/2.png",
-      "name_ja": "串本町"
+      "name_ja": "白浜"
     },
-	{
-	  "name": "Shirahama",
-	  "lat": "33.675779",
-	  "lng": "135.387056",
-	  "dms": "33°40'32.8\"N 135°23'13.4\"E",
-	  "image_url": "https://local.pokemon.jp/img/p/manhole/03e9a0983c54cc918c63b4db3a0fcc5e_l.png",
-	  "image_local": "images/Wakayama/3.png",
-	  "name_ja": "白浜"
-	},
-	{
+    {
+      "name": "Shirahama",
+      "lat": "33.675779",
+      "lng": "135.387056",
+      "dms": "33°40'32.8\"N 135°23'13.4\"E",
+      "image_url": "https://local.pokemon.jp/img/p/manhole/03e9a0983c54cc918c63b4db3a0fcc5e_l.png",
+      "image_local": "images/Wakayama/3.png",
+      "name_ja": "那智勝浦町"
+    },
+    {
       "name": "Koya",
       "lat": 34.21208333333334,
       "lng": 135.58305555555555,
       "dms": "34°12'43.5\"N 135°34'59.0\"E",
       "image_url": "https://www.serebii.net/pokelids/th/wakayama/3.png",
       "image_local": "images/Wakayama/4.png",
-      "name_ja": "白浜町"
+      "name_ja": "串本町"
     },
     {
       "name": "Wakayama",
