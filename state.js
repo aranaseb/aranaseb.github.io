@@ -22,6 +22,7 @@ const baseCountSize = 2.5 * screenScale;
 const state = {
 	pokelids: {},
 	translations: {},
+	cities: [],
 	selectedPrefectures: new Set(),
 	initialTransform: null,
 	pokelidsReady: false,
@@ -45,13 +46,14 @@ function prefSlug(feature) {
 }
 
 /*  */
-d3.json("translations.json").then(data => {
-	state.translations = data;
-});
-
-/*  */
-d3.json("pokelids.json").then(data => {
-	state.pokelids = data;
+Promise.all([
+	d3.json("translations.json"),
+	d3.json("pokelids.json"),
+	d3.json("jpcities.json"),
+]).then(([translations, pokelids, cities]) => {
+	state.translations = translations;
+	state.pokelids = pokelids;
+	state.cities = cities;
 	state.pokelidsReady = true;
 	onBothReady();
 });

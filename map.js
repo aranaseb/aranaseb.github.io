@@ -55,13 +55,24 @@ d3.json("jp.json").then(function(geojson) {
 	pokelidLayer.raise();
 	cityLayer.raise();
 	initInitialZoom();
-	d3.json("jpcities.json").then(initCities);
+	if (state.cities.length) {
+		initCities(state.cities);
+	} else {
+		// translations/cities may not be ready yet — wait for them
+		const interval = setInterval(() => {
+			if (state.cities.length) {
+				clearInterval(interval);
+				initCities(state.cities);
+			}
+		}, 50);
+	}
 });
 
 // ─── Global event handlers ────────────────────────────────────────────────────
 
 /*  */
-svg.on("click", () => {
+svg.on("click", (event) => {
+	if (event.target !== svg.node()) return;
 	resetColors();
 	clearPokelids();
 	showPokelids();

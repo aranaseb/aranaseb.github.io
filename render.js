@@ -38,6 +38,9 @@ function setLocale(locale) {
 	state.locale = locale;
 	document.documentElement.lang = locale;
 	d3.select("#lang-toggle").text(t("ui", "lang_toggle", locale));
+	cityLayer.selectAll("g.city").each(function(d) {
+		d3.select(this).select(".city-label").text(t("cities", d.key, locale) || d.city);
+	});
 	updateCounter();
 	showPokelids();
 }
@@ -86,7 +89,7 @@ function renderClusterCount(enter) {
 function clusterTooltipText(d) {
 	return d.lids.length > 1
 		? `${d.lids.length} ${t("ui", "pokelids_in_area", state.locale)}`
-		: `${d.lids[0].name}<br>${d.lids[0].dms}`;
+		: `${(d.lids[0].name_ja && state.locale === "ja" ? d.lids[0].name_ja : d.lids[0].name)}<br>${d.lids[0].dms}`;
 }
 
 /*  */
@@ -153,7 +156,8 @@ function initCities(cities) {
 				.attr("stroke", "#fff")
 				.attr("stroke-width", 0.25 * screenScale);
 			group.append("text")
-				.text(d.city)
+				.attr("class", "city-label")
+				.text(t("cities", d.key, state.locale) || d.city)
 				.attr("x", 1).attr("y", 1)
 				.attr("font-size", `${baseFontSize}px`)
 				.attr("font-family", "sans-serif")

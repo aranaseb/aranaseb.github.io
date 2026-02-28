@@ -24,7 +24,7 @@ function showPokelidModal(pokelid) {
 	const prefNameEn = t("prefectures", slug, "en");
 	const prefNameLocale = t("prefectures", slug, state.locale);
 
-	modal.select(".modal-title").text(pokelid.name);
+	modal.select(".modal-title").text(pokelid.name_ja && state.locale === "ja" ? pokelid.name_ja : pokelid.name);
 	modal.select(".modal-prefecture").text(prefNameLocale);
 	modal.select(".modal-prefecture-label").node().firstChild.textContent =
 		t("ui", "prefecture_label", state.locale) + " ";
@@ -63,7 +63,7 @@ function showClusterModal(cluster) {
 			.attr("class", "cluster-item")
 			.style("cursor", "pointer")
 			.on("click", () => { closeClusterModal(); showPokelidModal(lid); });
-		item.append("div").attr("class", "cluster-item-name").text(lid.name);
+		item.append("div").attr("class", "cluster-item-name").text(lid.name_ja && state.locale === "ja" ? lid.name_ja : lid.name);
 		item.append("div").attr("class", "cluster-item-coords").text(lid.dms);
 	});
 
