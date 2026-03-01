@@ -29,28 +29,32 @@ function onPrefectureClick(event, d) {
 	clearPokelids();
 	showPokelids();
 	filterCitiesByPrefecture();
-	zoomToSelection();
 	updateCounter();
 }
 
 /*  */
 function initInitialZoom() {
-	const [x0, y0] = projection([MAINLAND_BOUNDS.lng[0], MAINLAND_BOUNDS.lat[1]]);
-	const [x1, y1] = projection([MAINLAND_BOUNDS.lng[1], MAINLAND_BOUNDS.lat[0]]);
-	const scale = Math.min(8, 0.9 / Math.max((x1 - x0) / WIDTH, (y1 - y0) / HEIGHT));
-	const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-	svg.transition().duration(1000)
-		.call(zoom.transform, d3.zoomIdentity.translate(WIDTH / 2, HEIGHT / 2).scale(scale).translate(-cx, -cy))
-		.on("end", () => {
-			state.initialTransform = d3.zoomTransform(svg.node());
-			state.zoomReady = true;
-			onBothReady();
-		});
+	const [x0, y1] = projection([122, 24]);
+	const [x1, y0] = projection([148, 46]);
+	const imgW = x1 - x0;
+	const imgH = y1 - y0;
+	const scale = Math.max(WIDTH / imgW, HEIGHT / imgH);
+	const cx = (x0 + x1) / 2;
+	const transform = d3.zoomIdentity
+		.translate(WIDTH / 2, 0)
+		.scale(scale)
+		.translate(-cx, -y0);
+	svg.call(zoom.transform, transform);
+	state.initialTransform = transform;
+	state.zoomReady = true;
+	initZoomExtent();
+	onBothReady();
 }
 
 /*  */
 d3.json("jp.json").then(function(geojson) {
 	projection.fitExtent([[PADDING, PADDING], [WIDTH - PADDING, HEIGHT - PADDING]], geojson);
+	initSatellite(geojson);
 	initPrefectures(geojson.features);
 	pokelidLayer.raise();
 	cityLayer.raise();
@@ -78,7 +82,6 @@ svg.on("click", (event) => {
 	showPokelids();
 	cityLayer.selectAll("g.city").style("display", "none");
 	updateCounter();
-	zoomToTransform(state.initialTransform);
 });
 
 /*  */

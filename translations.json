@@ -6,6 +6,7 @@
    	"pokelids_in_area": { "en": "Pokélids in this area", "ja": "地域のポケふた" },
    	"click_to_view":    { "en": "Click a Pokélid to view details:", "ja": "ポケふたをクリックして詳細を見る：" },
    	"pokelids_total":   { "en": "Pokélids total", "ja": "ポケふた合計" },
+	"pokelid_count":	{ "en": "Pokélids", "ja": "ポケふた" },
    	"lang_toggle":      { "en": "日本語", "ja": "English" },
    	"multiple_pokelids":{ "en": "Multiple Pokélids", "ja": "複数のポケふた" }
 },

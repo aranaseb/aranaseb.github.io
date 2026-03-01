@@ -18,28 +18,33 @@ svg {
     top: 0;
     left: 0;
     touch-action: none;
-	background-image: radial-gradient(circle,rgba(104, 149, 186, 1) 0%, rgba(67, 100, 161, 1) 46%, rgba(46, 46, 112, 1) 100%);
+    background-color: #2e3a5e;
 }
 
+/* ─── Prefecture paths ──────────────────────────────────────────────────────── */
+
 .prefecture {
-    stroke: #333;
-    stroke-width: 0.5px;
-    transition: fill 0.3s;
+    fill: #5bba6f;
+    stroke: rgba(0, 0, 0, 0.6);
+    stroke-width: 0.2px;
+    transition: fill 0.2s;
     -webkit-tap-highlight-color: transparent;
 }
 
 .prefecture:hover {
-    fill-opacity: 0.7;
+    fill: #3fa34d;
 }
 
 .prefecture:active {
-    fill-opacity: 0.5;
+    fill: #2a9134;
 }
 
 .prefecture.selected {
-    fill: #ccffcc;
-    stroke: #000;
+    fill: #2a9134;
+    stroke: rgba(0, 0, 0, 0.95);
 }
+
+/* ─── Tooltip ────────────────────────────────────────────────────────────────── */
 
 #tooltip {
     position: fixed;
@@ -55,6 +60,8 @@ svg {
     max-width: 200px;
     word-wrap: break-word;
 }
+
+/* ─── UI Controls ────────────────────────────────────────────────────────────── */
 
 #lang-toggle {
     position: fixed;
@@ -75,20 +82,21 @@ svg {
 }
 
 #pokelid-counter {
-	position: fixed;
-  	top: 12px;
-  	right: 12px;
-  	background: rgba(0, 0, 0, 0.6);
-  	color: white;
-  	padding: 6px 14px;
-  	border-radius: 20px;
-  	font-size: 13px;
-	font-family: sans-serif;
-	z-index: 100;
-	pointer-events: none;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: sans-serif;
+    z-index: 100;
+    pointer-events: none;
 }
 
-/* Modal Styles */
+/* ─── Pokélid Modal ───────────────────────────────────────────────────────────── */
+
 #pokelid-modal {
     position: fixed;
     z-index: 2000;
@@ -108,7 +116,6 @@ svg {
     justify-content: center;
 }
 
-/* Pokelid modal header with image + title side by side */
 .modal-header {
     display: flex;
     align-items: center;
@@ -131,34 +138,6 @@ svg {
 
 .modal-header-text p {
     margin: 0;
-}
-
-/* Cluster list items with image */
-.cluster-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.cluster-item:last-child {
-    border-bottom: none;
-}
-
-.cluster-item-image {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    border: 2px solid #ddd;
-}
-
-.cluster-item-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
 }
 
 .modal-content {
@@ -268,57 +247,56 @@ svg {
     background-color: #E64A19 !important;
 }
 
-/* Mobile Responsive design */
 @media (max-width: 600px) {
     #pokelid-modal {
         padding: 10px;
     }
-    
+
     .modal-content {
         padding: 20px;
         border-radius: 10px;
         max-height: 85vh;
     }
-    
+
     .modal-close {
         font-size: 32px;
         right: 10px;
         top: 10px;
         padding: 8px;
     }
-    
+
     .modal-title {
         font-size: 20px;
         padding-right: 35px;
     }
-    
+
     .modal-prefecture-label {
         font-size: 14px;
     }
-    
+
     .modal-links a {
         padding: 16px 20px;
         font-size: 15px;
     }
 }
 
-/* Very small screens */
 @media (max-width: 400px) {
     .modal-content {
         padding: 15px;
     }
-    
+
     .modal-title {
         font-size: 18px;
     }
-    
+
     .modal-prefecture-label {
         font-size: 13px;
         margin-bottom: 15px;
     }
 }
 
-/* Cluster Modal Styles */
+/* ─── Cluster Modal ───────────────────────────────────────────────────────────── */
+
 #cluster-modal {
     position: fixed;
     z-index: 2000;
@@ -373,7 +351,10 @@ svg {
 }
 
 .cluster-item {
-    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
     margin-bottom: 8px;
     background-color: #f5f5f5;
     border-radius: 8px;
@@ -387,11 +368,29 @@ svg {
     border-color: #2196F3;
 }
 
+.cluster-item:last-child {
+    margin-bottom: 0;
+}
+
+.cluster-item-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #ddd;
+}
+
+.cluster-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .cluster-item-name {
     font-weight: 600;
     color: #333;
     font-size: 15px;
-    margin-bottom: 4px;
 }
 
 .cluster-item-coords {
@@ -403,19 +402,19 @@ svg {
     #cluster-modal {
         padding: 10px;
     }
-    
+
     .cluster-modal-title {
         font-size: 20px;
     }
-    
+
     .cluster-item {
         padding: 10px 12px;
     }
-    
+
     .cluster-item-name {
         font-size: 14px;
     }
-    
+
     .cluster-item-coords {
         font-size: 12px;
     }

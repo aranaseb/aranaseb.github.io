@@ -13,7 +13,7 @@ const regionColors = d3.scaleOrdinal()
 		"chugoku-shikoku",
 		"kyushu-okinawa"
 	])
-	.range(["#3fa34d"]);
+	.range(["#048c28"]);
 
 /*  */
 const projection = d3.geoEquirectangular();
@@ -24,6 +24,7 @@ const counter = d3.select("#pokelid-counter");
 /*  */
 const svg = d3.select("svg").attr("width", WIDTH).attr("height", HEIGHT);
 const g = svg.append("g").attr("width", WIDTH).attr("height", HEIGHT);
+const satelliteLayer = g.append("g").attr("class", "satellite");
 const prefLayer = g.append("g").attr("class", "prefectures");
 const pokelidLayer = g.append("g").attr("class", "pokelids");
 const cityLayer = g.append("g").attr("class", "cities");
@@ -32,6 +33,38 @@ const cityLayer = g.append("g").attr("class", "cities");
 const zoom = d3.zoom().scaleExtent([1, 20])
 	.on("zoom", event => g.attr("transform", event.transform));
 svg.call(zoom);
+
+/*  */
+function initZoomExtent() {
+	const [x0, y1] = projection([122, 24]);
+	const [x1, y0] = projection([148, 46]);
+	const imgW = x1 - x0;
+	const imgH = y1 - y0;
+	const minScale = Math.max(WIDTH / imgW, HEIGHT / imgH);
+	zoom.scaleExtent([minScale, 20]);
+
+	// Constrain pan in screen space so image always fills viewport
+	zoom.constrain((transform, extent, translateExtent) => {
+		const sx = transform.k * imgW;
+	const sy = transform.k * imgH;
+		const tx = Math.min(0, Math.max(transform.x, WIDTH - transform.k * (x1 - x0) - transform.k * x0));
+		const ty = Math.min(0, Math.max(transform.y, HEIGHT - transform.k * (y1 - y0) - transform.k * y0));
+
+		// Screen coords of image edges after transform
+		const screenX0 = transform.applyX(x0);
+		const screenX1 = transform.applyX(x1);
+		const screenY0 = transform.applyY(y0);
+		const screenY1 = transform.applyY(y1);
+
+		let dx = 0, dy = 0;
+		if (screenX0 > 0) dx = -screenX0;
+		else if (screenX1 < WIDTH) dx = WIDTH - screenX1;
+		if (screenY0 > 0) dy = -screenY0;
+		else if (screenY1 < HEIGHT) dy = HEIGHT - screenY1;
+
+		return transform.translate(dx / transform.k, dy / transform.k);
+	});
+}
 
 /*  */
 function setLocale(locale) {
@@ -43,6 +76,22 @@ function setLocale(locale) {
 	});
 	updateCounter();
 	showPokelids();
+}
+
+// ─── Satellite layer ─────────────────────────────────────────────────────────
+
+/*  */
+function initSatellite(geojson) {
+	const [x0, y1] = projection([122, 24]);
+	const [x1, y0] = projection([148, 46]);
+	satelliteLayer.append("image")
+		.attr("class", "satellite-image")
+		.attr("href", "japan_satellite.jpg")
+		.attr("x", x0)
+		.attr("y", y0)
+		.attr("width", x1 - x0)
+		.attr("height", y1 - y0)
+		.attr("preserveAspectRatio", "none");
 }
 
 // ─── Counter ──────────────────────────────────────────────────────────────────
@@ -65,7 +114,7 @@ function renderClusterCircle(enter) {
 		.append("circle")
 		.attr("class", "pokelid-circle")
 		.attr("r", baseClusterRadius)
-		.attr("fill", "#ff6b6b")
+		.attr("fill", "#ff0000")
 		.attr("stroke", "black")
 		.attr("stroke-width", 0.25 * screenScale)
 		.attr("opacity", 0.9);
@@ -222,7 +271,7 @@ function getPokelidCount(slug) {
 function resetColors() {
 	g.selectAll(".prefecture")
 		.classed("selected", false)
-		.attr("fill", d => regionColors(regions[prefSlug(d)]));
+		.attr("fill", "transparent");
 	state.selectedPrefectures.clear();
 }
 
@@ -233,7 +282,9 @@ function initPrefectures(features) {
 		.join("path")
 		.attr("class", "prefecture")
 		.attr("d", path)
-		.attr("fill", d => regionColors(regions[prefSlug(d)]))
+		.attr("fill", "transparent")
+		.attr("stroke", "rgba(0,0,0,0.6)")
+		.attr("stroke-width", 0.4)
 		.style("cursor", "pointer")
 		.on("mousemove touchmove", function(event, d) {
 			const e = event.type === "touchmove" ? event.touches[0] : event;

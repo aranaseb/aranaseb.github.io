@@ -14,9 +14,8 @@ const MAINLAND_BOUNDS = { lat: [30, 46], lng: [128, 146] };
 const screenScale = Math.min(WIDTH, HEIGHT) / 1000;
 const baseFontSize = 3 * screenScale;
 const baseCityRadius = 0.5 * screenScale;
-const basePokelidRadius = 0.8 * screenScale;
+const imageRadius = 1.8 * screenScale;
 const baseClusterRadius = 2.0 * screenScale;
-const imageRadius = 2.2 * basePokelidRadius;
 const baseCountSize = 2.5 * screenScale;
 
 /*  */
