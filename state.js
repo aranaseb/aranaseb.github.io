@@ -24,6 +24,7 @@ const state = {
 	translations: {},
 	cities: [],
 	selectedPrefectures: new Set(),
+	activeFilters: new Set(), // empty = show all; populated = show only matching station_types
 	initialTransform: null,
 	pokelidsReady: false,
 	zoomReady: false,

@@ -18,6 +18,26 @@ function closeModal(selector) {
 }
 
 /*  */
+function getStationTypeDesc(pokelid, locale) {
+	const type = pokelid.station_type;
+	if (type === "walkable") {
+		const distStr = pokelid.nearest_station_distance_km.toFixed(2) + "km";
+		const nearCity = pokelid.nearest_city_distance_km < 5;
+		if (nearCity) {
+			const cityName = t("cities", pokelid.nearest_city, locale) || pokelid.nearest_city;
+			return locale === "ja"
+				? `${cityName}の中心部、最寄り駅から${distStr}`
+				: `Inside ${cityName}, ${distStr} from the nearest train station`;
+		} else {
+			return locale === "ja"
+				? `最寄り駅から${distStr}`
+				: `${distStr} from the nearest train station`;
+		}
+	}
+	return t("ui", `station_desc_${type}`, locale);
+}
+
+/*  */
 function showPokelidModal(pokelid) {
 	const modal = d3.select("#pokelid-modal");
 	const slug = pokelid.prefecture;
@@ -28,6 +48,11 @@ function showPokelidModal(pokelid) {
 	modal.select(".modal-prefecture").text(prefNameLocale);
 	modal.select(".modal-prefecture-label").node().firstChild.textContent =
 		t("ui", "prefecture_label", state.locale) + " ";
+	modal.select(".modal-station-type")
+		.attr("data-type", pokelid.station_type)
+		.text(t("ui", `station_type_${pokelid.station_type}`, state.locale));
+	modal.select(".modal-station-desc")
+		.text(getStationTypeDesc(pokelid, state.locale));
 	modal.select(".modal-pokelid-image")
 		.attr("src", pokelid.image_local)
 		.attr("alt", pokelid.name);

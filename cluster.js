@@ -42,7 +42,11 @@ function getVisiblePoints() {
 		: new Set(Object.keys(state.pokelids));
 	const points = [];
 	for (const slug of slugs) {
-		(state.pokelids[slug] ?? []).forEach(p => points.push({ ...p, prefecture: slug }));
+		(state.pokelids[slug] ?? []).forEach(p => {
+			if (state.activeFilters.size === 0 || state.activeFilters.has(p.station_type)) {
+				points.push({ ...p, prefecture: slug });
+			}
+		});
 	}
 	return points;
 }

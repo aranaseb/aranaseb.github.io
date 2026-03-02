@@ -42,26 +42,16 @@ function initZoomExtent() {
 	const imgH = y1 - y0;
 	const minScale = Math.max(WIDTH / imgW, HEIGHT / imgH);
 	zoom.scaleExtent([minScale, 20]);
-
-	// Constrain pan in screen space so image always fills viewport
-	zoom.constrain((transform, extent, translateExtent) => {
-		const sx = transform.k * imgW;
-	const sy = transform.k * imgH;
-		const tx = Math.min(0, Math.max(transform.x, WIDTH - transform.k * (x1 - x0) - transform.k * x0));
-		const ty = Math.min(0, Math.max(transform.y, HEIGHT - transform.k * (y1 - y0) - transform.k * y0));
-
-		// Screen coords of image edges after transform
+	zoom.constrain((transform) => {
 		const screenX0 = transform.applyX(x0);
 		const screenX1 = transform.applyX(x1);
 		const screenY0 = transform.applyY(y0);
 		const screenY1 = transform.applyY(y1);
-
 		let dx = 0, dy = 0;
 		if (screenX0 > 0) dx = -screenX0;
 		else if (screenX1 < WIDTH) dx = WIDTH - screenX1;
 		if (screenY0 > 0) dy = -screenY0;
 		else if (screenY1 < HEIGHT) dy = HEIGHT - screenY1;
-
 		return transform.translate(dx / transform.k, dy / transform.k);
 	});
 }
@@ -71,6 +61,7 @@ function setLocale(locale) {
 	state.locale = locale;
 	document.documentElement.lang = locale;
 	d3.select("#lang-toggle").text(t("ui", "lang_toggle", locale));
+	if (typeof updateFilterLabels === "function") updateFilterLabels(locale);
 	cityLayer.selectAll("g.city").each(function(d) {
 		d3.select(this).select(".city-label").text(t("cities", d.key, locale) || d.city);
 	});
@@ -78,10 +69,10 @@ function setLocale(locale) {
 	showPokelids();
 }
 
-// ─── Satellite layer ─────────────────────────────────────────────────────────
+// ─── Satellite layer ──────────────────────────────────────────────────────────
 
 /*  */
-function initSatellite(geojson) {
+function initSatellite() {
 	const [x0, y1] = projection([122, 24]);
 	const [x1, y0] = projection([148, 46]);
 	satelliteLayer.append("image")
@@ -97,11 +88,23 @@ function initSatellite(geojson) {
 // ─── Counter ──────────────────────────────────────────────────────────────────
 
 /*  */
+function getFilteredPokelids() {
+	if (state.activeFilters.size === 0) return state.pokelids;
+	const filtered = {};
+	for (const [pref, lids] of Object.entries(state.pokelids)) {
+		const kept = lids.filter(l => state.activeFilters.has(l.station_type));
+		if (kept.length) filtered[pref] = kept;
+	}
+	return filtered;
+}
+
+/*  */
 function updateCounter() {
 	const sel = state.selectedPrefectures;
+	const source = getFilteredPokelids();
 	const count = sel.size === 0
-		? Object.values(state.pokelids).reduce((s, a) => s + a.length, 0)
-		: Array.from(sel).reduce((s, slug) => s + (state.pokelids[slug]?.length ?? 0), 0);
+		? Object.values(source).reduce((s, a) => s + a.length, 0)
+		: Array.from(sel).reduce((s, slug) => s + (source[slug]?.length ?? 0), 0);
 	counter.text(`${count} ${t("ui", "pokelids_total", state.locale)}`);
 }
 
@@ -109,25 +112,23 @@ function updateCounter() {
 
 /*  */
 function renderClusterCircle(enter) {
-	// Clusters: red circle with count
 	enter.filter(d => d.lids.length > 1)
 		.append("circle")
 		.attr("class", "pokelid-circle")
 		.attr("r", baseClusterRadius)
-		.attr("fill", "#ff0000")
+		.attr("fill", "#ff6b6b")
 		.attr("stroke", "black")
 		.attr("stroke-width", 0.25 * screenScale)
 		.attr("opacity", 0.9);
 
-	// Single lids: circular image
 	enter.filter(d => d.lids.length === 1).each(function(d) {
-		const g = d3.select(this);
+		const grp = d3.select(this);
 		const clipId = "clip-" + d.lids[0].image_local.replace(/[^a-z0-9]/gi, "-");
-		g.append("clipPath")
+		grp.append("clipPath")
 			.attr("id", clipId)
 			.append("circle")
 			.attr("r", imageRadius);
-		g.append("image")
+		grp.append("image")
 			.attr("class", "pokelid-image")
 			.attr("href", d.lids[0].image_local)
 			.attr("x", -imageRadius)
@@ -175,6 +176,7 @@ function onClusterClick(event, d) {
 
 /*  */
 function showPokelids() {
+	if (!prefs.pokelids) return;
 	const clusters = clusterPokelids(getVisiblePoints());
 	pokelidLayer.selectAll("g.pokelid-cluster").remove();
 	const groups = pokelidLayer.selectAll("g.pokelid-cluster")
@@ -216,7 +218,7 @@ function initCities(cities) {
 		.data(cities)
 		.join("g")
 		.attr("class", "city")
-		.style("display", "none")
+		.style("display", "block")
 		.each(function(d) {
 			const group = d3.select(this);
 			group.append("circle")
@@ -244,7 +246,12 @@ function initCities(cities) {
 
 /*  */
 function filterCitiesByPrefecture() {
-	const prefFeatures = g.selectAll(".prefecture").data();
+	if (!prefs.cities) return;
+	if (state.selectedPrefectures.size === 0) {
+		cityLayer.selectAll("g.city").style("display", "block");
+		return;
+	}
+	const prefFeatures = prefLayer.selectAll(".prefecture").data();
 	cityLayer.selectAll("g.city").style("display", function(d) {
 		for (const slug of state.selectedPrefectures) {
 			const feat = prefFeatures.find(f => f.properties.slug === slug);
@@ -268,23 +275,27 @@ function getPokelidCount(slug) {
 }
 
 /*  */
+function prefFill() {
+	return prefs.satellite ? "transparent" : "#6a9e5a";
+}
+
+/*  */
 function resetColors() {
-	g.selectAll(".prefecture")
-		.classed("selected", false)
-		.attr("fill", "transparent");
+	prefLayer.selectAll(".prefecture")
+		.classed("selected", false);
 	state.selectedPrefectures.clear();
 }
 
 /*  */
 function initPrefectures(features) {
-	g.selectAll(".prefecture")
+	prefLayer.selectAll(".prefecture")
 		.data(features)
 		.join("path")
 		.attr("class", "prefecture")
 		.attr("d", path)
-		.attr("fill", "transparent")
-		.attr("stroke", "rgba(0,0,0,0.6)")
-		.attr("stroke-width", 0.4)
+		.attr("stroke", "#ffffff")
+		.attr("stroke-width", 0.5)
+		.attr("stroke-opacity", 0.7)
 		.style("cursor", "pointer")
 		.on("mousemove touchmove", function(event, d) {
 			const e = event.type === "touchmove" ? event.touches[0] : event;
@@ -324,7 +335,7 @@ function zoomToSelection() {
 		zoomToTransform(state.initialTransform);
 		return;
 	}
-	const features = g.selectAll(".prefecture").data()
+	const features = prefLayer.selectAll(".prefecture").data()
 		.filter(f => state.selectedPrefectures.has(f.properties.slug));
 	if (!features.length) return;
 

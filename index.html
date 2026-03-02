@@ -17,8 +17,88 @@
 	    <!-- Pokélid Counter -->
 	    <div id="pokelid-counter"></div>
 
-	    <!-- Language Toggle -->
-	    <button id="lang-toggle">日本語</button>
+	    <!-- Top Left Controls -->
+	    <div id="top-left-controls">
+	        <button id="lang-toggle">日本語</button>
+	        <button id="prefs-toggle">⚙ Layers</button>
+	        <button id="filter-toggle">⚡ Filter</button>
+	    </div>
+
+	    <!-- Preferences Panel -->
+	    <div id="prefs-panel">
+	        <div id="prefs-header">
+	            <span id="prefs-title">Layers</span>
+	            <span id="prefs-close">&times;</span>
+	        </div>
+	        <div id="prefs-body">
+	            <label class="prefs-row">
+	                <span class="prefs-label">Cities</span>
+	                <input type="checkbox" id="pref-cities" checked>
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row">
+	                <span class="prefs-label">Pokélids</span>
+	                <input type="checkbox" id="pref-pokelids" checked>
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row">
+	                <span class="prefs-label">Prefecture borders</span>
+	                <input type="checkbox" id="pref-borders" checked>
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row">
+	                <span class="prefs-label">Satellite image</span>
+	                <input type="checkbox" id="pref-satellite" checked>
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	        </div>
+	    </div>
+
+	    <!-- Filter Panel -->
+	    <div id="filter-panel">
+	        <div id="filter-header">
+	            <span id="filter-title">Filter</span>
+	            <span id="filter-close">&times;</span>
+	        </div>
+	        <div id="filter-body">
+	            <label class="prefs-row filter-row" for="filter-all">
+	                <span class="prefs-label filter-label-text">All types</span>
+	                <input type="checkbox" id="filter-all">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="filter-major">
+	                <span class="prefs-label"><span class="filter-type-dot dot-major"></span><span class="filter-label-text">Major Station</span></span>
+	                <input type="checkbox" id="filter-major">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-local">
+	                <span class="prefs-label"><span class="filter-type-dot dot-local"></span><span class="filter-label-text">Local Station</span></span>
+	                <input type="checkbox" id="filter-local">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-walkable">
+	                <span class="prefs-label"><span class="filter-type-dot dot-walkable"></span><span class="filter-label-text">Walkable Station</span></span>
+	                <input type="checkbox" id="filter-walkable">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-roadside">
+	                <span class="prefs-label"><span class="filter-type-dot dot-roadside"></span><span class="filter-label-text">Roadside Station</span></span>
+	                <input type="checkbox" id="filter-roadside">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-remote">
+	                <span class="prefs-label"><span class="filter-type-dot dot-remote"></span><span class="filter-label-text">Remote</span></span>
+	                <input type="checkbox" id="filter-remote">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-super_remote">
+	                <span class="prefs-label"><span class="filter-type-dot dot-super_remote"></span><span class="filter-label-text">Super Remote</span></span>
+	                <input type="checkbox" id="filter-super_remote">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	        </div>
+	    </div>
 
 	    <!-- Pokélid Modal -->
 		<div id="pokelid-modal" class="modal">
@@ -29,6 +109,7 @@
 					<div class="modal-header-text">
 	    		    	<h2 class="modal-title">Pokélid Name</h2>
 	    	        	<p class="modal-prefecture-label">Prefecture: <span class="modal-prefecture"></span></p>
+					<p class="modal-station-line"><span class="modal-station-type" data-type=""></span><span class="modal-station-desc"></span></p>
 					</div>
 				</div>
     	        <img class="modal-image" src="" alt="Pokélid">
@@ -55,6 +136,7 @@
 	    <script src="cluster.js"></script>
 	    <script src="render.js"></script>
 	    <script src="modals.js"></script>
+	    <script src="prefs.js"></script>
 	    <script src="map.js"></script>
 
 	    <script>
@@ -66,5 +148,83 @@
 	            }
 	        })();
 	    </script>
+	<script>
+	    // Self-contained filter panel — panel toggle, filtering, and translations
+	    (function() {
+	        var TYPES = ["major", "local", "walkable", "roadside", "remote", "super_remote"];
+
+	        function applyFilters() {
+	            state.activeFilters = new Set(
+	                TYPES.filter(function(tp) {
+	                    var cb = document.getElementById("filter-" + tp);
+	                    return cb && cb.checked;
+	                })
+	            );
+	            clearPokelids();
+	            showPokelids();
+	            updateCounter();
+	        }
+
+	        // Update all filter panel text to the given locale
+	        window.updateFilterLabels = function(locale) {
+	            var titleEl = document.getElementById("filter-title");
+	            if (titleEl) titleEl.textContent = t("ui", "filter_title", locale);
+	            var allLabel = document.querySelector("label[for='filter-all'] .filter-label-text");
+	            if (allLabel) allLabel.textContent = t("ui", "filter_all", locale);
+	            TYPES.forEach(function(tp) {
+	                var label = document.querySelector("label[for='filter-" + tp + "'] .filter-label-text");
+	                if (label) label.textContent = t("ui", "station_type_" + tp, locale);
+	            });
+	            var filterBtn = document.getElementById("filter-toggle");
+	            if (filterBtn) filterBtn.textContent = "⚡ " + t("ui", "filter_title", locale);
+	        };
+
+	        document.addEventListener("DOMContentLoaded", function() {
+	            var filterBtn   = document.getElementById("filter-toggle");
+	            var filterPanel = document.getElementById("filter-panel");
+	            var prefsPanel  = document.getElementById("prefs-panel");
+	            var filterClose = document.getElementById("filter-close");
+	            var allCb       = document.getElementById("filter-all");
+
+	            if (filterBtn && filterPanel) {
+	                filterBtn.addEventListener("click", function() {
+	                    filterPanel.classList.toggle("open");
+	                    if (prefsPanel) prefsPanel.classList.remove("open");
+	                });
+	            }
+	            if (filterClose && filterPanel) {
+	                filterClose.addEventListener("click", function() {
+	                    filterPanel.classList.remove("open");
+	                });
+	            }
+
+	            // "All types" — clear all filters
+	            if (allCb) {
+	                allCb.addEventListener("change", function() {
+	                    if (allCb.checked) {
+	                        TYPES.forEach(function(tp) {
+	                            var cb = document.getElementById("filter-" + tp);
+	                            if (cb) cb.checked = false;
+	                        });
+	                        state.activeFilters = new Set();
+	                        clearPokelids();
+	                        showPokelids();
+	                        updateCounter();
+	                    }
+	                });
+	            }
+
+	            // Individual type checkboxes
+	            TYPES.forEach(function(type) {
+	                var cb = document.getElementById("filter-" + type);
+	                if (!cb) return;
+	                cb.addEventListener("change", function() {
+	                    if (allCb) allCb.checked = false;
+	                    applyFilters();
+	                });
+	            });
+	        });
+	    })();
+	</script>
 	</body>
 </html>

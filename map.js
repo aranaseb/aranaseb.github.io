@@ -80,7 +80,7 @@ svg.on("click", (event) => {
 	resetColors();
 	clearPokelids();
 	showPokelids();
-	cityLayer.selectAll("g.city").style("display", "none");
+	filterCitiesByPrefecture();
 	updateCounter();
 });
 
@@ -106,3 +106,6 @@ d3.select(".cluster-modal-close").on("click", function(event) {
 d3.select("#lang-toggle").on("click", function() {
 	setLocale(state.locale === "en" ? "ja" : "en");
 });
+
+/*  */
+initPrefs();

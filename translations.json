@@ -1,16 +1,95 @@
 {
-"ui": {
-   	"prefecture_label": { "en": "Prefecture:", "ja": "都道府県:" },
-   	"view_on_maps":     { "en": "📍 View on Google Maps", "ja": "📍 Googleマップで見る" },
-   	"pokemon_page":     { "en": "Pokemon Local Acts Page", "ja": "ポケモンだいすきグラブページ" },
-   	"pokelids_in_area": { "en": "Pokélids in this area", "ja": "地域のポケふた" },
-   	"click_to_view":    { "en": "Click a Pokélid to view details:", "ja": "ポケふたをクリックして詳細を見る：" },
-   	"pokelids_total":   { "en": "Pokélids total", "ja": "ポケふた合計" },
-	"pokelid_count":	{ "en": "Pokélids", "ja": "ポケふた" },
-   	"lang_toggle":      { "en": "日本語", "ja": "English" },
-   	"multiple_pokelids":{ "en": "Multiple Pokélids", "ja": "複数のポケふた" }
-},
-"prefectures": {
+  "ui": {
+    "prefecture_label": {
+      "en": "Prefecture:",
+      "ja": "都道府県:"
+    },
+    "view_on_maps": {
+      "en": "📍 View on Google Maps",
+      "ja": "📍 Googleマップで見る"
+    },
+    "pokemon_page": {
+      "en": "Pokemon Local Acts Page",
+      "ja": "ポケモンだいすきグラブページ"
+    },
+    "pokelids_in_area": {
+      "en": "Pokélids in this area",
+      "ja": "地域のポケふた"
+    },
+    "click_to_view": {
+      "en": "Click a Pokélid to view details:",
+      "ja": "ポケふたをクリックして詳細を見る："
+    },
+    "pokelids_total": {
+      "en": "Pokélids total",
+      "ja": "ポケふた合計"
+    },
+    "pokelid_count": {
+      "en": "Pokélids",
+      "ja": "ポケふた"
+    },
+    "lang_toggle": {
+      "en": "日本語",
+      "ja": "English"
+    },
+    "multiple_pokelids": {
+      "en": "Multiple Pokélids",
+      "ja": "複数のポケふた"
+    },
+    "filter_title": {
+      "en": "Filter",
+      "ja": "フィルター"
+    },
+    "filter_all": {
+      "en": "All types",
+      "ja": "すべて"
+    },
+    "station_type_major": {
+      "en": "Major Station",
+      "ja": "主要駅"
+    },
+    "station_type_local": {
+      "en": "Local Station",
+      "ja": "地方駅"
+    },
+    "station_type_walkable": {
+      "en": "Walkable Station",
+      "ja": "徒歩圏内駅"
+    },
+    "station_type_roadside": {
+      "en": "Roadside Station",
+      "ja": "道の駅"
+    },
+    "station_type_remote": {
+      "en": "Remote",
+      "ja": "遠隔地"
+    },
+    "station_desc_major": {
+      "en": "Near a major city train station",
+      "ja": "主要都市の駅の近く"
+    },
+    "station_desc_local": {
+      "en": "At a local town train station",
+      "ja": "地方の駅の近く"
+    },
+    "station_desc_roadside": {
+      "en": "At a roadside rest stop (Michi-no-Eki)",
+      "ja": "道の駅に設置"
+    },
+    "station_desc_remote": {
+      "en": "Far from the nearest train station - driving likely required",
+      "ja": "最寄り駅から遠い"
+    },
+    "station_type_super_remote": {
+      "en": "Super Remote",
+      "ja": "超遠隔地"
+    },
+    "station_desc_super_remote": {
+      "en": "Very remote - only accessible by boat, car, or long-distance bus",
+      "ja": "最寄り駅から非常に遠い"
+    }
+  },
+  "prefectures": {
     "hokkaido": {
       "en": "Hokkaido",
       "ja": "北海道"
@@ -388,6 +467,70 @@
     "naha": {
       "en": "Naha",
       "ja": "那覇市"
+    },
+    "kitakyushu": {
+      "en": "Kitakyushu",
+      "ja": "北九州市"
+    },
+    "himeji": {
+      "en": "Himeji",
+      "ja": "姫路市"
+    },
+    "toyohashi": {
+      "en": "Toyohashi",
+      "ja": "豊橋市"
+    },
+    "takasaki": {
+      "en": "Takasaki",
+      "ja": "高崎市"
+    },
+    "numazu": {
+      "en": "Numazu",
+      "ja": "沼津市"
+    },
+    "fukuyama": {
+      "en": "Fukuyama",
+      "ja": "福山市"
+    },
+    "yokkaichi": {
+      "en": "Yokkaichi",
+      "ja": "四日市市"
+    },
+    "asahikawa": {
+      "en": "Asahikawa",
+      "ja": "旭川市"
+    },
+    "hamamatsu": {
+      "en": "Hamamatsu",
+      "ja": "浜松市"
+    },
+    "hakodate": {
+      "en": "Hakodate",
+      "ja": "函館市"
+    },
+    "ota": {
+      "en": "Ota",
+      "ja": "太田市"
+    },
+    "koriyama": {
+      "en": "Koriyama",
+      "ja": "郡山市"
+    },
+    "tsuchiura": {
+      "en": "Tsuchiura",
+      "ja": "土浦市"
+    },
+    "matsumoto": {
+      "en": "Matsumoto",
+      "ja": "松本市"
+    },
+    "kisarazu": {
+      "en": "Kisarazu",
+      "ja": "木更津市"
+    },
+    "kurume": {
+      "en": "Kurume",
+      "ja": "久留米市"
     }
   },
   "regions": {

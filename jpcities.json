@@ -280,5 +280,101 @@
     "lat": 26.21241,
     "lng": 127.68111,
     "key": "naha"
+  },
+  {
+    "city": "Kitakyushu",
+    "lat": 33.88333,
+    "lng": 130.875,
+    "key": "kitakyushu"
+  },
+  {
+    "city": "Himeji",
+    "lat": 34.81637,
+    "lng": 134.68955,
+    "key": "himeji"
+  },
+  {
+    "city": "Toyohashi",
+    "lat": 34.76944,
+    "lng": 137.39167,
+    "key": "toyohashi"
+  },
+  {
+    "city": "Takasaki",
+    "lat": 36.32267,
+    "lng": 139.0031,
+    "key": "takasaki"
+  },
+  {
+    "city": "Numazu",
+    "lat": 35.09583,
+    "lng": 138.86417,
+    "key": "numazu"
+  },
+  {
+    "city": "Fukuyama",
+    "lat": 34.48533,
+    "lng": 133.36222,
+    "key": "fukuyama"
+  },
+  {
+    "city": "Yokkaichi",
+    "lat": 34.96468,
+    "lng": 136.62453,
+    "key": "yokkaichi"
+  },
+  {
+    "city": "Asahikawa",
+    "lat": 43.77056,
+    "lng": 142.365,
+    "key": "asahikawa"
+  },
+  {
+    "city": "Hamamatsu",
+    "lat": 34.71028,
+    "lng": 137.72694,
+    "key": "hamamatsu"
+  },
+  {
+    "city": "Hakodate",
+    "lat": 41.76889,
+    "lng": 140.72889,
+    "key": "hakodate"
+  },
+  {
+    "city": "Ota",
+    "lat": 36.29167,
+    "lng": 139.37472,
+    "key": "ota"
+  },
+  {
+    "city": "Koriyama",
+    "lat": 37.39917,
+    "lng": 140.38333,
+    "key": "koriyama"
+  },
+  {
+    "city": "Tsuchiura",
+    "lat": 36.07417,
+    "lng": 140.20167,
+    "key": "tsuchiura"
+  },
+  {
+    "city": "Matsumoto",
+    "lat": 36.23833,
+    "lng": 137.97194,
+    "key": "matsumoto"
+  },
+  {
+    "city": "Kisarazu",
+    "lat": 35.37528,
+    "lng": 139.91611,
+    "key": "kisarazu"
+  },
+  {
+    "city": "Kurume",
+    "lat": 33.31667,
+    "lng": 130.51667,
+    "key": "kurume"
   }
 ]
