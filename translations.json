@@ -66,11 +66,11 @@
     },
     "station_desc_major": {
       "en": "Near a major city train station",
-      "ja": "主要都市の駅の近く"
+      "ja": "大都市の駅の近く"
     },
     "station_desc_local": {
       "en": "At a local town train station",
-      "ja": "地方の駅の近く"
+      "ja": "小さな駅の近く"
     },
     "station_desc_roadside": {
       "en": "At a roadside rest stop (Michi-no-Eki)",
