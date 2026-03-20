@@ -53,8 +53,8 @@
       "ja": "地方駅"
     },
     "station_type_walkable": {
-      "en": "Walkable Station",
-      "ja": "徒歩圏内駅"
+      "en": "Walkable",
+      "ja": "徒歩圏内"
     },
     "station_type_roadside": {
       "en": "Roadside Station",
@@ -65,19 +65,19 @@
       "ja": "遠隔地"
     },
     "station_desc_major": {
-      "en": "Near a major city train station",
-      "ja": "大都市の駅の近く"
+      "en": "Near a train station in a major city",
+      "ja": "駅の近く、大都市の中"
     },
     "station_desc_local": {
       "en": "At a local town train station",
-      "ja": "小さな駅の近く"
+      "ja": "小さな駅"
     },
     "station_desc_roadside": {
       "en": "At a roadside rest stop (Michi-no-Eki)",
-      "ja": "道の駅に設置"
+      "ja": "道の駅"
     },
     "station_desc_remote": {
-      "en": "Far from the nearest train station - driving likely required",
+      "en": "Far from the nearest train station - bus/car required",
       "ja": "最寄り駅から遠い"
     },
     "station_type_super_remote": {
