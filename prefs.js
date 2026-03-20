@@ -8,7 +8,7 @@ const prefs = {
 	cities: true,
 	pokelids: true,
 	borders: true,
-	satellite: true,
+	satellite: false,
 };
 
 /*  */
@@ -56,5 +56,7 @@ function initPrefs() {
 		});
 	});
 
+	// Apply non-default prefs on init
+	applyPref("satellite");
 }
 

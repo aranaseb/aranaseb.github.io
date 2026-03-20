@@ -88,10 +88,10 @@ def classify(
 
 def main():
     parser = argparse.ArgumentParser(description="Reclassify pokelid station types.")
-    parser.add_argument("--pokelids", default="pokelids.json")
-    parser.add_argument("--roadside", default="roadside_stations.json")
-    parser.add_argument("--cities",   default="jpcities.json")
-    parser.add_argument("--output",   default="pokelids.json")
+    parser.add_argument("--pokelids", default="data/pokelids.json")
+    parser.add_argument("--roadside", default="data/roadside_stations.json")
+    parser.add_argument("--cities",   default="data/jpcities.json")
+    parser.add_argument("--output",   default="data/pokelids.json")
     args = parser.parse_args()
 
     # ── Load data ──────────────────────────────────────────────────────────────

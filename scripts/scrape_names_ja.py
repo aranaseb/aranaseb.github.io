@@ -25,7 +25,7 @@ PREFECTURES = [
 ]
 
 def fetch_ja_names(slug):
-    url = f"https://local.pokemon.jp/ja/manhole/{slug}.html"
+    url = f"https://local.pokemon.jp/manhole/{slug}.html"
     try:
         r = requests.get(url, timeout=15)
         r.raise_for_status()
@@ -51,7 +51,7 @@ def fetch_ja_names(slug):
     return names
 
 def main():
-    with open("pokelids.json") as f:
+    with open("data/pokelids.json") as f:
         pokelids = json.load(f)
 
     total = sum(len(v) for v in pokelids.values())
@@ -87,7 +87,7 @@ def main():
 
         time.sleep(0.75)
 
-    with open("pokelids.json", "w") as f:
+    with open("data/pokelids.json", "w") as f:
         json.dump(pokelids, f, ensure_ascii=False, indent=2)
 
     print(f"\nDone. {matched}/{total} lids updated.")

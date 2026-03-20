@@ -11,7 +11,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117 Safari/537.36"
 }
 
-OUTPUT_JSON = "pokelids.json"
+OUTPUT_JSON = "data/pokelids.json"
 IMAGE_DIR = "images"
 DELAY = 0.5
 
@@ -124,11 +124,14 @@ def scrape_prefecture(pref, url):
         name = name_td.get_text(strip=True)
 
         dms_text = coord_td.get_text(strip=True)
+        if dms_text.startswith("Location"):
+            dms_text = dms_text[8:]
         lat, lng = parse_dms(dms_text)
 
         if lat is None:
-            print("  WARNING: DMS not parsed:", repr(dms_text))
-            continue
+            print("  WARNING: DMS not parsed, enter manually:", name)
+            lat,lng = 9999,9999
+            dms_text = "REPLACE"
 
         local_path = download_image(img_url, pref)
 
@@ -153,7 +156,7 @@ def scrape_all():
 
     for pref, url in sorted(prefectures.items()):
         entries = scrape_prefecture(pref, url)
-        all_data[pref] = entries
+        all_data[pref.lower()] = entries
         time.sleep(DELAY)
 
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:

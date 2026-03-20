@@ -52,7 +52,7 @@ function initInitialZoom() {
 }
 
 /*  */
-d3.json("jp.json").then(function(geojson) {
+d3.json("data/jp.json").then(function(geojson) {
 	projection.fitExtent([[PADDING, PADDING], [WIDTH - PADDING, HEIGHT - PADDING]], geojson);
 	initSatellite(geojson);
 	initPrefectures(geojson.features);

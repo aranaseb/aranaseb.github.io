@@ -48,9 +48,9 @@ function prefSlug(feature) {
 
 /*  */
 Promise.all([
-	d3.json("translations.json"),
-	d3.json("pokelids.json"),
-	d3.json("jpcities.json"),
+	d3.json("data/translations.json"),
+	d3.json("data/pokelids.json"),
+	d3.json("data/jpcities.json"),
 ]).then(([translations, pokelids, cities]) => {
 	state.translations = translations;
 	state.pokelids = pokelids;

@@ -77,7 +77,7 @@ function initSatellite() {
 	const [x1, y0] = projection([148, 46]);
 	satelliteLayer.append("image")
 		.attr("class", "satellite-image")
-		.attr("href", "japan_satellite.jpg")
+		.attr("href", "data/japan_satellite.jpg")
 		.attr("x", x0)
 		.attr("y", y0)
 		.attr("width", x1 - x0)
