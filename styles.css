@@ -6,41 +6,29 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    -webkit-overflow-scrolling: touch;
-    touch-action: none;
 }
 
-svg {
+/* D3 overlay SVG — must NOT have background or fixed dimensions here;
+   size is set dynamically by redraw() to match the map container */
+svg.d3-overlay {
     display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    touch-action: none;
-    background-color: #2e3a5e;
+    touch-action: auto;
+    background-color: transparent;
+    overflow: visible;
 }
 
-/* ─── Prefecture paths ──────────────────────────────────────────────────────── */
 
-.prefecture {
-    stroke: rgba(0, 0, 0, 0.6);
-    stroke-width: 0.4px;
-    transition: fill 0.2s;
-    -webkit-tap-highlight-color: transparent;
+#osm-map {
+	width: 100%;
+	height: 100vh;
 }
 
-/* Satellite ON (default) */
-.prefecture                  { fill: transparent; }
-.prefecture:hover            { fill: rgba(255, 255, 255, 0.15) !important; stroke: rgba(0, 0, 0, 0.6) !important; }
-.prefecture:active           { fill: rgba(255, 255, 255, 0.25) !important; stroke: rgba(0, 0, 0, 0.6) !important; }
-.prefecture.selected         { fill: rgba(255, 255, 255, 0.25) !important; stroke: rgba(0, 0, 0, 0.6) !important; }
-
-/* Satellite OFF */
-.satellite-off .prefecture           { fill: #6a9e5a; }
-.satellite-off .prefecture:hover     { fill: #82b870 !important; }
-.satellite-off .prefecture:active    { fill: #93c980 !important; }
-.satellite-off .prefecture.selected  { fill: #aad494 !important; }
+.leaflet-overlay-pane svg {
+	overflow: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 /* ─── Tooltip ────────────────────────────────────────────────────────────────── */
 
@@ -73,7 +61,7 @@ svg {
     border-radius: 20px;
     font-size: 13px;
     font-family: sans-serif;
-    z-index: 100;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -129,10 +117,10 @@ svg {
     max-width: 500px;
     width: 100%;
     max-height: 90vh;
+    max-height: 90dvh;
     overflow-y: auto;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    -webkit-overflow-scrolling: touch;
 }
 
 .modal-close {
@@ -145,8 +133,9 @@ svg {
     cursor: pointer;
     line-height: 1;
     transition: color 0.2s;
-    padding: 5px;
+    padding: 10px;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
     z-index: 1;
 }
 
@@ -238,13 +227,14 @@ svg {
         padding: 20px;
         border-radius: 10px;
         max-height: 85vh;
+        max-height: 85dvh;
     }
 
     .modal-close {
         font-size: 32px;
         right: 10px;
         top: 10px;
-        padding: 8px;
+        padding: 10px;
     }
 
     .modal-title {
@@ -308,8 +298,9 @@ svg {
     cursor: pointer;
     line-height: 1;
     transition: color 0.2s;
-    padding: 5px;
+    padding: 10px;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
     z-index: 1;
 }
 
@@ -328,8 +319,8 @@ svg {
 
 .cluster-list {
     max-height: 60vh;
+    max-height: 60dvh;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .cluster-item {
@@ -342,6 +333,8 @@ svg {
     border-radius: 8px;
     transition: background-color 0.2s;
     border: 2px solid transparent;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .cluster-item:hover,
@@ -408,7 +401,7 @@ svg {
     position: fixed;
     top: 12px;
     left: 12px;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -423,85 +416,16 @@ svg {
     font-size: 13px;
     font-family: sans-serif;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
-#lang-toggle:hover {
+#lang-toggle:hover,
+#lang-toggle:active {
     background: rgba(0, 0, 0, 0.85);
 }
 
-#prefs-toggle {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-family: sans-serif;
-    cursor: pointer;
-    text-align: left;
-}
-
-#prefs-toggle:hover {
-    background: rgba(0, 0, 0, 0.85);
-}
-
-/* ─── Preferences Panel ──────────────────────────────────────────────────────── */
-
-#prefs-panel {
-    position: fixed;
-    top: 80px;
-    left: 12px;
-    z-index: 200;
-    background: rgba(20, 20, 20, 0.92);
-    color: white;
-    border-radius: 12px;
-    width: 220px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    backdrop-filter: blur(6px);
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: max-height 0.25s ease, opacity 0.2s ease;
-}
-
-#prefs-panel.open {
-    max-height: 400px;
-    opacity: 1;
-    pointer-events: all;
-}
-
-#prefs-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 14px 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#prefs-title {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    opacity: 0.7;
-}
-
-#prefs-close {
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.15s;
-}
-
-#prefs-close:hover {
-    opacity: 1;
-}
-
-#prefs-body {
-    padding: 8px 0;
-}
+/* ─── Shared panel row / toggle styles ───────────────────────────────────────── */
 
 .prefs-row {
     display: flex;
@@ -510,9 +434,12 @@ svg {
     padding: 10px 14px;
     cursor: pointer;
     transition: background 0.15s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
-.prefs-row:hover {
+.prefs-row:hover,
+.prefs-row:active {
     background: rgba(255,255,255,0.06);
 }
 
@@ -554,6 +481,89 @@ svg {
     transform: translateX(16px);
 }
 
+/* ─── Prefecture Panel ───────────────────────────────────────────────────────── */
+
+#prefecture-toggle {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+#prefecture-toggle:hover,
+#prefecture-toggle:active {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#prefecture-panel {
+    position: fixed;
+    top: 80px;
+    left: 12px;
+    z-index: 1000;
+    background: rgba(20, 20, 20, 0.92);
+    color: white;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+#prefecture-panel.open {
+    max-height: 70vh;
+    max-height: 70dvh;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#prefecture-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+}
+
+#prefecture-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+#prefecture-close {
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.15s;
+    padding: 8px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+#prefecture-close:hover,
+#prefecture-close:active { opacity: 1; }
+
+#prefecture-body {
+    padding: 8px 0;
+    overflow-y: auto;
+}
 
 /* ─── Filter Button ──────────────────────────────────────────────────────────── */
 
@@ -567,9 +577,12 @@ svg {
     font-family: sans-serif;
     cursor: pointer;
     text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
-#filter-toggle:hover {
+#filter-toggle:hover,
+#filter-toggle:active {
     background: rgba(0, 0, 0, 0.85);
 }
 
@@ -579,7 +592,7 @@ svg {
     position: fixed;
     top: 80px;
     left: 12px;
-    z-index: 200;
+    z-index: 1000;
     background: rgba(20, 20, 20, 0.92);
     color: white;
     border-radius: 12px;
@@ -591,12 +604,15 @@ svg {
     opacity: 0;
     pointer-events: none;
     transition: max-height 0.25s ease, opacity 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 #filter-panel.open {
-    max-height: 500px;
+    max-height: 70vh;
+    max-height: 70dvh;
     opacity: 1;
-    pointer-events: all;
+    pointer-events: auto;
 }
 
 #filter-header {
@@ -605,6 +621,7 @@ svg {
     justify-content: space-between;
     padding: 12px 14px 10px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
 }
 
 #filter-title {
@@ -621,16 +638,20 @@ svg {
     cursor: pointer;
     opacity: 0.5;
     transition: opacity 0.15s;
+    padding: 8px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
-#filter-close:hover { opacity: 1; }
+#filter-close:hover,
+#filter-close:active { opacity: 1; }
 
-#filter-body { padding: 8px 0; }
+#filter-body { padding: 10px 0; overflow-y: auto; }
 
 .filter-divider {
     height: 1px;
     background: rgba(255,255,255,0.08);
-    margin: 4px 14px;
+    margin: 6px 14px;
 }
 
 /* Type colour dots */
@@ -665,6 +686,10 @@ svg {
     flex-wrap: wrap;
 }
 
+.modal-station-line + .modal-station-line {
+    margin-top: 8px;
+}
+
 .modal-station-type {
     display: inline-block;
     padding: 2px 8px;
@@ -686,4 +711,102 @@ svg {
 .modal-station-desc {
     color: #888;
     font-size: 12px;
+}
+
+/* ─── Visit status tag ───────────────────────────────────────────────────────── */
+
+.modal-visit-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.modal-visit-tag[data-status="unvisited"] { background: #9E9E9E; }
+.modal-visit-tag[data-status="visited"]   { background: #4CAF50; }
+.modal-visit-tag[data-status="want"]      { background: #2196F3; }
+
+/* ─── Visit status buttons ───────────────────────────────────────────────────── */
+
+.modal-visit-status {
+    display: flex;
+    gap: 8px;
+    margin: 14px 0;
+    flex-wrap: wrap;
+}
+
+.visit-btn {
+    flex: 1;
+    padding: 8px 6px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #555;
+    transition: all 0.15s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.visit-btn:active { transform: scale(0.97); }
+
+.visit-btn--unvisited.visit-btn--active { background: #9E9E9E; color: white; border-color: #9E9E9E; }
+.visit-btn--visited.visit-btn--active   { background: #4CAF50; color: white; border-color: #4CAF50; }
+.visit-btn--want.visit-btn--active      { background: #2196F3; color: white; border-color: #2196F3; }
+
+.visit-btn--unvisited:not(.visit-btn--active):hover { border-color: #9E9E9E; color: #9E9E9E; }
+.visit-btn--visited:not(.visit-btn--active):hover   { border-color: #4CAF50; color: #4CAF50; }
+.visit-btn--want:not(.visit-btn--active):hover      { border-color: #2196F3; color: #2196F3; }
+
+/* ─── Visit filter dots + section title ──────────────────────────────────────── */
+
+.dot-unvisited { background: #9E9E9E; }
+.dot-visited   { background: #4CAF50; }
+.dot-want      { background: #2196F3; }
+
+.filter-section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding: 8px 14px 4px;
+}
+
+#top-left-controls {
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    left: calc(12px + env(safe-area-inset-left, 0px));
+}
+
+#pokelid-counter {
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    right: calc(12px + env(safe-area-inset-right, 0px));
+}
+
+#prefecture-panel,
+#filter-panel {
+    top: calc(80px + env(safe-area-inset-top, 0px));
+    left: calc(12px + env(safe-area-inset-left, 0px));
+}
+
+/* ─── Landscape / short-screen guard ────────────────────────────────────────── */
+
+@media (max-height: 500px) {
+    #prefecture-panel.open {
+        max-height: 80dvh;
+        max-height: 80vh;
+    }
+
+    #filter-panel.open {
+        max-height: 80dvh;
+        max-height: 80vh;
+    }
 }

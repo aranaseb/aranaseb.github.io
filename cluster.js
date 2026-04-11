@@ -15,7 +15,8 @@ function haversineKm(lat1, lng1, lat2, lng2) {
 }
 
 /*  */
-function clusterPokelids(points, maxKm = CLUSTER_DISTANCE_KM) {
+function clusterPokelids(points) {
+	const maxKm = getZoomTier() === "close" ? 0 : CLUSTER_DISTANCE_KM;
 	const used = new Set();
 	return points.reduce((clusters, point, i) => {
 		if (used.has(i)) return clusters;
@@ -43,9 +44,9 @@ function getVisiblePoints() {
 	const points = [];
 	for (const slug of slugs) {
 		(state.pokelids[slug] ?? []).forEach(p => {
-			if (state.activeFilters.size === 0 || state.activeFilters.has(p.station_type)) {
-				points.push({ ...p, prefecture: slug });
-			}
+			if (state.activeFilters.size > 0 && !state.activeFilters.has(p.station_type)) return;
+			if (state.activeVisitFilters.size > 0 && !state.activeVisitFilters.has(getVisitStatus(p.id))) return;
+			points.push({ ...p, prefecture: slug });
 		});
 	}
 	return points;

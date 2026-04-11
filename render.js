@@ -3,96 +3,91 @@
 // @author Sebastian Arana
 //
 
-/*  */
-const regionColors = d3.scaleOrdinal()
-	.domain([
-		"hokkaido-tohoku",
-		"kanto",
-		"chubu",
-		"kinki",
-		"chugoku-shikoku",
-		"kyushu-okinawa"
-	])
-	.range(["#048c28"]);
+
+const map = L.map('osm-map', { zoomControl: false }).setView([38.0, 140.8], 6);
+
+const esriSatellite = L.tileLayer(
+	'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+	{ attribution: '&copy; Esri', maxZoom: 19 }
+);
+const esriLabelsEn = L.tileLayer(
+	'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+	{ attribution: '', maxZoom: 19 }
+);
+const osmJaLabels = L.tileLayer(
+	'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	{ attribution: '&copy; OpenStreetMap contributors', maxZoom: 19, opacity: 0.7 }
+);
+
+function applyTileLayer(locale) {
+	if (!map.hasLayer(esriSatellite)) map.addLayer(esriSatellite);
+	if (locale === 'en') {
+		map.removeLayer(osmJaLabels);
+		if (!map.hasLayer(esriLabelsEn)) map.addLayer(esriLabelsEn);
+	} else {
+		map.removeLayer(esriLabelsEn);
+		if (!map.hasLayer(osmJaLabels)) map.addLayer(osmJaLabels);
+	}
+}
+
+applyTileLayer(state.locale);
 
 /*  */
-const projection = d3.geoEquirectangular();
-const path = d3.geoPath().projection(projection);
+const svg = d3.select(map.getPanes().overlayPane)
+	.append("svg")
+	.attr("class", "d3-overlay")
+	.style("position", "absolute")
+	.style("top", "0")
+	.style("left", "0")
+	.style("pointer-events", "none");
+const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const tooltip = d3.select("#tooltip");
 const counter = d3.select("#pokelid-counter");
 
-/*  */
-const svg = d3.select("svg").attr("width", WIDTH).attr("height", HEIGHT);
-const g = svg.append("g").attr("width", WIDTH).attr("height", HEIGHT);
-const satelliteLayer = g.append("g").attr("class", "satellite");
-const prefLayer = g.append("g").attr("class", "prefectures");
-const pokelidLayer = g.append("g").attr("class", "pokelids");
-const cityLayer = g.append("g").attr("class", "cities");
+const pokelidLayer = g.append("g").attr("class", "pokelids").style("pointer-events", "auto");
+
 
 /*  */
-const zoom = d3.zoom().scaleExtent([1, 20])
-	.on("zoom", event => g.attr("transform", event.transform));
-svg.call(zoom);
+function redraw() {
+	const size = map.getSize();
+	svg
+		.attr("width",  size.x)
+		.attr("height", size.y);
 
-/*  */
-function initZoomExtent() {
-	const [x0, y1] = projection([122, 24]);
-	const [x1, y0] = projection([148, 46]);
-	const imgW = x1 - x0;
-	const imgH = y1 - y0;
-	const minScale = Math.max(WIDTH / imgW, HEIGHT / imgH);
-	zoom.scaleExtent([minScale, 20]);
-	zoom.constrain((transform) => {
-		const screenX0 = transform.applyX(x0);
-		const screenX1 = transform.applyX(x1);
-		const screenY0 = transform.applyY(y0);
-		const screenY1 = transform.applyY(y1);
-		let dx = 0, dy = 0;
-		if (screenX0 > 0) dx = -screenX0;
-		else if (screenX1 < WIDTH) dx = WIDTH - screenX1;
-		if (screenY0 > 0) dy = -screenY0;
-		else if (screenY1 < HEIGHT) dy = HEIGHT - screenY1;
-		return transform.translate(dx / transform.k, dy / transform.k);
+	g.attr("transform", "translate(0,0)");
+
+	pokelidLayer.selectAll("g.pokelid-cluster").attr("transform", d => {
+		const pt = map.latLngToLayerPoint(L.latLng(d.lat, d.lng));
+		return `translate(${pt.x},${pt.y})`;
 	});
 }
 
 /*  */
 function setLocale(locale) {
 	state.locale = locale;
+	localStorage.setItem("pokelid-locale", locale);
 	document.documentElement.lang = locale;
+	applyTileLayer(locale);
 	d3.select("#lang-toggle").text(t("ui", "lang_toggle", locale));
 	if (typeof updateFilterLabels === "function") updateFilterLabels(locale);
-	cityLayer.selectAll("g.city").each(function(d) {
-		d3.select(this).select(".city-label").text(t("cities", d.key, locale) || d.city);
-	});
+	if (typeof updatePrefectureLabels === "function") updatePrefectureLabels(locale);
+	if (typeof updatePrefsLabels === "function") updatePrefsLabels(locale);
 	updateCounter();
 	showPokelids();
-}
-
-// ─── Satellite layer ──────────────────────────────────────────────────────────
-
-/*  */
-function initSatellite() {
-	const [x0, y1] = projection([122, 24]);
-	const [x1, y0] = projection([148, 46]);
-	satelliteLayer.append("image")
-		.attr("class", "satellite-image")
-		.attr("href", "data/japan_satellite.jpg")
-		.attr("x", x0)
-		.attr("y", y0)
-		.attr("width", x1 - x0)
-		.attr("height", y1 - y0)
-		.attr("preserveAspectRatio", "none");
 }
 
 // ─── Counter ──────────────────────────────────────────────────────────────────
 
 /*  */
 function getFilteredPokelids() {
-	if (state.activeFilters.size === 0) return state.pokelids;
+	if (state.activeFilters.size === 0 && state.activeVisitFilters.size === 0) return state.pokelids;
 	const filtered = {};
 	for (const [pref, lids] of Object.entries(state.pokelids)) {
-		const kept = lids.filter(l => state.activeFilters.has(l.station_type));
+		const kept = lids.filter(l => {
+			if (state.activeFilters.size > 0 && !state.activeFilters.has(l.station_type)) return false;
+			if (state.activeVisitFilters.size > 0 && !state.activeVisitFilters.has(getVisitStatus(l.id))) return false;
+			return true;
+		});
 		if (kept.length) filtered[pref] = kept;
 	}
 	return filtered;
@@ -112,45 +107,58 @@ function updateCounter() {
 
 /*  */
 function renderClusterCircle(enter) {
-	enter.filter(d => d.lids.length > 1)
-		.append("circle")
-		.attr("class", "pokelid-circle")
-		.attr("r", baseClusterRadius)
-		.attr("fill", "#ff6b6b")
-		.attr("stroke", "black")
-		.attr("stroke-width", 0.25 * screenScale)
-		.attr("opacity", 0.9);
+	const scale = getMarkerScale();
+
+	enter.filter(d => d.lids.length > 1).each(function(d) {
+		const allVisited = d.lids.every(l => getVisitStatus(l.id) === "visited");
+		d3.select(this).append("circle")
+			.attr("class", "pokelid-circle")
+			.attr("r", baseClusterRadius * scale)
+			.attr("fill", "#ff6b6b")
+			.attr("stroke", "white")
+			.attr("stroke-width", 0.25 * screenScale)
+			.attr("opacity", allVisited ? 0.35 : 0.9);
+	});
 
 	enter.filter(d => d.lids.length === 1).each(function(d) {
 		const grp = d3.select(this);
-		const clipId = "clip-" + d.lids[0].image_local.replace(/[^a-z0-9]/gi, "-");
+		const lid = d.lids[0];
+		const r = imageRadius * scale;
+		const clipId = "clip-" + lid.image_local.replace(/[^a-z0-9]/gi, "-");
+		const status = getVisitStatus(lid.id);
+		grp.append("circle")
+			.attr("r", r + 1)
+			.attr("fill", "white")
+			.attr("opacity", 0.7);
 		grp.append("clipPath")
 			.attr("id", clipId)
 			.append("circle")
-			.attr("r", imageRadius);
+			.attr("r", r);
 		grp.append("image")
 			.attr("class", "pokelid-image")
-			.attr("href", d.lids[0].image_local)
-			.attr("x", -imageRadius)
-			.attr("y", -imageRadius)
-			.attr("width", imageRadius * 2)
-			.attr("height", imageRadius * 2)
-			.attr("clip-path", `url(#${clipId})`);
+			.attr("href", lid.image_local)
+			.attr("x", -r)
+			.attr("y", -r)
+			.attr("width", r * 2)
+			.attr("height", r * 2)
+			.attr("clip-path", `url(#${clipId})`)
+			.attr("opacity", status === "visited" ? 0.35 : 1);
 	});
 }
 
 /*  */
 function renderClusterCount(enter) {
+	const scale = getMarkerScale();
 	enter.filter(d => d.lids.length > 1)
 		.append("text")
 		.attr("class", "cluster-count")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
-		.attr("font-size", `${baseCountSize}px`)
+		.attr("font-size", `${baseCountSize * scale}px`)
 		.attr("font-weight", "bold")
 		.attr("fill", "white")
 		.attr("stroke", "black")
-		.attr("stroke-width", 0.15 * screenScale)
+		.attr("stroke-width", 0.2 * screenScale)
 		.attr("paint-order", "stroke")
 		.text(d => d.lids.length);
 }
@@ -176,7 +184,6 @@ function onClusterClick(event, d) {
 
 /*  */
 function showPokelids() {
-	if (!prefs.pokelids) return;
 	const clusters = clusterPokelids(getVisiblePoints());
 	pokelidLayer.selectAll("g.pokelid-cluster").remove();
 	const groups = pokelidLayer.selectAll("g.pokelid-cluster")
@@ -191,8 +198,8 @@ function showPokelids() {
 
 	groups
 		.attr("transform", d => {
-			const [x, y] = projection([d.lng, d.lat]);
-			return `translate(${x},${y})`;
+			const pt = map.latLngToLayerPoint(L.latLng(d.lat, d.lng));
+			return `translate(${pt.x},${pt.y})`;
 		})
 		.on("mousemove touchmove", function(event, d) {
 			const e = event.type === "touchmove" ? event.touches[0] : event;
@@ -208,145 +215,4 @@ function showPokelids() {
 /*  */
 function clearPokelids() {
 	pokelidLayer.selectAll("g.pokelid-cluster").remove();
-}
-
-// ─── Cities ───────────────────────────────────────────────────────────────────
-
-/*  */
-function initCities(cities) {
-	cityLayer.selectAll("g.city")
-		.data(cities)
-		.join("g")
-		.attr("class", "city")
-		.style("display", "block")
-		.each(function(d) {
-			const group = d3.select(this);
-			group.append("circle")
-				.attr("r", baseCityRadius)
-				.attr("fill", "#000")
-				.attr("stroke", "#fff")
-				.attr("stroke-width", 0.25 * screenScale);
-			group.append("text")
-				.attr("class", "city-label")
-				.text(t("cities", d.key, state.locale) || d.city)
-				.attr("x", 1).attr("y", 1)
-				.attr("font-size", `${baseFontSize}px`)
-				.attr("font-family", "sans-serif")
-				.attr("fill", "#333")
-				.attr("paint-order", "stroke")
-				.attr("stroke", "white")
-				.attr("stroke-width", 0.5 * screenScale)
-				.style("pointer-events", "none");
-		})
-		.attr("transform", d => {
-			const [x, y] = projection([+d.lng, +d.lat]);
-			return `translate(${x},${y})`;
-		});
-}
-
-/*  */
-function filterCitiesByPrefecture() {
-	if (!prefs.cities) return;
-	if (state.selectedPrefectures.size === 0) {
-		cityLayer.selectAll("g.city").style("display", "block");
-		return;
-	}
-	const prefFeatures = prefLayer.selectAll(".prefecture").data();
-	cityLayer.selectAll("g.city").style("display", function(d) {
-		for (const slug of state.selectedPrefectures) {
-			const feat = prefFeatures.find(f => f.properties.slug === slug);
-			if (feat && d3.geoContains(feat, [d.lng, d.lat])) return "block";
-		}
-		return "none";
-	});
-}
-
-// ─── Prefectures ──────────────────────────────────────────────────────────────
-
-/*  */
-function prefTooltipText(slug, count) {
-	const name = t("prefectures", slug, state.locale);
-	return `${name}<br>${count} ${t("ui", "pokelid_count", state.locale)}`;
-}
-
-/*  */
-function getPokelidCount(slug) {
-	return (state.pokelids[slug] ?? []).length;
-}
-
-/*  */
-function prefFill() {
-	return prefs.satellite ? "transparent" : "#6a9e5a";
-}
-
-/*  */
-function resetColors() {
-	prefLayer.selectAll(".prefecture")
-		.classed("selected", false);
-	state.selectedPrefectures.clear();
-}
-
-/*  */
-function initPrefectures(features) {
-	prefLayer.selectAll(".prefecture")
-		.data(features)
-		.join("path")
-		.attr("class", "prefecture")
-		.attr("d", path)
-		.attr("stroke", "#ffffff")
-		.attr("stroke-width", 0.5)
-		.attr("stroke-opacity", 0.7)
-		.style("cursor", "pointer")
-		.on("mousemove touchmove", function(event, d) {
-			const e = event.type === "touchmove" ? event.touches[0] : event;
-			const slug = prefSlug(d);
-			tooltip.style("opacity", 1)
-				.html(prefTooltipText(slug, getPokelidCount(slug)))
-				.style("left", (e.pageX + 12) + "px")
-				.style("top", (e.pageY + 12) + "px");
-		})
-		.on("mouseout touchend", () => tooltip.style("opacity", 0))
-		.on("click touchend", onPrefectureClick);
-}
-
-// ─── Zoom ─────────────────────────────────────────────────────────────────────
-
-/*  */
-function getBoundsForFeature(feature) {
-	const slug = feature.properties.slug;
-	if (customZoomBounds[slug]) {
-		const c = customZoomBounds[slug];
-		const [x0, y0] = projection([c.lng[0], c.lat[1]]);
-		const [x1, y1] = projection([c.lng[1], c.lat[0]]);
-		return { minX: x0, minY: y0, maxX: x1, maxY: y1 };
-	}
-	const [[x0, y0], [x1, y1]] = path.bounds(feature);
-	return { minX: x0, minY: y0, maxX: x1, maxY: y1 };
-}
-
-/*  */
-function zoomToTransform(transform, duration = 750) {
-	svg.transition().duration(duration).call(zoom.transform, transform);
-}
-
-/*  */
-function zoomToSelection() {
-	if (state.selectedPrefectures.size === 0) {
-		zoomToTransform(state.initialTransform);
-		return;
-	}
-	const features = prefLayer.selectAll(".prefecture").data()
-		.filter(f => state.selectedPrefectures.has(f.properties.slug));
-	if (!features.length) return;
-
-	let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-	features.forEach(f => {
-		const b = getBoundsForFeature(f);
-		minX = Math.min(minX, b.minX); minY = Math.min(minY, b.minY);
-		maxX = Math.max(maxX, b.maxX); maxY = Math.max(maxY, b.maxY);
-	});
-
-	const scale = Math.min(10, 0.8 / Math.max((maxX - minX) / WIDTH, (maxY - minY) / HEIGHT));
-	const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
-	zoomToTransform(d3.zoomIdentity.translate(WIDTH / 2, HEIGHT / 2).scale(scale).translate(-cx, -cy));
 }

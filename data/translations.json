@@ -53,8 +53,8 @@
       "ja": "地方駅"
     },
     "station_type_walkable": {
-      "en": "Walkable",
-      "ja": "徒歩圏内"
+      "en": "Walkable Station",
+      "ja": "徒歩圏内駅"
     },
     "station_type_roadside": {
       "en": "Roadside Station",
@@ -65,19 +65,19 @@
       "ja": "遠隔地"
     },
     "station_desc_major": {
-      "en": "Near a train station in a major city",
-      "ja": "駅の近く、大都市の中"
+      "en": "Near a major city train station",
+      "ja": "主要都市の駅の近く"
     },
     "station_desc_local": {
       "en": "At a local town train station",
-      "ja": "小さな駅"
+      "ja": "地方の駅の近く"
     },
     "station_desc_roadside": {
       "en": "At a roadside rest stop (Michi-no-Eki)",
-      "ja": "道の駅"
+      "ja": "道の駅に設置"
     },
     "station_desc_remote": {
-      "en": "Far from the nearest train station - bus/car required",
+      "en": "Far from the nearest train station - driving likely required",
       "ja": "最寄り駅から遠い"
     },
     "station_type_super_remote": {
@@ -87,6 +87,54 @@
     "station_desc_super_remote": {
       "en": "Very remote - only accessible by boat, car, or long-distance bus",
       "ja": "最寄り駅から非常に遠い"
+    },
+    "prefecture_panel_title": {
+      "en": "Prefectures",
+      "ja": "都道府県"
+    },
+    "filter_all_prefectures": {
+      "en": "All prefectures",
+      "ja": "すべての都道府県"
+    },
+    "layers_title": {
+      "en": "Layers",
+      "ja": "レイヤー"
+    },
+    "layers_button": {
+      "en": "🗺 Layers",
+      "ja": "🗺 レイヤー"
+    },
+    "layer_cities": {
+      "en": "Cities",
+      "ja": "都市"
+    },
+    "layer_pokelids": {
+      "en": "Pokélids",
+      "ja": "ポケふた"
+    },
+    "layer_borders": {
+      "en": "Prefecture borders",
+      "ja": "都道府県の境界"
+    },
+    "visit_unvisited": {
+      "en": "Unvisited",
+      "ja": "未訪問"
+    },
+    "visit_visited": {
+      "en": "Visited",
+      "ja": "訪問済み"
+    },
+    "visit_want": {
+      "en": "Plan to visit",
+      "ja": "訪問予定"
+    },
+    "filter_visits_title": {
+      "en": "Visit status",
+      "ja": "訪問状況"
+    },
+    "filter_visit_all": {
+      "en": "All",
+      "ja": "すべて"
     }
   },
   "prefectures": {
@@ -531,32 +579,6 @@
     "kurume": {
       "en": "Kurume",
       "ja": "久留米市"
-    }
-  },
-  "regions": {
-    "hokkaido-tohoku": {
-      "en": "Hokkaido-Tohoku",
-      "ja": "北海道・東北"
-    },
-    "kanto": {
-      "en": "Kanto",
-      "ja": "関東"
-    },
-    "chubu": {
-      "en": "Chubu",
-      "ja": "中部"
-    },
-    "kinki": {
-      "en": "Kinki",
-      "ja": "近畿"
-    },
-    "chugoku-shikoku": {
-      "en": "Chugoku-Shikoku",
-      "ja": "中国・四国"
-    },
-    "kyushu-okinawa": {
-      "en": "Kyushu-Okinawa",
-      "ja": "九州・沖縄"
     }
   }
 }

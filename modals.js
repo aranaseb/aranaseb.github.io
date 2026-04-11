@@ -66,7 +66,35 @@ function showPokelidModal(pokelid) {
 		.text(t("ui", "pokemon_page", state.locale))
 		.attr("href", `https://local.pokemon.jp/en/manhole/${prefNameEn.toLowerCase()}.html`);
 
+	// Visit status
+	const STATUSES = ["unvisited", "visited", "want"];
+	const statusBar = modal.select(".modal-visit-status").html("");
+	STATUSES.forEach(s => {
+		statusBar.append("button")
+			.attr("class", `visit-btn visit-btn--${s}`)
+			.attr("data-status", s)
+			.text(t("ui", `visit_${s}`, state.locale))
+			.on("click touchend", function(event) {
+				event.stopPropagation();
+				setVisitStatus(pokelid.id, s);
+				updateVisitButtons(modal, pokelid.id);
+				clearPokelids();
+				showPokelids();
+			});
+	});
+	updateVisitButtons(modal, pokelid.id);
+
 	openModal("#pokelid-modal");
+}
+
+/*  */
+function updateVisitButtons(modal, id) {
+	const status = getVisitStatus(id);
+	modal.selectAll(".visit-btn").classed("visit-btn--active", false);
+	modal.select(`.visit-btn[data-status="${status}"]`).classed("visit-btn--active", true);
+	modal.select(".modal-visit-tag")
+		.attr("data-status", status)
+		.text(t("ui", `visit_${status}`, state.locale));
 }
 
 /*  */

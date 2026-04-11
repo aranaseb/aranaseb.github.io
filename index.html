@@ -7,9 +7,10 @@
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	    <title>Pokélid Map - Japan</title>
 	    <link rel="stylesheet" href="styles.css">
+	    <link rel="stylesheet" href="leaflet.css">
 	</head>
 	<body>
-	    <svg></svg>
+		<div id="osm-map"></div>
 
 	    <!-- Tooltip -->
 	    <div id="tooltip"></div>
@@ -20,37 +21,75 @@
 	    <!-- Top Left Controls -->
 	    <div id="top-left-controls">
 	        <button id="lang-toggle">日本語</button>
-	        <button id="prefs-toggle">⚙ Layers</button>
+	        <button id="prefecture-toggle">🗾 Prefectures</button>
 	        <button id="filter-toggle">⚡ Filter</button>
 	    </div>
 
-	    <!-- Preferences Panel -->
-	    <div id="prefs-panel">
-	        <div id="prefs-header">
-	            <span id="prefs-title">Layers</span>
-	            <span id="prefs-close">&times;</span>
+	    <!-- Prefecture Panel -->
+	    <div id="prefecture-panel">
+	        <div id="prefecture-header">
+	            <span id="prefecture-title">Prefectures</span>
+	            <span id="prefecture-close">&times;</span>
 	        </div>
-	        <div id="prefs-body">
-	            <label class="prefs-row">
-	                <span class="prefs-label">Cities</span>
-	                <input type="checkbox" id="pref-cities" checked>
+	        <div id="prefecture-body">
+	            <label class="prefs-row filter-row" for="pref-filter-all">
+	                <span class="prefs-label filter-label-text pref-filter-label-text">All prefectures</span>
+	                <input type="checkbox" id="pref-filter-all">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
-	            <label class="prefs-row">
-	                <span class="prefs-label">Pokélids</span>
-	                <input type="checkbox" id="pref-pokelids" checked>
-	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
-	            </label>
-	            <label class="prefs-row">
-	                <span class="prefs-label">Prefecture borders</span>
-	                <input type="checkbox" id="pref-borders" checked>
-	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
-	            </label>
-	            <label class="prefs-row">
-	                <span class="prefs-label">Satellite image</span>
-	                <input type="checkbox" id="pref-satellite" checked>
-	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
-	            </label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-hokkaido"><span class="prefs-label"><span class="pref-filter-label-text">Hokkaido</span></span><input type="checkbox" id="pref-filter-hokkaido"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-aomori"><span class="prefs-label"><span class="pref-filter-label-text">Aomori</span></span><input type="checkbox" id="pref-filter-aomori"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-iwate"><span class="prefs-label"><span class="pref-filter-label-text">Iwate</span></span><input type="checkbox" id="pref-filter-iwate"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-miyagi"><span class="prefs-label"><span class="pref-filter-label-text">Miyagi</span></span><input type="checkbox" id="pref-filter-miyagi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-akita"><span class="prefs-label"><span class="pref-filter-label-text">Akita</span></span><input type="checkbox" id="pref-filter-akita"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-yamagata"><span class="prefs-label"><span class="pref-filter-label-text">Yamagata</span></span><input type="checkbox" id="pref-filter-yamagata"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-fukushima"><span class="prefs-label"><span class="pref-filter-label-text">Fukushima</span></span><input type="checkbox" id="pref-filter-fukushima"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-ibaraki"><span class="prefs-label"><span class="pref-filter-label-text">Ibaraki</span></span><input type="checkbox" id="pref-filter-ibaraki"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-tochigi"><span class="prefs-label"><span class="pref-filter-label-text">Tochigi</span></span><input type="checkbox" id="pref-filter-tochigi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-gunma"><span class="prefs-label"><span class="pref-filter-label-text">Gunma</span></span><input type="checkbox" id="pref-filter-gunma"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-saitama"><span class="prefs-label"><span class="pref-filter-label-text">Saitama</span></span><input type="checkbox" id="pref-filter-saitama"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-chiba"><span class="prefs-label"><span class="pref-filter-label-text">Chiba</span></span><input type="checkbox" id="pref-filter-chiba"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-tokyo"><span class="prefs-label"><span class="pref-filter-label-text">Tokyo</span></span><input type="checkbox" id="pref-filter-tokyo"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kanagawa"><span class="prefs-label"><span class="pref-filter-label-text">Kanagawa</span></span><input type="checkbox" id="pref-filter-kanagawa"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-niigata"><span class="prefs-label"><span class="pref-filter-label-text">Niigata</span></span><input type="checkbox" id="pref-filter-niigata"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-toyama"><span class="prefs-label"><span class="pref-filter-label-text">Toyama</span></span><input type="checkbox" id="pref-filter-toyama"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-ishikawa"><span class="prefs-label"><span class="pref-filter-label-text">Ishikawa</span></span><input type="checkbox" id="pref-filter-ishikawa"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-fukui"><span class="prefs-label"><span class="pref-filter-label-text">Fukui</span></span><input type="checkbox" id="pref-filter-fukui"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-yamanashi"><span class="prefs-label"><span class="pref-filter-label-text">Yamanashi</span></span><input type="checkbox" id="pref-filter-yamanashi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-nagano"><span class="prefs-label"><span class="pref-filter-label-text">Nagano</span></span><input type="checkbox" id="pref-filter-nagano"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-gifu"><span class="prefs-label"><span class="pref-filter-label-text">Gifu</span></span><input type="checkbox" id="pref-filter-gifu"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-shizuoka"><span class="prefs-label"><span class="pref-filter-label-text">Shizuoka</span></span><input type="checkbox" id="pref-filter-shizuoka"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-aichi"><span class="prefs-label"><span class="pref-filter-label-text">Aichi</span></span><input type="checkbox" id="pref-filter-aichi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-mie"><span class="prefs-label"><span class="pref-filter-label-text">Mie</span></span><input type="checkbox" id="pref-filter-mie"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-shiga"><span class="prefs-label"><span class="pref-filter-label-text">Shiga</span></span><input type="checkbox" id="pref-filter-shiga"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kyoto"><span class="prefs-label"><span class="pref-filter-label-text">Kyoto</span></span><input type="checkbox" id="pref-filter-kyoto"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-osaka"><span class="prefs-label"><span class="pref-filter-label-text">Osaka</span></span><input type="checkbox" id="pref-filter-osaka"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-hyogo"><span class="prefs-label"><span class="pref-filter-label-text">Hyogo</span></span><input type="checkbox" id="pref-filter-hyogo"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-nara"><span class="prefs-label"><span class="pref-filter-label-text">Nara</span></span><input type="checkbox" id="pref-filter-nara"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-wakayama"><span class="prefs-label"><span class="pref-filter-label-text">Wakayama</span></span><input type="checkbox" id="pref-filter-wakayama"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-tottori"><span class="prefs-label"><span class="pref-filter-label-text">Tottori</span></span><input type="checkbox" id="pref-filter-tottori"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-shimane"><span class="prefs-label"><span class="pref-filter-label-text">Shimane</span></span><input type="checkbox" id="pref-filter-shimane"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-okayama"><span class="prefs-label"><span class="pref-filter-label-text">Okayama</span></span><input type="checkbox" id="pref-filter-okayama"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-hiroshima"><span class="prefs-label"><span class="pref-filter-label-text">Hiroshima</span></span><input type="checkbox" id="pref-filter-hiroshima"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-yamaguchi"><span class="prefs-label"><span class="pref-filter-label-text">Yamaguchi</span></span><input type="checkbox" id="pref-filter-yamaguchi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-tokushima"><span class="prefs-label"><span class="pref-filter-label-text">Tokushima</span></span><input type="checkbox" id="pref-filter-tokushima"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kagawa"><span class="prefs-label"><span class="pref-filter-label-text">Kagawa</span></span><input type="checkbox" id="pref-filter-kagawa"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-ehime"><span class="prefs-label"><span class="pref-filter-label-text">Ehime</span></span><input type="checkbox" id="pref-filter-ehime"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kochi"><span class="prefs-label"><span class="pref-filter-label-text">Kochi</span></span><input type="checkbox" id="pref-filter-kochi"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <div class="filter-divider"></div>
+	            <label class="prefs-row filter-row" for="pref-filter-fukuoka"><span class="prefs-label"><span class="pref-filter-label-text">Fukuoka</span></span><input type="checkbox" id="pref-filter-fukuoka"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-saga"><span class="prefs-label"><span class="pref-filter-label-text">Saga</span></span><input type="checkbox" id="pref-filter-saga"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-nagasaki"><span class="prefs-label"><span class="pref-filter-label-text">Nagasaki</span></span><input type="checkbox" id="pref-filter-nagasaki"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kumamoto"><span class="prefs-label"><span class="pref-filter-label-text">Kumamoto</span></span><input type="checkbox" id="pref-filter-kumamoto"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-oita"><span class="prefs-label"><span class="pref-filter-label-text">Oita</span></span><input type="checkbox" id="pref-filter-oita"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-miyazaki"><span class="prefs-label"><span class="pref-filter-label-text">Miyazaki</span></span><input type="checkbox" id="pref-filter-miyazaki"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-kagoshima"><span class="prefs-label"><span class="pref-filter-label-text">Kagoshima</span></span><input type="checkbox" id="pref-filter-kagoshima"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
+	            <label class="prefs-row filter-row" for="pref-filter-okinawa"><span class="prefs-label"><span class="pref-filter-label-text">Okinawa</span></span><input type="checkbox" id="pref-filter-okinawa"><span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span></label>
 	        </div>
 	    </div>
 
@@ -62,39 +101,61 @@
 	        </div>
 	        <div id="filter-body">
 	            <label class="prefs-row filter-row" for="filter-all">
-	                <span class="prefs-label filter-label-text">All types</span>
+	                <span class="prefs-label"><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-all">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <div class="filter-divider"></div>
 	            <label class="prefs-row filter-row" for="filter-major">
-	                <span class="prefs-label"><span class="filter-type-dot dot-major"></span><span class="filter-label-text">Major Station</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-major"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-major">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <label class="prefs-row filter-row" for="filter-local">
-	                <span class="prefs-label"><span class="filter-type-dot dot-local"></span><span class="filter-label-text">Local Station</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-local"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-local">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <label class="prefs-row filter-row" for="filter-walkable">
-	                <span class="prefs-label"><span class="filter-type-dot dot-walkable"></span><span class="filter-label-text">Walkable Station</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-walkable"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-walkable">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <label class="prefs-row filter-row" for="filter-roadside">
-	                <span class="prefs-label"><span class="filter-type-dot dot-roadside"></span><span class="filter-label-text">Roadside Station</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-roadside"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-roadside">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <label class="prefs-row filter-row" for="filter-remote">
-	                <span class="prefs-label"><span class="filter-type-dot dot-remote"></span><span class="filter-label-text">Remote</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-remote"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-remote">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	            <label class="prefs-row filter-row" for="filter-super_remote">
-	                <span class="prefs-label"><span class="filter-type-dot dot-super_remote"></span><span class="filter-label-text">Super Remote</span></span>
+	                <span class="prefs-label"><span class="filter-type-dot dot-super_remote"></span><span class="filter-label-text"></span></span>
 	                <input type="checkbox" id="filter-super_remote">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <div class="filter-divider"></div>
+	            <div class="filter-section-title" id="filter-visits-title"></div>
+	            <label class="prefs-row filter-row" for="filter-visit-all">
+	                <span class="prefs-label"><span class="filter-label-text visit-filter-label-text"></span></span>
+	                <input type="checkbox" id="filter-visit-all">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-visit-unvisited">
+	                <span class="prefs-label"><span class="filter-type-dot dot-unvisited"></span><span class="filter-label-text visit-filter-label-text"></span></span>
+	                <input type="checkbox" id="filter-visit-unvisited">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-visit-visited">
+	                <span class="prefs-label"><span class="filter-type-dot dot-visited"></span><span class="filter-label-text visit-filter-label-text"></span></span>
+	                <input type="checkbox" id="filter-visit-visited">
+	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
+	            </label>
+	            <label class="prefs-row filter-row" for="filter-visit-want">
+	                <span class="prefs-label"><span class="filter-type-dot dot-want"></span><span class="filter-label-text visit-filter-label-text"></span></span>
+	                <input type="checkbox" id="filter-visit-want">
 	                <span class="prefs-toggle-track"><span class="prefs-toggle-thumb"></span></span>
 	            </label>
 	        </div>
@@ -110,8 +171,10 @@
 	    		    	<h2 class="modal-title">Pokélid Name</h2>
 	    	        	<p class="modal-prefecture-label">Prefecture: <span class="modal-prefecture"></span></p>
 					<p class="modal-station-line"><span class="modal-station-type" data-type=""></span><span class="modal-station-desc"></span></p>
+					<p class="modal-station-line"><span class="modal-visit-tag" data-status="unvisited"></span></p>
 					</div>
 				</div>
+				<div class="modal-visit-status"></div>
     	        <img class="modal-image" src="" alt="Pokélid">
     	        <div class="modal-links">
     	            <a class="modal-maps-link" href="#" target="_blank" rel="noopener noreferrer"></a>
@@ -131,100 +194,16 @@
 	    </div>
 
 	    <script src="d3.js"></script>
-	    <script src="regions.js"></script>
+	    <script src="leaflet.js"></script>
 	    <script src="state.js"></script>
 	    <script src="cluster.js"></script>
 	    <script src="render.js"></script>
 	    <script src="modals.js"></script>
-	    <script src="prefs.js"></script>
+	    <script src="prefecture.js"></script>
+	    <script src="filter.js"></script>
 	    <script src="map.js"></script>
 
-	    <script>
-	        (function() {
-	            const modal = document.getElementById('pokelid-modal');
-	            if (modal) {
-	                modal.classList.remove('show');
-	                modal.style.display = 'none';
-	            }
-	        })();
-	    </script>
-	<script>
-	    // Self-contained filter panel — panel toggle, filtering, and translations
-	    (function() {
-	        var TYPES = ["major", "local", "walkable", "roadside", "remote", "super_remote"];
 
-	        function applyFilters() {
-	            state.activeFilters = new Set(
-	                TYPES.filter(function(tp) {
-	                    var cb = document.getElementById("filter-" + tp);
-	                    return cb && cb.checked;
-	                })
-	            );
-	            clearPokelids();
-	            showPokelids();
-	            updateCounter();
-	        }
 
-	        // Update all filter panel text to the given locale
-	        window.updateFilterLabels = function(locale) {
-	            var titleEl = document.getElementById("filter-title");
-	            if (titleEl) titleEl.textContent = t("ui", "filter_title", locale);
-	            var allLabel = document.querySelector("label[for='filter-all'] .filter-label-text");
-	            if (allLabel) allLabel.textContent = t("ui", "filter_all", locale);
-	            TYPES.forEach(function(tp) {
-	                var label = document.querySelector("label[for='filter-" + tp + "'] .filter-label-text");
-	                if (label) label.textContent = t("ui", "station_type_" + tp, locale);
-	            });
-	            var filterBtn = document.getElementById("filter-toggle");
-	            if (filterBtn) filterBtn.textContent = "⚡ " + t("ui", "filter_title", locale);
-	        };
-
-	        document.addEventListener("DOMContentLoaded", function() {
-	            var filterBtn   = document.getElementById("filter-toggle");
-	            var filterPanel = document.getElementById("filter-panel");
-	            var prefsPanel  = document.getElementById("prefs-panel");
-	            var filterClose = document.getElementById("filter-close");
-	            var allCb       = document.getElementById("filter-all");
-
-	            if (filterBtn && filterPanel) {
-	                filterBtn.addEventListener("click", function() {
-	                    filterPanel.classList.toggle("open");
-	                    if (prefsPanel) prefsPanel.classList.remove("open");
-	                });
-	            }
-	            if (filterClose && filterPanel) {
-	                filterClose.addEventListener("click", function() {
-	                    filterPanel.classList.remove("open");
-	                });
-	            }
-
-	            // "All types" — clear all filters
-	            if (allCb) {
-	                allCb.addEventListener("change", function() {
-	                    if (allCb.checked) {
-	                        TYPES.forEach(function(tp) {
-	                            var cb = document.getElementById("filter-" + tp);
-	                            if (cb) cb.checked = false;
-	                        });
-	                        state.activeFilters = new Set();
-	                        clearPokelids();
-	                        showPokelids();
-	                        updateCounter();
-	                    }
-	                });
-	            }
-
-	            // Individual type checkboxes
-	            TYPES.forEach(function(type) {
-	                var cb = document.getElementById("filter-" + type);
-	                if (!cb) return;
-	                cb.addEventListener("change", function() {
-	                    if (allCb) allCb.checked = false;
-	                    applyFilters();
-	                });
-	            });
-	        });
-	    })();
-	</script>
 	</body>
 </html>
