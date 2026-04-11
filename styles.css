@@ -810,3 +810,24 @@ svg.d3-overlay {
         max-height: 80vh;
     }
 }
+
+/* ─── Export KML Button ──────────────────────────────────────────────────────── */
+
+#export-kml-btn {
+    background: rgba(33, 150, 243, 0.85);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+#export-kml-btn:hover,
+#export-kml-btn:active {
+    background: rgba(25, 118, 210, 0.95);
+}

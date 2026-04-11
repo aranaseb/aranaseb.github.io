@@ -9,6 +9,8 @@ function onBothReady() {
 	if (typeof updateFilterLabels === "function") updateFilterLabels(state.locale);
 	if (typeof updatePrefectureLabels === "function") updatePrefectureLabels(state.locale);
 	if (typeof updatePrefsLabels === "function") updatePrefsLabels(state.locale);
+	if (typeof updateExportButton === "function") updateExportButton();
+	if (typeof updateExportLabel === "function") updateExportLabel(state.locale);
 	showPokelids();
 	updateCounter();
 }

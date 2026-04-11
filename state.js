@@ -5,6 +5,7 @@
 
 /*  */
 const CLUSTER_DISTANCE_KM = 5;
+const MAINLAND_BOUNDS = { lat: [30, 46], lng: [128, 146] };
 
 /*  */
 const ZOOM_FAR   = 8;
@@ -22,7 +23,7 @@ function getZoomTier() {
 const screenScale = 1;
 const imageRadius = 12;
 const baseClusterRadius = 12;
-const baseCountSize = 11;
+const baseCountSize = 14;
 
 /*  */
 function getMarkerScale() {
@@ -57,12 +58,18 @@ function setVisitStatus(id, status) {
 		visits[id] = status;
 	}
 	localStorage.setItem("pokelid-visits", JSON.stringify(visits));
+	if (typeof updateExportButton === "function") updateExportButton();
 }
 
 
 /*  */
 function t(type, key, locale = "en") {
 	return state.translations[type]?.[key]?.[locale] ?? key;
+}
+
+/*  */
+function prefSlug(feature) {
+	return feature.properties.slug;
 }
 
 /*  */
@@ -73,5 +80,5 @@ Promise.all([
 	state.translations = translations;
 	state.pokelids = pokelids;
 	state.pokelidsReady = true;
-	onBothReady();
+	if (typeof onBothReady === "function") onBothReady();
 });

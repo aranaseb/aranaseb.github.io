@@ -72,6 +72,7 @@ function setLocale(locale) {
 	if (typeof updateFilterLabels === "function") updateFilterLabels(locale);
 	if (typeof updatePrefectureLabels === "function") updatePrefectureLabels(locale);
 	if (typeof updatePrefsLabels === "function") updatePrefsLabels(locale);
+	if (typeof updateExportLabel === "function") updateExportLabel(locale);
 	updateCounter();
 	showPokelids();
 }

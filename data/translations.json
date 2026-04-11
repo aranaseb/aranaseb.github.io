@@ -135,6 +135,10 @@
     "filter_visit_all": {
       "en": "All",
       "ja": "すべて"
+    },
+    "export_kml": {
+      "en": "📍 Export Plan to Visit",
+      "ja": "📍 訪問予定をエクスポート"
     }
   },
   "prefectures": {
