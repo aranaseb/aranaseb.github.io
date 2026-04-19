@@ -81,10 +81,10 @@ function setLocale(locale) {
 
 /*  */
 function getFilteredPokelids() {
-	if (state.activeFilters.size === 0 && state.activeVisitFilters.size === 0) return state.pokelids;
 	const filtered = {};
 	for (const [pref, lids] of Object.entries(state.pokelids)) {
 		const kept = lids.filter(l => {
+			if (!l.active) return false;
 			if (state.activeFilters.size > 0 && !state.activeFilters.has(l.station_type)) return false;
 			if (state.activeVisitFilters.size > 0 && !state.activeVisitFilters.has(getVisitStatus(l.id))) return false;
 			return true;
@@ -185,7 +185,7 @@ function onClusterClick(event, d) {
 
 /*  */
 function showPokelids() {
-	const clusters = clusterPokelids(getVisiblePoints());
+	const clusters = clusterPokelids(getVisiblePoints(getFilteredPokelids()));
 	pokelidLayer.selectAll("g.pokelid-cluster").remove();
 	const groups = pokelidLayer.selectAll("g.pokelid-cluster")
 		.data(clusters, d => `${d.prefecture}-${d.lat},${d.lng}-${d.lids.length}`)

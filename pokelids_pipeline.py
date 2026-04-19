@@ -241,6 +241,7 @@ def build_new_lid(lid_id, fetched):
         "pokemon_featured":                     fetched["pokemon"],
         "image_url":                            fetched["image_url"],
         "image_local":                          fetched["image_local"],
+        "active":                               False,
         "name_ja":                              None,
         "nearest_station_id":                   None,
         "nearest_station_distance_km":          None,
@@ -410,6 +411,10 @@ def load_data(path):
         return {}
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
+    for lids in data.values():
+        for lid in lids:
+            if "active" not in lid:
+                lid["active"] = False
     print(f"Loaded {sum(len(v) for v in data.values())} lids from {path}")
     return data
 

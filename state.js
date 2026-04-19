@@ -78,7 +78,11 @@ Promise.all([
 	d3.json("data/pokelids.json"),
 ]).then(([translations, pokelids]) => {
 	state.translations = translations;
-	state.pokelids = pokelids;
+	state.pokelids = Object.fromEntries(
+		Object.entries(pokelids)
+			.map(([pref, lids]) => [pref, lids.filter(l => l.active !== false)])
+			.filter(([, lids]) => lids.length > 0)
+	);
 	state.pokelidsReady = true;
 	if (typeof onBothReady === "function") onBothReady();
 });

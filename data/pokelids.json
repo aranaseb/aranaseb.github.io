@@ -19,7 +19,8 @@
       "pokemon_featured": [
         "Grubbin",
         "Ribombee"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyohashi",
@@ -39,7 +40,8 @@
       "name_ja": "刈谷市",
       "pokemon_featured": [
         "Typhlosion"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyohashi",
@@ -60,7 +62,8 @@
       "pokemon_featured": [
         "Starmie",
         "Charjabug"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyohashi",
@@ -81,7 +84,8 @@
       "pokemon_featured": [
         "Kabuto",
         "Vikavolt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nagoya",
@@ -102,7 +106,8 @@
       "pokemon_featured": [
         "Magikarp",
         "Komala"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Seto",
@@ -123,7 +128,8 @@
       "pokemon_featured": [
         "Torracat",
         "Magmar"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tokoname",
@@ -144,7 +150,8 @@
       "pokemon_featured": [
         "Pidgeot",
         "Alolan Meowth"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kariya",
@@ -166,7 +173,8 @@
         "Bagon",
         "Sceptile",
         "Axew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nishio",
@@ -187,7 +195,8 @@
       "pokemon_featured": [
         "Alcremie",
         "Gulpin"
-      ]
+      ],
+      "active": true
     }
   ],
   "akita": [
@@ -210,7 +219,8 @@
       "pokemon_featured": [
         "Dragonair",
         "Rufflet"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kazuno",
@@ -231,7 +241,8 @@
       "pokemon_featured": [
         "Cubone",
         "Galarian Yamask"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Oga",
@@ -253,7 +264,8 @@
         "Glalie",
         "Houndoom",
         "Granbull"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokote",
@@ -274,7 +286,8 @@
       "pokemon_featured": [
         "Fidough",
         "Snorunt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Akita",
@@ -296,7 +309,8 @@
         "Growlithe",
         "Rockruff",
         "Dachsbun"
-      ]
+      ],
+      "active": true
     }
   ],
   "aomori": [
@@ -319,7 +333,8 @@
       "pokemon_featured": [
         "Geodude",
         "Wingull"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hachinohe",
@@ -341,7 +356,8 @@
         "Pyukumuku",
         "Pincurchin",
         "Snom"
-      ]
+      ],
+      "active": true
     }
   ],
   "chiba": [
@@ -363,7 +379,8 @@
       "name_ja": "香取市",
       "pokemon_featured": [
         "Galarian Farfetch’d"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Katori",
@@ -384,7 +401,8 @@
       "pokemon_featured": [
         "Rookidee",
         "Falinks"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Katori",
@@ -405,7 +423,8 @@
       "pokemon_featured": [
         "Florges",
         "Fletchling"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Katori",
@@ -427,7 +446,8 @@
         "Lotad",
         "Seedot",
         "Staravia"
-      ]
+      ],
+      "active": true
     }
   ],
   "ehime": [
@@ -450,7 +470,8 @@
       "pokemon_featured": [
         "Tsareena",
         "Bounsweet"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Matsuyama",
@@ -471,7 +492,8 @@
       "pokemon_featured": [
         "Escavalier",
         "Sirfetch’d"
-      ]
+      ],
+      "active": true
     }
   ],
   "fukui": [
@@ -495,7 +517,8 @@
         "Dragonite",
         "Mareanie",
         "Wiglett"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takahama",
@@ -516,7 +539,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Tatsugiri"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Eiheiji-cho",
@@ -537,7 +561,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Kubfu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Echizen-shi",
@@ -559,7 +584,8 @@
         "Dragonite",
         "Toxel",
         "Honedge"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Awara",
@@ -581,7 +607,8 @@
         "Dragonite",
         "Togetic",
         "Zigzagoon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Katsuyama",
@@ -603,7 +630,8 @@
         "Dragonite",
         "Archen",
         "Tyrantrum"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ono",
@@ -623,7 +651,8 @@
       "name_ja": "池田町",
       "pokemon_featured": [
         "Dragonite"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsuruga",
@@ -644,7 +673,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Stunfisk"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Minami Echizen",
@@ -665,7 +695,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Butterfree"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Obama",
@@ -686,7 +717,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Rookidee"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ikeda",
@@ -708,7 +740,8 @@
         "Dragonite",
         "Dragonair",
         "Dratini"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sakai",
@@ -729,7 +762,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Mabosstiff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Fukui",
@@ -750,7 +784,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Kommo-o"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ohira",
@@ -772,7 +807,8 @@
         "Dragonite",
         "Abra",
         "Meowstic"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sabaee",
@@ -794,7 +830,8 @@
         "Dragonite",
         "Morpeko",
         "Blipbug"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Wakasa",
@@ -816,7 +853,8 @@
         "Dragonite",
         "Ducklett",
         "Quaxly"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Echizen-cho",
@@ -837,7 +875,8 @@
       "pokemon_featured": [
         "Dragonite",
         "Wigglytuff"
-      ]
+      ],
+      "active": true
     }
   ],
   "fukuoka": [
@@ -859,7 +898,8 @@
       "name_ja": "太宰府市",
       "pokemon_featured": [
         "Aegislash"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Dazaifu",
@@ -881,7 +921,8 @@
         "Alakazam",
         "Slowking",
         "Oranguru"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Dazaifu",
@@ -903,7 +944,8 @@
         "Kirlia",
         "Sawsbuck",
         "Fletchling"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakyushu",
@@ -923,7 +965,8 @@
       "name_ja": "北九州市",
       "pokemon_featured": [
         "Aggron"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakyushu",
@@ -944,7 +987,8 @@
       "pokemon_featured": [
         "Alolan Dugtrio",
         "Carkol"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakyushu",
@@ -965,7 +1009,8 @@
       "pokemon_featured": [
         "Sableye",
         "Duraludon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakyushu",
@@ -986,7 +1031,8 @@
       "pokemon_featured": [
         "Gardevoir",
         "Lunatone"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakyushu",
@@ -1006,7 +1052,8 @@
       "name_ja": "北九州市",
       "pokemon_featured": [
         "Tropius"
-      ]
+      ],
+      "active": true
     }
   ],
   "fukushima": [
@@ -1031,7 +1078,8 @@
         "Happiny",
         "Swadloon",
         "Audino"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shirakawa",
@@ -1052,7 +1100,8 @@
       "pokemon_featured": [
         "Chansey",
         "Darumaka"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hirata",
@@ -1074,7 +1123,8 @@
         "Chansey",
         "Capsakid",
         "Scovillain"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hirono",
@@ -1095,7 +1145,8 @@
       "pokemon_featured": [
         "Chansey",
         "Yanma"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kunimi",
@@ -1117,7 +1168,8 @@
         "Chansey",
         "Cutiefly",
         "Ralts"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yuguwa",
@@ -1139,7 +1191,8 @@
         "Chansey",
         "Politoed",
         "Drednaw"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Aizubange",
@@ -1160,7 +1213,8 @@
       "pokemon_featured": [
         "Chansey",
         "Machamp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kagamiishi",
@@ -1182,7 +1236,8 @@
         "Chansey",
         "Miltank",
         "Mareep"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shinchi",
@@ -1203,7 +1258,8 @@
       "pokemon_featured": [
         "Chansey",
         "Stantler"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Soma",
@@ -1224,7 +1280,8 @@
       "pokemon_featured": [
         "Chansey",
         "Ponyta"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Minamisoma",
@@ -1245,7 +1302,8 @@
       "pokemon_featured": [
         "Chansey",
         "Rapidash"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Namie",
@@ -1265,7 +1323,8 @@
       "name_ja": "広野町",
       "pokemon_featured": [
         "Chansey"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Naraha",
@@ -1286,7 +1345,8 @@
       "pokemon_featured": [
         "Chansey",
         "Raboot"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iwaki",
@@ -1307,7 +1367,8 @@
       "pokemon_featured": [
         "Chansey",
         "Bellossom"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kawamata",
@@ -1329,7 +1390,8 @@
         "Chansey",
         "Silcoon",
         "Cascoon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tamura",
@@ -1350,7 +1412,8 @@
       "pokemon_featured": [
         "Chansey",
         "Heracross"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kawauchi",
@@ -1372,7 +1435,8 @@
         "Chansey",
         "Wishiwashi",
         "Arrokuda"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Fukushima",
@@ -1393,7 +1457,8 @@
       "pokemon_featured": [
         "Chansey",
         "Morpeko"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Aizuwakamatsu",
@@ -1414,7 +1479,8 @@
       "pokemon_featured": [
         "Chansey",
         "Gallade"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Koriyama",
@@ -1435,7 +1501,8 @@
       "pokemon_featured": [
         "Chansey",
         "Jigglypuff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Minamiaizu",
@@ -1456,7 +1523,8 @@
       "pokemon_featured": [
         "Chansey",
         "Timburr"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yanaizu",
@@ -1477,7 +1545,8 @@
       "pokemon_featured": [
         "Chansey",
         "Happiny"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Showa",
@@ -1498,7 +1567,8 @@
       "pokemon_featured": [
         "Chansey",
         "Sewaddle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Futaba",
@@ -1519,7 +1589,8 @@
       "pokemon_featured": [
         "Chansey",
         "Sunkern"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iitate",
@@ -1540,7 +1611,8 @@
       "pokemon_featured": [
         "Chansey",
         "Floette"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nihomatsu",
@@ -1561,7 +1633,8 @@
       "pokemon_featured": [
         "Chansey",
         "Swirlix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Date",
@@ -1582,7 +1655,8 @@
       "pokemon_featured": [
         "Chansey",
         "Rillaboom"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitashiobara",
@@ -1603,7 +1677,8 @@
       "pokemon_featured": [
         "Chansey",
         "Vanillish"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Inawashiro",
@@ -1625,7 +1700,8 @@
         "Chansey",
         "Grotle",
         "Swanna"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Aizumisato",
@@ -1646,7 +1722,8 @@
       "pokemon_featured": [
         "Chansey",
         "Lilligant"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nishigo",
@@ -1667,7 +1744,8 @@
       "pokemon_featured": [
         "Chansey",
         "Wooper"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yabuki",
@@ -1688,7 +1766,8 @@
       "pokemon_featured": [
         "Chansey",
         "Talonflame"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Furudono",
@@ -1709,7 +1788,8 @@
       "pokemon_featured": [
         "Chansey",
         "Blissey"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Miharu",
@@ -1730,7 +1810,8 @@
       "pokemon_featured": [
         "Chansey",
         "Roserade"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sukagawa",
@@ -1751,7 +1832,8 @@
       "pokemon_featured": [
         "Chansey",
         "Delphox"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tenei",
@@ -1772,7 +1854,8 @@
       "pokemon_featured": [
         "Chansey",
         "Indeedee"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Shimogo",
@@ -1795,7 +1878,8 @@
         "Chespin",
         "Farfetch’d",
         "Chimecho"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Nishiaizu",
@@ -1817,7 +1901,8 @@
         "Chansey",
         "Shiinotic",
         "Clefable"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Izumizaki",
@@ -1839,7 +1924,8 @@
         "Chansey",
         "Baltoy",
         "Corvisquire"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Samegawa",
@@ -1861,7 +1947,8 @@
         "Chansey",
         "Sharpedo",
         "Gible"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Asakawa",
@@ -1883,7 +1970,8 @@
         "Chansey",
         "Happiny",
         "Pansear"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Ono",
@@ -1905,7 +1993,8 @@
         "Chansey",
         "Gothorita",
         "Hatterene"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Okuma",
@@ -1928,7 +2017,8 @@
         "Teddiursa",
         "Bewear",
         "Stufful"
-      ]
+      ],
+      "active": false
     }
   ],
   "gifu": [
@@ -1951,7 +2041,8 @@
       "pokemon_featured": [
         "Whiscash",
         "Barboach"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Gero",
@@ -1973,7 +2064,8 @@
         "Seismitoad",
         "Palpitoad",
         "Tympole"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Seki",
@@ -1993,7 +2085,8 @@
       "name_ja": "関市",
       "pokemon_featured": [
         "Cramorant"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sekigahara",
@@ -2014,7 +2107,8 @@
       "pokemon_featured": [
         "Kingambit",
         "Pawniard"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takayama",
@@ -2036,7 +2130,8 @@
         "Pansage",
         "Pansear",
         "Panpour"
-      ]
+      ],
+      "active": true
     }
   ],
   "hokkaido": [
@@ -2059,7 +2154,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Hisuian Braviary"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ishikari",
@@ -2080,7 +2176,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Turtwig"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Eniwa",
@@ -2100,7 +2197,8 @@
       "name_ja": "津別町",
       "pokemon_featured": [
         "Vulpix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyako",
@@ -2121,7 +2219,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Swinub"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mori",
@@ -2142,7 +2241,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Inkay"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kaminokuni",
@@ -2163,7 +2263,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Chimchar"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shibetsu",
@@ -2184,7 +2285,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Mareep"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Pippu",
@@ -2205,7 +2307,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Piplup"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Teshio",
@@ -2226,7 +2329,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Alolan Vulpix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Wakkanai",
@@ -2247,7 +2351,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Alolan Ninetales"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyotomi",
@@ -2268,7 +2373,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Miltank"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mombetsu",
@@ -2289,7 +2395,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Spheal"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Engaru",
@@ -2310,7 +2417,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Froslass"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ohzora",
@@ -2331,7 +2439,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Staraptor"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shintoku",
@@ -2352,7 +2461,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Teddiursa"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ashoro",
@@ -2375,7 +2485,8 @@
         "Uxie",
         "Mesprit",
         "Azelf"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tomakomai",
@@ -2396,7 +2507,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Ninetales"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mikasa",
@@ -2418,7 +2530,8 @@
         "Vulpix",
         "Omanyte",
         "Cranidos"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kamifurano",
@@ -2439,7 +2552,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Delcatty"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kembuchi",
@@ -2460,7 +2574,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Honedge"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hakodate",
@@ -2481,7 +2596,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Togekiss"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Otaru",
@@ -2501,7 +2617,8 @@
       "name_ja": "帯広市",
       "pokemon_featured": [
         "Alolan Vulpix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nemuro",
@@ -2522,7 +2639,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Mr. Rime"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Noboribetsu",
@@ -2539,7 +2657,8 @@
       "nearest_roadside_station_id": "hokkaido-mitara-muroran",
       "nearest_city": "sapporo",
       "nearest_city_distance_km": 69.0591,
-      "name_ja": "旭川市"
+      "name_ja": "旭川市",
+      "active": true
     },
     {
       "name": "Honbetsu",
@@ -2560,7 +2679,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Rikubetsu",
@@ -2581,7 +2701,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Bergmite"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nakashibetsu",
@@ -2602,7 +2723,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Combusken"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Asahikawa",
@@ -2624,7 +2746,8 @@
         "Alolan Vulpix",
         "Eiscue",
         "Cubchoo"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kushiro",
@@ -2645,7 +2768,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Decidueye"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Obihiro",
@@ -2667,7 +2791,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Mudbray"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Abashiri",
@@ -2688,7 +2813,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Weavile"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Akaigawa",
@@ -2710,7 +2836,8 @@
         "Alolan Vulpix",
         "Vanillite",
         "Hatenna"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higasikawa",
@@ -2731,7 +2858,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Dialga"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shari",
@@ -2752,7 +2880,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Palkia"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Erimo",
@@ -2773,7 +2902,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Lycanroc"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tobetsu",
@@ -2795,7 +2925,8 @@
         "Alolan Vulpix",
         "Sinistea",
         "Polteageist"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Muroan",
@@ -2817,7 +2948,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Illumise"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitami",
@@ -2838,7 +2970,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Alolan Vulpix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Utashinai",
@@ -2860,7 +2993,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Joltik"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kikonai",
@@ -2882,7 +3016,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Gossifleur"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Saurfutsu",
@@ -2904,7 +3039,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Aipom"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Bihoro",
@@ -2926,7 +3062,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Hoppip"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sapporo",
@@ -2947,7 +3084,8 @@
       "pokemon_featured": [
         "Vulpix",
         "Slaking"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sunagawa",
@@ -2969,7 +3107,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Slurpuff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yuni",
@@ -2991,7 +3130,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Sizzlipede"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Assabu",
@@ -3013,7 +3153,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Wormadam"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Horonobe",
@@ -3035,7 +3176,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Flabébé"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsubetsu",
@@ -3057,7 +3199,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Sawsbuck"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yubetsu",
@@ -3079,7 +3222,8 @@
         "Vulpix",
         "Alolan Vulpix",
         "Cutiefly"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Betsukai",
@@ -3100,7 +3244,8 @@
       "pokemon_featured": [
         "Alolan Vulpix",
         "Sealeo"
-      ]
+      ],
+      "active": true
     }
   ],
   "hyogo": [
@@ -3122,7 +3267,8 @@
       "name_ja": "淡路市",
       "pokemon_featured": [
         "Lugia"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Awaji",
@@ -3143,7 +3289,8 @@
       "pokemon_featured": [
         "Bayleef",
         "Aromatisse"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Awaji",
@@ -3164,7 +3311,8 @@
       "pokemon_featured": [
         "Cloyster",
         "Gastrodon"
-      ]
+      ],
+      "active": true
     }
   ],
   "ibaraki": [
@@ -3187,7 +3335,8 @@
       "pokemon_featured": [
         "Maractus",
         "Bombirdier"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Chikusei",
@@ -3208,7 +3357,8 @@
       "pokemon_featured": [
         "Croagunk",
         "Bellibolt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsukuba",
@@ -3228,7 +3378,8 @@
       "name_ja": "つくば市",
       "pokemon_featured": [
         "Rayquaza"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hitachiota",
@@ -3249,7 +3400,8 @@
       "pokemon_featured": [
         "Salamence",
         "Hawlucha"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mito",
@@ -3271,7 +3423,8 @@
         "Serperior",
         "Ferrothorn",
         "Herdier"
-      ]
+      ],
+      "active": true
     }
   ],
   "ishikawa": [
@@ -3293,7 +3446,143 @@
       "name_ja": "金沢市",
       "pokemon_featured": [
         "Milotic"
-      ]
+      ],
+      "active": true
+    },
+    {
+      "id": 468,
+      "name": "Nanao",
+      "lat": 37.087801,
+      "lng": 136.923564,
+      "dms": "37°5'16.1\"N 136°55'24.8\"E",
+      "pokemon_featured": [
+        "Politoed",
+        "Gyarados",
+        "Poliwag"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/f1da1d7cec53987ff936da3fbd11f18f_l.png",
+      "image_local": "images_official/unknown/468.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Wakuraonsen_Station",
+      "nearest_station_distance_km": 1.4304,
+      "station_type": "walkable",
+      "nearest_roadside_station_id": "ishikawa-noto-shokusai-ichiba",
+      "nearest_roadside_station_distance_km": 5.905,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 50.6502
+    },
+    {
+      "id": 469,
+      "name": "Wajima",
+      "lat": 37.389147,
+      "lng": 136.906156,
+      "dms": "37°23'20.9\"N 136°54'22.2\"E",
+      "pokemon_featured": [
+        "Darumaka",
+        "Greninja"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/5bde37f1ca046581e26582ecfca9bdcd_l.png",
+      "image_local": "images_official/unknown/469.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Anamizu_Station",
+      "nearest_station_distance_km": 17.9145,
+      "station_type": "roadside",
+      "nearest_roadside_station_id": "ishikawa-wajima",
+      "nearest_roadside_station_distance_km": 0.0611,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 81.7831
+    },
+    {
+      "id": 470,
+      "name": "Suzu",
+      "lat": 37.39454,
+      "lng": 137.240367,
+      "dms": "37°23'40.3\"N 137°14'25.3\"E",
+      "pokemon_featured": [
+        "Luvdisc",
+        "Sylveon"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/13e5c3a4028ded1bfa96f4b816bfe631_l.png",
+      "image_local": "images_official/unknown/470.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Iida_Station_(Ishikawa)",
+      "nearest_station_distance_km": 5.0267,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "ishikawa-suzunari",
+      "nearest_roadside_station_distance_km": 5.8454,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 77.729
+    },
+    {
+      "id": 471,
+      "name": "Shika",
+      "lat": 37.139152,
+      "lng": 136.724847,
+      "dms": "37°8'20.9\"N 136°43'29.4\"E",
+      "pokemon_featured": [
+        "Wattrel",
+        "Gorebyss"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/5a893a52dcdef186d0629ca2c52a7546_l.png",
+      "image_local": "images_official/unknown/471.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Noto-Nakajima_Station",
+      "nearest_station_distance_km": 11.869,
+      "station_type": "roadside",
+      "nearest_roadside_station_id": "ishikawa-togi-kaiji-kaido",
+      "nearest_roadside_station_distance_km": 0.114,
+      "nearest_city": "kanazawa",
+      "nearest_city_distance_km": 64.5417
+    },
+    {
+      "id": 472,
+      "name": "Anamizu",
+      "lat": 37.228298,
+      "lng": 136.905007,
+      "dms": "37°13'41.9\"N 136°54'18.0\"E",
+      "pokemon_featured": [
+        "Snorlax",
+        "Plusle",
+        "Minun"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/87a3fd9365e386e00d23128242ee50b4_l.png",
+      "image_local": "images_official/unknown/472.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Anamizu_Station",
+      "nearest_station_distance_km": 0.0413,
+      "station_type": "roadside",
+      "nearest_roadside_station_id": "ishikawa-anamizu",
+      "nearest_roadside_station_distance_km": 0.0605,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 65.252
+    },
+    {
+      "id": 473,
+      "name": "Noto",
+      "lat": 37.333975,
+      "lng": 137.138718,
+      "dms": "37°20'2.3\"N 137°8'19.4\"E",
+      "pokemon_featured": [
+        "Roselia",
+        "Minior",
+        "Lotad"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/e839dd22163b193f2e7d8c3db59ee6ec_l.png",
+      "image_local": "images_official/unknown/473.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Hanami_Station",
+      "nearest_station_distance_km": 5.6021,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "ishikawa-sakura-toge",
+      "nearest_roadside_station_distance_km": 11.2732,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 71.2702
     }
   ],
   "iwate": [
@@ -3315,7 +3604,8 @@
       "name_ja": "葛巻町",
       "pokemon_featured": [
         "Kabuto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kuji",
@@ -3335,7 +3625,8 @@
       "name_ja": "盛岡市",
       "pokemon_featured": [
         "Aerodactyl"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Noda",
@@ -3355,7 +3646,8 @@
       "name_ja": "北上市",
       "pokemon_featured": [
         "Onix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Fudai",
@@ -3375,7 +3667,8 @@
       "name_ja": "北上市",
       "pokemon_featured": [
         "Shieldon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iwaizumi",
@@ -3395,7 +3688,8 @@
       "name_ja": "久慈市",
       "pokemon_featured": [
         "Tyrunt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tanohata",
@@ -3415,7 +3709,8 @@
       "name_ja": "一戸町",
       "pokemon_featured": [
         "Nosepass"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Miyako",
@@ -3435,7 +3730,8 @@
       "name_ja": "九戸村",
       "pokemon_featured": [
         "Geodude"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yamada",
@@ -3455,7 +3751,8 @@
       "name_ja": "軽米町",
       "pokemon_featured": [
         "Omanyte"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Otsuchi",
@@ -3475,7 +3772,8 @@
       "name_ja": "平泉町",
       "pokemon_featured": [
         "Shuckle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kamaishi",
@@ -3495,7 +3793,8 @@
       "name_ja": "西和賀町",
       "pokemon_featured": [
         "Aron"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ofunato",
@@ -3515,7 +3814,8 @@
       "name_ja": "紫波町",
       "pokemon_featured": [
         "Rhyhorn"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Rikuzentakata",
@@ -3535,7 +3835,8 @@
       "name_ja": "岩手町",
       "pokemon_featured": [
         "Rockruff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sumita",
@@ -3555,7 +3856,8 @@
       "name_ja": "滝沢市",
       "pokemon_featured": [
         "Larvitar"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hanamaki",
@@ -3577,7 +3879,8 @@
         "Geodude",
         "Cosmog",
         "Rayquaza"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tono",
@@ -3599,7 +3902,8 @@
         "Geodude",
         "Lombre",
         "Ludicolo"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ichonoseki",
@@ -3621,7 +3925,8 @@
         "Geodude",
         "Roggenrola",
         "Rhyperior"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ninohe",
@@ -3642,7 +3947,8 @@
       "pokemon_featured": [
         "Geodude",
         "Snorunt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hacimantai",
@@ -3663,7 +3969,8 @@
       "pokemon_featured": [
         "Geodude",
         "Amaura"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takizawa",
@@ -3685,7 +3992,8 @@
         "Geodude",
         "Mudbray",
         "Hawlucha"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iwate",
@@ -3707,7 +4015,8 @@
         "Geodude",
         "Ditto",
         "Alolan Geodude"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shiwa",
@@ -3728,7 +4037,8 @@
       "pokemon_featured": [
         "Geodude",
         "Steenee"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nishiwaga",
@@ -3750,7 +4060,8 @@
         "Geodude",
         "Burmy",
         "Sawsbuck"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hiraizumi",
@@ -3771,7 +4082,8 @@
       "pokemon_featured": [
         "Cresselia",
         "Lunatone"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Karumai",
@@ -3793,7 +4105,8 @@
         "Geodude",
         "Passimian",
         "Rockruff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kunohe",
@@ -3815,7 +4128,8 @@
         "Geodude",
         "Hoothoot",
         "Dartrix"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ichinohe",
@@ -3836,7 +4150,8 @@
       "pokemon_featured": [
         "Geodude",
         "Baltoy"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kuji",
@@ -3858,7 +4173,8 @@
         "Geodude",
         "Aerodactyl",
         "Bibarel"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kitakami",
@@ -3879,7 +4195,8 @@
       "pokemon_featured": [
         "Golem",
         "Bisharp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Morioka",
@@ -3896,7 +4213,8 @@
       "nearest_roadside_station_id": "iwate-morioka-shibumi",
       "nearest_city": "morioka",
       "nearest_city_distance_km": 15.9681,
-      "name_ja": "野田村"
+      "name_ja": "野田村",
+      "active": true
     },
     {
       "name": "Kitakami",
@@ -3918,7 +4236,8 @@
         "Geodude",
         "Ogerpon",
         "Dipplin"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kuzamaki",
@@ -3940,7 +4259,8 @@
         "Alolan Geodude",
         "Miltank",
         "Milcery"
-      ]
+      ],
+      "active": true
     },
     {
       "id": 463,
@@ -3962,7 +4282,8 @@
       "nearest_roadside_station_id": "iwate-mizusawa",
       "nearest_roadside_station_distance_km": 6.2053,
       "nearest_city": "morioka",
-      "nearest_city_distance_km": 62.8744
+      "nearest_city_distance_km": 62.8744,
+      "active": false
     },
     {
       "id": 464,
@@ -3984,7 +4305,8 @@
       "nearest_roadside_station_id": "iwate-shizukuishi-anekko",
       "nearest_roadside_station_distance_km": 0.08,
       "nearest_city": "morioka",
-      "nearest_city_distance_km": 23.8031
+      "nearest_city_distance_km": 23.8031,
+      "active": false
     },
     {
       "id": 465,
@@ -4006,7 +4328,8 @@
       "nearest_roadside_station_id": "iwate-shiwa",
       "nearest_roadside_station_distance_km": 8.0673,
       "nearest_city": "morioka",
-      "nearest_city_distance_km": 10.0192
+      "nearest_city_distance_km": 10.0192,
+      "active": true
     },
     {
       "id": 466,
@@ -4028,7 +4351,8 @@
       "nearest_roadside_station_id": "iwate-mizusawa",
       "nearest_roadside_station_distance_km": 13.1633,
       "nearest_city": "morioka",
-      "nearest_city_distance_km": 56.101
+      "nearest_city_distance_km": 56.101,
+      "active": false
     }
   ],
   "kagawa": [
@@ -4050,7 +4374,8 @@
       "name_ja": "綾川町",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Marugame",
@@ -4070,7 +4395,8 @@
       "name_ja": "宇多津町",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sakaide",
@@ -4090,7 +4416,8 @@
       "name_ja": "まんのう町",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Zentsuji",
@@ -4111,7 +4438,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Slowbro"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kan-onji",
@@ -4132,7 +4460,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Slowking"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sanuki",
@@ -4153,7 +4482,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Clefairy"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashikagawa",
@@ -4173,7 +4503,8 @@
       "name_ja": "直島町",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mitoyo",
@@ -4194,7 +4525,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Shellder"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tonosho",
@@ -4215,7 +4547,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shodoshima",
@@ -4235,7 +4568,8 @@
       "name_ja": "土庄町",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Miki",
@@ -4255,7 +4589,8 @@
       "name_ja": "三豊市",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Naoshima",
@@ -4276,7 +4611,8 @@
       "pokemon_featured": [
         "Slowpoke",
         "Magikarp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ayahawa",
@@ -4296,7 +4632,8 @@
       "name_ja": "さぬき市",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kotohira",
@@ -4316,7 +4653,8 @@
       "name_ja": "観音寺市",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tadotsu",
@@ -4336,7 +4674,8 @@
       "name_ja": "善通寺市",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Manno",
@@ -4356,7 +4695,8 @@
       "name_ja": "坂出市",
       "pokemon_featured": [
         "Slowpoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Utazu",
@@ -4377,7 +4717,8 @@
       "pokemon_featured": [
         "Galarian Slowpoke",
         "Quagsire"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ayagawa",
@@ -4399,7 +4740,8 @@
         "Slowpoke",
         "Galarian Slowpoke",
         "Shellder"
-      ]
+      ],
+      "active": true
     }
   ],
   "kagoshima": [
@@ -4421,7 +4763,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Eevee"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4441,7 +4784,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Vaporeon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4461,7 +4805,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Jolteon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4481,7 +4826,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Flareon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4501,7 +4847,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Espeon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4521,7 +4868,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Umbreon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4541,7 +4889,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Leafeon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4561,7 +4910,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Glaceon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ibusuki",
@@ -4581,7 +4931,8 @@
       "name_ja": "指宿市",
       "pokemon_featured": [
         "Sylveon"
-      ]
+      ],
+      "active": true
     }
   ],
   "kanagawa": [
@@ -4605,7 +4956,8 @@
         "Pikachu",
         "Psyduck",
         "Machop"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokohama",
@@ -4627,7 +4979,8 @@
         "Pikachu",
         "Victini",
         "Munchlax"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokohama",
@@ -4648,7 +5001,8 @@
       "pokemon_featured": [
         "Pikachu",
         "Pelipper"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokohama",
@@ -4669,7 +5023,8 @@
       "pokemon_featured": [
         "Pikachu",
         "Raichu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokohama",
@@ -4689,7 +5044,8 @@
       "name_ja": "横浜市",
       "pokemon_featured": [
         "Pikachu"
-      ]
+      ],
+      "active": true
     }
   ],
   "kochi": [
@@ -4712,7 +5068,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Clodsire"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Otsuki",
@@ -4734,7 +5091,8 @@
         "Quagsire",
         "Phione",
         "Finneon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsuno",
@@ -4756,7 +5114,8 @@
         "Quagsire",
         "Lileep",
         "Cleffa"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hidaka",
@@ -4778,7 +5137,8 @@
         "Quagsire",
         "Dewpider",
         "Yanma"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Otoyo",
@@ -4799,7 +5159,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Altaria"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nahari",
@@ -4821,7 +5182,8 @@
         "Quagsire",
         "Cacturne",
         "Corsola"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kami",
@@ -4843,7 +5205,8 @@
         "Quagsire",
         "Pawniard",
         "Deino"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Muroto",
@@ -4864,7 +5227,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Nacli"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Akita",
@@ -4885,7 +5249,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Hoothoot"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Susaki",
@@ -4907,7 +5272,8 @@
         "Quagsire",
         "Buizel",
         "Floatzel"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sukumo",
@@ -4928,7 +5294,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Wooper"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Konan",
@@ -4949,7 +5316,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Tynamo"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyo",
@@ -4970,7 +5338,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Mantine"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kochi",
@@ -4991,7 +5360,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Goldeen"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tosashimizu",
@@ -5012,7 +5382,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Shellos"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Yasuda",
@@ -5033,7 +5404,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Motoyama",
@@ -5055,7 +5427,8 @@
         "Quagsire",
         "Surskit",
         "Masquerain"
-      ]
+      ],
+      "active": false
     },
     {
       "name": "Niyodogawa",
@@ -5076,7 +5449,8 @@
       "pokemon_featured": [
         "Quagsire",
         "Sobble"
-      ]
+      ],
+      "active": true
     }
   ],
   "kyoto": [
@@ -5098,7 +5472,8 @@
       "name_ja": "ニンテンドーミュージアム",
       "pokemon_featured": [
         "Ho-Oh"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kyoto",
@@ -5120,7 +5495,8 @@
         "Pichu",
         "Cleffa",
         "Igglybuff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kyoto",
@@ -5141,7 +5517,8 @@
       "pokemon_featured": [
         "Chikorita",
         "Shiftry"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kyoto",
@@ -5162,7 +5539,8 @@
       "pokemon_featured": [
         "Cyndaquil",
         "Darmanitan"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kyoto",
@@ -5183,7 +5561,8 @@
       "pokemon_featured": [
         "Totodile",
         "Azumarill"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Uji",
@@ -5204,7 +5583,8 @@
       "pokemon_featured": [
         "Scorbunny",
         "Spinda"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Uji",
@@ -5225,7 +5605,8 @@
       "pokemon_featured": [
         "Poltchageist",
         "Sinistcha"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Uji",
@@ -5245,7 +5626,8 @@
       "name_ja": "京都市",
       "pokemon_featured": [
         "Pikachu"
-      ]
+      ],
+      "active": true
     }
   ],
   "mie": [
@@ -5268,7 +5650,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Tirtouga"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Watarai",
@@ -5290,7 +5673,8 @@
         "Oshawott",
         "Marill",
         "Claydol"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Odai",
@@ -5312,7 +5696,8 @@
         "Oshawott",
         "Pansage",
         "Virizion"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Meiwa",
@@ -5334,7 +5719,8 @@
         "Oshawott",
         "Bounsweet",
         "Florges"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Asahi",
@@ -5355,7 +5741,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Whimsicott"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kameyama",
@@ -5377,7 +5764,8 @@
         "Oshawott",
         "Riolu",
         "Torterra"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsu",
@@ -5397,7 +5785,8 @@
       "name_ja": "いなべ市",
       "pokemon_featured": [
         "Oshawott"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yokkaichi",
@@ -5418,7 +5807,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Samurott"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ise",
@@ -5439,7 +5829,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Chingling"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toba",
@@ -5460,7 +5851,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Dewgong"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kumano",
@@ -5481,7 +5873,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Stufful"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shima",
@@ -5502,7 +5895,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Clamperl"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iga",
@@ -5523,7 +5917,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Accelgor"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nabari City",
@@ -5544,7 +5939,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Dewott"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kisosaki",
@@ -5565,7 +5961,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Machoke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toin",
@@ -5586,7 +5983,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Mime Jr."
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Minamiise",
@@ -5607,7 +6005,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tamashiro",
@@ -5628,7 +6027,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Spoink"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Matsusaka",
@@ -5649,7 +6049,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Meowth"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takizawa",
@@ -5671,7 +6072,8 @@
         "Oshawott",
         "Lechonk",
         "Phanpy"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kawagoe",
@@ -5693,7 +6095,8 @@
         "Oshawott",
         "Taillow",
         "Surskit"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Suzuka",
@@ -5714,7 +6117,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Cyclizar"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kuwana",
@@ -5736,7 +6140,8 @@
         "Oshawott",
         "Hakamo-o",
         "Loudred"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Owasa",
@@ -5757,7 +6162,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Perrserker"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Inabe",
@@ -5779,7 +6185,8 @@
         "Oshawott",
         "Plusle",
         "Minun"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Komono",
@@ -5801,7 +6208,8 @@
         "Oshawott",
         "Skiddo",
         "Gogoat"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Taiki",
@@ -5824,7 +6232,8 @@
         "Reuniclus",
         "Duosion",
         "Miltank"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kihoku",
@@ -5845,7 +6254,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Alomomola"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mihama",
@@ -5866,7 +6276,8 @@
       "pokemon_featured": [
         "Oshawott",
         "Pachirisu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toba",
@@ -5886,7 +6297,8 @@
       "name_ja": "四日市市",
       "pokemon_featured": [
         "Oshawott"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Suzuka",
@@ -5906,7 +6318,8 @@
       "name_ja": "津市",
       "pokemon_featured": [
         "Oshawott"
-      ]
+      ],
+      "active": true
     }
   ],
   "miyagi": [
@@ -5930,7 +6343,8 @@
         "Lapras",
         "Swanna",
         "Mantyke"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kesennuma",
@@ -5951,7 +6365,8 @@
       "pokemon_featured": [
         "Lapras",
         "Geodude"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Minamisanriku",
@@ -5972,7 +6387,8 @@
       "pokemon_featured": [
         "Lapras",
         "Octillery"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Onagawa",
@@ -5993,7 +6409,8 @@
       "pokemon_featured": [
         "Lapras",
         "Wingull"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ishinomaki",
@@ -6017,7 +6434,8 @@
         "Litten",
         "Skitty",
         "Glameow"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashimatsushima",
@@ -6038,7 +6456,8 @@
       "pokemon_featured": [
         "Lapras",
         "Latios"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Matsushima",
@@ -6058,7 +6477,8 @@
       "name_ja": "大郷町",
       "pokemon_featured": [
         "Lapras"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shiogama",
@@ -6079,7 +6499,8 @@
       "pokemon_featured": [
         "Lapras",
         "Plusle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Rifu",
@@ -6100,7 +6521,8 @@
       "pokemon_featured": [
         "Lapras",
         "Minun"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shigahama",
@@ -6122,7 +6544,8 @@
         "Lapras",
         "Ditto",
         "Staryu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tagajo",
@@ -6143,7 +6566,8 @@
       "pokemon_featured": [
         "Lapras",
         "Horsea"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sendai",
@@ -6164,7 +6588,8 @@
       "pokemon_featured": [
         "Lapras",
         "Jirachi"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Natori",
@@ -6184,7 +6609,8 @@
       "name_ja": "大河原町",
       "pokemon_featured": [
         "Lapras"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iwanuma",
@@ -6205,7 +6631,8 @@
       "pokemon_featured": [
         "Lapras",
         "Togepi"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Waari",
@@ -6229,7 +6656,8 @@
         "Starly",
         "Taillow",
         "Pidove"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yamamoto",
@@ -6250,7 +6678,8 @@
       "pokemon_featured": [
         "Lapras",
         "Chansey"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shiroishi",
@@ -6271,7 +6700,8 @@
       "pokemon_featured": [
         "Lapras",
         "Nickit"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kakuda",
@@ -6292,7 +6722,8 @@
       "pokemon_featured": [
         "Lapras",
         "Latias"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tome",
@@ -6313,7 +6744,8 @@
       "pokemon_featured": [
         "Lapras",
         "Lotad"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kurihara",
@@ -6334,7 +6766,8 @@
       "pokemon_featured": [
         "Lapras",
         "Ducklett"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Osaki",
@@ -6356,7 +6789,8 @@
         "Lapras",
         "Dugtrio",
         "Spearow"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tomiya",
@@ -6377,7 +6811,8 @@
       "pokemon_featured": [
         "Lapras",
         "Snubbull"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Zao",
@@ -6398,7 +6833,8 @@
       "pokemon_featured": [
         "Lapras",
         "Abomasnow"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shichikashuku",
@@ -6419,7 +6855,8 @@
       "pokemon_featured": [
         "Lapras",
         "Bibarel"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ogawara",
@@ -6440,7 +6877,8 @@
       "pokemon_featured": [
         "Lapras",
         "Cherrim"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Murata",
@@ -6461,7 +6899,8 @@
       "pokemon_featured": [
         "Lapras",
         "Lickilicky"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shibata",
@@ -6482,7 +6921,8 @@
       "pokemon_featured": [
         "Lapras",
         "Flabébé"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kawasaki",
@@ -6502,7 +6942,8 @@
       "name_ja": "七ヶ浜町",
       "pokemon_featured": [
         "Lapras"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Marumori",
@@ -6524,7 +6965,8 @@
         "Lapras",
         "Meowth",
         "Espurr"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Taiwa",
@@ -6546,7 +6988,8 @@
         "Lapras",
         "Foongus",
         "Torterra"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Osato",
@@ -6567,7 +7010,8 @@
       "pokemon_featured": [
         "Lapras",
         "Petilil"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ohira",
@@ -6589,7 +7033,8 @@
         "Lapras",
         "Frillish",
         "Luvdisc"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shikam",
@@ -6610,7 +7055,8 @@
       "pokemon_featured": [
         "Lapras",
         "Lombre"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kami",
@@ -6631,7 +7077,8 @@
       "pokemon_featured": [
         "Lapras",
         "Roselia"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Wakuya",
@@ -6652,7 +7099,8 @@
       "pokemon_featured": [
         "Lapras",
         "Mudsdale"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Misato",
@@ -6674,7 +7122,8 @@
         "Lapras",
         "Doduo",
         "Dodrio"
-      ]
+      ],
+      "active": true
     }
   ],
   "miyazaki": [
@@ -6697,7 +7146,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Castform"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Miyakonojo",
@@ -6718,7 +7168,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Minior"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nobeoka",
@@ -6739,7 +7190,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Alolan Exeggutor"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nichinan",
@@ -6760,7 +7212,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Probopass"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kobayashi",
@@ -6777,7 +7230,8 @@
       "nearest_roadside_station_id": "miyazaki-yu-paru-nojiri",
       "nearest_city": "miyazaki_city",
       "nearest_city_distance_km": 28.2983,
-      "name_ja": "諸塚村"
+      "name_ja": "諸塚村",
+      "active": true
     },
     {
       "name": "Hyuga",
@@ -6798,7 +7252,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Oricorio"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kushima",
@@ -6819,7 +7274,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Galarian Ponyta"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Saito",
@@ -6840,7 +7296,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Sunflora"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Erbino",
@@ -6861,7 +7318,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Torkoal"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Mimata",
@@ -6882,7 +7340,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Woobat"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takanabe",
@@ -6903,7 +7362,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Alolan Raichu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shintomi",
@@ -6924,7 +7384,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Makuhita"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kijo",
@@ -6945,7 +7406,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kawaminami",
@@ -6966,7 +7428,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Marshtomp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsuno",
@@ -6987,7 +7450,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Buizel"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kadogawa",
@@ -7008,7 +7472,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Crabrawler"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Misato",
@@ -7029,7 +7494,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Exeggcute"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takaharu",
@@ -7050,7 +7516,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Smoochum"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kunitomi",
@@ -7071,7 +7538,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Gulpin"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Aya",
@@ -7092,7 +7560,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Slakoth"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nishimera",
@@ -7113,7 +7582,8 @@
       "pokemon_featured": [
         "Alolan Exeggutor",
         "Golurk"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Morotsuka",
@@ -7134,7 +7604,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Regirock"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shiiba",
@@ -7155,7 +7626,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Sigilyph"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Takachiho",
@@ -7176,7 +7648,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Regigigas"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hinokage",
@@ -7197,7 +7670,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Registeel"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Gokase",
@@ -7218,7 +7692,8 @@
       "pokemon_featured": [
         "Exeggutor",
         "Regice"
-      ]
+      ],
+      "active": true
     }
   ],
   "nagasaki": [
@@ -7241,7 +7716,8 @@
       "pokemon_featured": [
         "Ampharos",
         "Palafin"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Unzen",
@@ -7263,7 +7739,8 @@
         "Ampharos",
         "Torkoal",
         "Camerupt"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Omura",
@@ -7284,7 +7761,8 @@
       "pokemon_featured": [
         "Ampharos",
         "Cherrim"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sasebo",
@@ -7306,7 +7784,8 @@
         "Ampharos",
         "Treecko",
         "Lilligant"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nagasaki",
@@ -7328,7 +7807,8 @@
         "Ampharos",
         "Togepi",
         "Wingull"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shimbara",
@@ -7350,7 +7830,8 @@
         "Ampharos",
         "Flittle",
         "Spheal"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iki",
@@ -7372,7 +7853,8 @@
         "Ampharos",
         "Squawkabilly",
         "Nosepass"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Togitsu",
@@ -7395,7 +7877,8 @@
         "Hoothoot",
         "Graveler",
         "Sentret"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashisonogi",
@@ -7417,7 +7900,8 @@
         "Ampharos",
         "Banette",
         "Jumpluff"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Saza",
@@ -7439,7 +7923,8 @@
         "Ampharos",
         "Tynamo",
         "Eelektrik"
-      ]
+      ],
+      "active": true
     }
   ],
   "nara": [
@@ -7462,7 +7947,8 @@
       "pokemon_featured": [
         "Bronzong",
         "Simisear"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ikaruga",
@@ -7483,7 +7969,8 @@
       "pokemon_featured": [
         "Bellsprout",
         "Growlithe"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ikaruga",
@@ -7504,7 +7991,8 @@
       "pokemon_featured": [
         "Magby",
         "Chimecho"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ikaruga",
@@ -7525,7 +8013,8 @@
       "pokemon_featured": [
         "Fletchinder",
         "Deerling"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ikaruga",
@@ -7545,7 +8034,8 @@
       "name_ja": "斑鳩町",
       "pokemon_featured": [
         "Entei"
-      ]
+      ],
+      "active": true
     }
   ],
   "niigata": [
@@ -7567,7 +8057,8 @@
       "name_ja": "小千谷市",
       "pokemon_featured": [
         "Magikarp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ojiya",
@@ -7587,7 +8078,8 @@
       "name_ja": "小千谷市",
       "pokemon_featured": [
         "Magikarp"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ojiya",
@@ -7608,7 +8100,8 @@
       "pokemon_featured": [
         "Magikarp",
         "Feebas"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ojiya",
@@ -7629,7 +8122,8 @@
       "pokemon_featured": [
         "Magikarp",
         "Pidgeotto"
-      ]
+      ],
+      "active": true
     }
   ],
   "okayama": [
@@ -7651,7 +8145,8 @@
       "name_ja": "倉敷市",
       "pokemon_featured": [
         "Lucario"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kurashiki",
@@ -7672,7 +8167,8 @@
       "pokemon_featured": [
         "Poochyena",
         "Beautifly"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kurashiki",
@@ -7693,7 +8189,8 @@
       "pokemon_featured": [
         "Grookey",
         "Eldegoss"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kurashiki",
@@ -7713,7 +8210,8 @@
       "name_ja": "倉敷市",
       "pokemon_featured": [
         "Unfezant"
-      ]
+      ],
+      "active": true
     }
   ],
   "okinawa": [
@@ -7735,7 +8233,8 @@
       "name_ja": "那覇市",
       "pokemon_featured": [
         "Arcanine"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ginowan",
@@ -7756,7 +8255,8 @@
       "pokemon_featured": [
         "Corsola",
         "Luvdisc"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Okinawa",
@@ -7777,7 +8277,8 @@
       "pokemon_featured": [
         "Thwackey",
         "Lurantis"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Uruma",
@@ -7797,7 +8298,8 @@
       "name_ja": "渡嘉敷村",
       "pokemon_featured": [
         "Tauros"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Urasoe",
@@ -7814,7 +8316,8 @@
       "nearest_roadside_station_id": "okinawa-toyosaki",
       "nearest_city": "naha",
       "nearest_city_distance_km": 3.8226,
-      "name_ja": "北谷町"
+      "name_ja": "北谷町",
+      "active": true
     },
     {
       "name": "Nago",
@@ -7835,7 +8338,8 @@
       "pokemon_featured": [
         "Emolga",
         "Pikipek"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Itoman",
@@ -7856,7 +8360,8 @@
       "pokemon_featured": [
         "Wartortle",
         "Sandygast"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Motobu",
@@ -7876,7 +8381,8 @@
       "name_ja": "南城市",
       "pokemon_featured": [
         "Wailord"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tomigusuku",
@@ -7897,7 +8403,8 @@
       "pokemon_featured": [
         "Axew",
         "Jangmo-o"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nanjo",
@@ -7918,7 +8425,8 @@
       "pokemon_featured": [
         "Seviper",
         "Zangoose"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ishigaki",
@@ -7939,7 +8447,8 @@
       "pokemon_featured": [
         "Mantine",
         "Remoraid"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Miyakojima",
@@ -7959,7 +8468,8 @@
       "name_ja": "名護市",
       "pokemon_featured": [
         "Kyogre"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Chatan",
@@ -7979,7 +8489,8 @@
       "name_ja": "浦添市",
       "pokemon_featured": [
         "Growlithe"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tokashiki",
@@ -7996,7 +8507,8 @@
       "nearest_roadside_station_id": "okinawa-toyosaki",
       "nearest_city": "naha",
       "nearest_city_distance_km": 34.0123,
-      "name_ja": "うるま市"
+      "name_ja": "うるま市",
+      "active": true
     },
     {
       "name": "Zamami",
@@ -8017,7 +8529,8 @@
       "pokemon_featured": [
         "Growlithe",
         "Wailmer"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kumejima",
@@ -8038,7 +8551,8 @@
       "pokemon_featured": [
         "Growlithe",
         "Clauncher"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Naha",
@@ -8058,7 +8572,8 @@
       "name_ja": "那覇市",
       "pokemon_featured": [
         "Growlithe"
-      ]
+      ],
+      "active": true
     }
   ],
   "osaka": [
@@ -8081,7 +8596,8 @@
       "pokemon_featured": [
         "Magnemite",
         "Magneton"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashiosaka",
@@ -8102,7 +8618,8 @@
       "pokemon_featured": [
         "Klink",
         "Klang"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashiosaka",
@@ -8123,7 +8640,8 @@
       "pokemon_featured": [
         "Elekid",
         "Mawile"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashiosaka",
@@ -8143,7 +8661,8 @@
       "name_ja": "東大阪市",
       "pokemon_featured": [
         "Raikou"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Higashiosaka",
@@ -8164,7 +8683,8 @@
       "pokemon_featured": [
         "Yamper",
         "Togedemaru"
-      ]
+      ],
+      "active": true
     }
   ],
   "saga": [
@@ -8186,7 +8706,8 @@
       "name_ja": "佐賀市",
       "pokemon_featured": [
         "Meowth"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Saga",
@@ -8206,7 +8727,8 @@
       "name_ja": "佐賀市",
       "pokemon_featured": [
         "Alolan Meowth"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Saga",
@@ -8226,7 +8748,8 @@
       "name_ja": "佐賀市",
       "pokemon_featured": [
         "Galarian Meowth"
-      ]
+      ],
+      "active": true
     }
   ],
   "saitama": [
@@ -8249,7 +8772,8 @@
       "pokemon_featured": [
         "Dratini",
         "Corviknight"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tokorozawa",
@@ -8270,7 +8794,8 @@
       "pokemon_featured": [
         "Dragonair",
         "Skarmory"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tokorozawa",
@@ -8290,7 +8815,8 @@
       "name_ja": "所沢市",
       "pokemon_featured": [
         "Dragonite"
-      ]
+      ],
+      "active": true
     }
   ],
   "shiga": [
@@ -8312,7 +8838,8 @@
       "name_ja": "甲賀市",
       "pokemon_featured": [
         "Gyarados"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Otsu",
@@ -8332,7 +8859,8 @@
       "name_ja": "甲賀市",
       "pokemon_featured": [
         "Gyarados"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Koka",
@@ -8352,7 +8880,8 @@
       "name_ja": "甲賀市",
       "pokemon_featured": [
         "Greninja"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Koka",
@@ -8372,7 +8901,8 @@
       "name_ja": "大津市",
       "pokemon_featured": [
         "Greninja"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Koka",
@@ -8393,7 +8923,8 @@
       "pokemon_featured": [
         "Greninja",
         "Frogadier"
-      ]
+      ],
+      "active": true
     }
   ],
   "shimane": [
@@ -8416,7 +8947,8 @@
       "pokemon_featured": [
         "Dedenne",
         "Lopunny"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yasugi",
@@ -8437,7 +8969,8 @@
       "pokemon_featured": [
         "Barboach",
         "Mr. Mime"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Oda",
@@ -8458,7 +8991,8 @@
       "pokemon_featured": [
         "Gallade",
         "Hydreigon"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Izumo",
@@ -8479,7 +9013,8 @@
       "pokemon_featured": [
         "Tandemaus",
         "Luvdisc"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hamada",
@@ -8500,7 +9035,8 @@
       "pokemon_featured": [
         "Omastar",
         "Stunfisk"
-      ]
+      ],
+      "active": true
     }
   ],
   "shizuoka": [
@@ -8523,7 +9059,8 @@
       "pokemon_featured": [
         "Pancham",
         "Pangoro"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Fuji",
@@ -8543,7 +9080,8 @@
       "name_ja": "富士市",
       "pokemon_featured": [
         "Moltres"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Numazu",
@@ -8565,7 +9103,8 @@
         "Huntail",
         "Relicanth",
         "Gorebyss"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hamamatsu",
@@ -8586,7 +9125,8 @@
       "pokemon_featured": [
         "Meloetta",
         "Eelektross"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shizuoka",
@@ -8607,7 +9147,8 @@
       "pokemon_featured": [
         "Ivysaur",
         "Staraptor"
-      ]
+      ],
+      "active": true
     }
   ],
   "tochigi": [
@@ -8630,7 +9171,8 @@
       "pokemon_featured": [
         "Electabuzz",
         "Skwovet"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Utsunomiya",
@@ -8651,7 +9193,8 @@
       "pokemon_featured": [
         "Electrike",
         "Crustle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Utsunomiya",
@@ -8671,7 +9214,8 @@
       "name_ja": "宇都宮市",
       "pokemon_featured": [
         "Thundurus"
-      ]
+      ],
+      "active": true
     }
   ],
   "tokushima": [
@@ -8695,7 +9239,8 @@
         "Poliwag",
         "Poliwhirl",
         "Diglett"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Naruto City",
@@ -8716,7 +9261,8 @@
       "pokemon_featured": [
         "Seadra",
         "Kingdra"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Naruto City",
@@ -8736,7 +9282,8 @@
       "name_ja": "鳴門市",
       "pokemon_featured": [
         "Suicune"
-      ]
+      ],
+      "active": true
     }
   ],
   "tokyo": [
@@ -8758,7 +9305,8 @@
       "name_ja": "ポケパーク カントー",
       "pokemon_featured": [
         "Bulbasaur"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Machida",
@@ -8778,7 +9326,8 @@
       "name_ja": "台東区上野",
       "pokemon_featured": [
         "Charmander"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Machida",
@@ -8798,7 +9347,8 @@
       "name_ja": "台東区上野",
       "pokemon_featured": [
         "Squirtle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Machida",
@@ -8820,7 +9370,8 @@
         "Oddish",
         "Weedle",
         "Caterpie"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Machida",
@@ -8841,7 +9392,8 @@
       "pokemon_featured": [
         "Pidgey",
         "Rattata"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Machida",
@@ -8861,7 +9413,8 @@
       "name_ja": "小笠原村",
       "pokemon_featured": [
         "Poliwag"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ogasawara",
@@ -8881,7 +9434,8 @@
       "name_ja": "小笠原村",
       "pokemon_featured": [
         "Venusaur"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ogasawara",
@@ -8901,7 +9455,8 @@
       "name_ja": "町田市",
       "pokemon_featured": [
         "Charizard"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ogasawara",
@@ -8921,7 +9476,8 @@
       "name_ja": "町田市",
       "pokemon_featured": [
         "Blastoise"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ogasawara",
@@ -8941,7 +9497,8 @@
       "name_ja": "町田市",
       "pokemon_featured": [
         "Mew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ueno",
@@ -8962,7 +9519,8 @@
       "pokemon_featured": [
         "Tyrunt",
         "Wynaut"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Ueno",
@@ -8983,7 +9541,8 @@
       "pokemon_featured": [
         "Baltoy",
         "Bronzor"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Poké Park Kanto",
@@ -9004,7 +9563,8 @@
       "pokemon_featured": [
         "Pikachu",
         "Eevee"
-      ]
+      ],
+      "active": true
     }
   ],
   "tottori": [
@@ -9028,7 +9588,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Buneary"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yonago",
@@ -9050,7 +9611,8 @@
         "Sandshrew",
         "Farfetch&#039;d",
         "Swanna"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kurayoshi",
@@ -9071,7 +9633,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Alolan Sandshrew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sakaiminato",
@@ -9093,7 +9656,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Krabby"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Iwami",
@@ -9114,7 +9678,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Xatu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Wakasa",
@@ -9135,7 +9700,8 @@
       "pokemon_featured": [
         "Alolan Sandshrew",
         "Snover"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Misasa",
@@ -9157,7 +9723,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Froakie"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yurihama",
@@ -9178,7 +9745,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Shellder"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kotoura",
@@ -9199,7 +9767,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Alolan Sandshrew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Daisen",
@@ -9220,7 +9789,8 @@
       "pokemon_featured": [
         "Alolan Sandshrew",
         "Litwick"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nanbu",
@@ -9242,7 +9812,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Trapinch"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Houki",
@@ -9264,7 +9835,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Glalie"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Nichinan",
@@ -9286,7 +9858,8 @@
         "Sandshrew",
         "Volbeat",
         "Illumise"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hinokage",
@@ -9308,7 +9881,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Swablu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Chizu",
@@ -9330,7 +9904,8 @@
         "Sandshrew",
         "Sandslash",
         "Sudowoodo"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Yazu",
@@ -9351,7 +9926,8 @@
       "pokemon_featured": [
         "Alolan Sandshrew",
         "Alolan Sandslash"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hokuei",
@@ -9372,7 +9948,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Alolan Sandshrew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Hiezu",
@@ -9393,7 +9970,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Ditto"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kofu",
@@ -9414,7 +9992,8 @@
       "pokemon_featured": [
         "Sandshrew",
         "Alolan Sandshrew"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tottori",
@@ -9436,7 +10015,8 @@
         "Sandshrew",
         "Alolan Sandshrew",
         "Bunnelby"
-      ]
+      ],
+      "active": true
     }
   ],
   "toyama": [
@@ -9458,7 +10038,8 @@
       "name_ja": "富山市",
       "pokemon_featured": [
         "Absol"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyama",
@@ -9478,7 +10059,8 @@
       "name_ja": "富山市",
       "pokemon_featured": [
         "Inkay"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Toyama",
@@ -9499,7 +10081,8 @@
       "pokemon_featured": [
         "Ledyba",
         "Comfey"
-      ]
+      ],
+      "active": true
     }
   ],
   "wakayama": [
@@ -9521,7 +10104,8 @@
       "name_ja": "那智勝浦町",
       "pokemon_featured": [
         "Celebi"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Kushimoto",
@@ -9543,7 +10127,8 @@
         "Cleffa",
         "Elgyem",
         "Magnezone"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Koya",
@@ -9563,7 +10148,8 @@
       "name_ja": "白浜町",
       "pokemon_featured": [
         "Urshifu"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Wakayama",
@@ -9584,7 +10170,8 @@
       "pokemon_featured": [
         "Luxray",
         "Primarina"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shirahama",
@@ -9605,7 +10192,8 @@
       "pokemon_featured": [
         "Pancham",
         "Finizen"
-      ]
+      ],
+      "active": true
     }
   ],
   "yamagata": [
@@ -9629,7 +10217,8 @@
         "Skiploom",
         "Vileplume",
         "Lilligant"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Sagae",
@@ -9650,7 +10239,8 @@
       "pokemon_featured": [
         "Cherrim",
         "Cherubi"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Okura",
@@ -9672,7 +10262,8 @@
         "Lampent",
         "Galarian Darmanitan",
         "Braixen"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Oguni",
@@ -9694,7 +10285,8 @@
         "Cubchoo",
         "Beartic",
         "Cetoddle"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Tsuruoka",
@@ -9717,7 +10309,8 @@
         "Tentacruel",
         "Tentacool",
         "Frillish"
-      ]
+      ],
+      "active": true
     }
   ],
   "yamaguchi": [
@@ -9740,7 +10333,8 @@
       "pokemon_featured": [
         "Empoleon",
         "Wailmer"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shimonoseki",
@@ -9761,7 +10355,8 @@
       "pokemon_featured": [
         "Chinchou",
         "Qwilfish"
-      ]
+      ],
+      "active": true
     },
     {
       "name": "Shimonoseki",
@@ -9778,7 +10373,8 @@
       "nearest_roadside_station_id": "yamaguchi-kikugawa",
       "nearest_city": "kitakyushu",
       "nearest_city_distance_km": 7.7157,
-      "name_ja": "下関市"
+      "name_ja": "下関市",
+      "active": true
     },
     {
       "name": "Shimonoseki",
@@ -9798,7 +10394,33 @@
       "name_ja": "下関市",
       "pokemon_featured": [
         "Koffing"
-      ]
+      ],
+      "active": true
+    }
+  ],
+  "Iwate": [
+    {
+      "id": 467,
+      "name": "Morioka",
+      "lat": 39.694005,
+      "lng": 141.128421,
+      "dms": "39°41'38.4\"N 141°7'42.3\"E",
+      "pokemon_featured": [
+        "Geodude",
+        "Rockruff",
+        "Lycanroc"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/950280bab6a52375f60a30456007e6e9_l.png",
+      "image_local": "images_official/Iwate/467.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Morioka_Station",
+      "nearest_station_distance_km": 1.0712,
+      "station_type": "walkable",
+      "nearest_roadside_station_id": "iwate-shiwa",
+      "nearest_roadside_station_distance_km": 16.7818,
+      "nearest_city": "morioka",
+      "nearest_city_distance_km": 2.3205
     }
   ]
 }
