@@ -3,39 +3,38 @@
 // @author Sebastian Arana
 //
 
-const FILTER_TYPES = ["major", "local", "walkable", "roadside", "remote", "super_remote"];
-
-/*  */
-function applyFilters() {
-	state.activeFilters = new Set(
-		FILTER_TYPES.filter(tp => {
-			const cb = document.getElementById("filter-" + tp);
-			return cb && cb.checked;
-		})
-	);
-	clearPokelids();
-	showPokelids();
-	updateCounter();
-}
-
+const FILTER_TYPES   = ["major", "local", "walkable", "roadside", "remote", "super_remote"];
 const VISIT_STATUSES = ["unvisited", "visited", "want"];
 
-/*  */
-function applyVisitFilters() {
-	state.activeVisitFilters = new Set(
-		VISIT_STATUSES.filter(s => {
-			const cb = document.getElementById("filter-visit-" + s);
-			return cb && cb.checked;
-		})
-	);
+/* Refresh the map display and counter after any filter change. */
+function refreshDisplay() {
 	clearPokelids();
 	showPokelids();
 	updateCounter();
 }
 
-/*  */
+/* Build an active-filter Set from a list of checkbox ids and write it to state. */
+function applyCheckboxFilters(values, idPrefix, stateKey) {
+	state[stateKey] = new Set(
+		values.filter(v => {
+			const cb = document.getElementById(idPrefix + v);
+			return cb && cb.checked;
+		})
+	);
+	refreshDisplay();
+}
+
+function applyFilters() {
+	applyCheckboxFilters(FILTER_TYPES, "filter-", "activeFilters");
+}
+
+function applyVisitFilters() {
+	applyCheckboxFilters(VISIT_STATUSES, "filter-visit-", "activeVisitFilters");
+}
+
+/* Update all translatable labels in the filter panel. */
 function updateFilterLabels(locale) {
-	document.getElementById("filter-title").textContent = t("ui", "filter_title", locale);
+	document.getElementById("filter-title").textContent  = t("ui", "filter_title", locale);
 	document.getElementById("filter-toggle").textContent = "⚡ " + t("ui", "filter_title", locale);
 
 	const visitsTitle = document.getElementById("filter-visits-title");
@@ -58,7 +57,35 @@ function updateFilterLabels(locale) {
 	});
 }
 
-/*  */
+/*
+ * Wire up a "select all" checkbox alongside its individual item checkboxes.
+ *   allCb     – the "All …" checkbox element
+ *   values    – array of value strings (FILTER_TYPES or VISIT_STATUSES)
+ *   idPrefix  – id prefix for individual checkboxes  ("filter-" / "filter-visit-")
+ *   stateKey  – key on `state` to clear when "All" is selected
+ *   applyFn   – function to call when an individual checkbox changes
+ */
+function initFilterGroup(allCb, values, idPrefix, stateKey, applyFn) {
+	allCb.addEventListener("change", () => {
+		if (!allCb.checked) return;
+		values.forEach(v => {
+			const cb = document.getElementById(idPrefix + v);
+			if (cb) cb.checked = false;
+		});
+		state[stateKey] = new Set();
+		refreshDisplay();
+	});
+
+	values.forEach(v => {
+		const cb = document.getElementById(idPrefix + v);
+		if (!cb) return;
+		cb.addEventListener("change", () => {
+			allCb.checked = false;
+			applyFn();
+		});
+	});
+}
+
 function initFilter() {
 	const filterPanel = document.getElementById("filter-panel");
 	const filterClose = document.getElementById("filter-close");
@@ -73,51 +100,6 @@ function initFilter() {
 		filterPanel.classList.remove("open");
 	});
 
-	// "All types" — clear station type filters
-	allCb.addEventListener("change", () => {
-		if (allCb.checked) {
-			FILTER_TYPES.forEach(tp => {
-				const cb = document.getElementById("filter-" + tp);
-				if (cb) cb.checked = false;
-			});
-			state.activeFilters = new Set();
-			clearPokelids();
-			showPokelids();
-			updateCounter();
-		}
-	});
-
-	// Individual station type checkboxes
-	FILTER_TYPES.forEach(type => {
-		const cb = document.getElementById("filter-" + type);
-		if (!cb) return;
-		cb.addEventListener("change", () => {
-			if (allCb) allCb.checked = false;
-			applyFilters();
-		});
-	});
-
-	// "All" visit status — clear visit filters
-	visitAllCb.addEventListener("change", () => {
-		if (visitAllCb.checked) {
-			VISIT_STATUSES.forEach(s => {
-				const cb = document.getElementById("filter-visit-" + s);
-				if (cb) cb.checked = false;
-			});
-			state.activeVisitFilters = new Set();
-			clearPokelids();
-			showPokelids();
-			updateCounter();
-		}
-	});
-
-	// Individual visit status checkboxes
-	VISIT_STATUSES.forEach(s => {
-		const cb = document.getElementById("filter-visit-" + s);
-		if (!cb) return;
-		cb.addEventListener("change", () => {
-			if (visitAllCb) visitAllCb.checked = false;
-			applyVisitFilters();
-		});
-	});
+	initFilterGroup(allCb,      FILTER_TYPES,   "filter-",       "activeFilters",      applyFilters);
+	initFilterGroup(visitAllCb, VISIT_STATUSES, "filter-visit-", "activeVisitFilters", applyVisitFilters);
 }
