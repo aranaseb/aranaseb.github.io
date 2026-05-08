@@ -1855,7 +1855,7 @@
         "Chansey",
         "Indeedee"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Shimogo",
@@ -1879,7 +1879,7 @@
         "Farfetch’d",
         "Chimecho"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Nishiaizu",
@@ -1971,7 +1971,7 @@
         "Happiny",
         "Pansear"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Ono",
@@ -1994,7 +1994,7 @@
         "Gothorita",
         "Hatterene"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Okuma",
@@ -2018,7 +2018,7 @@
         "Bewear",
         "Stufful"
       ],
-      "active": false
+      "active":true 
     }
   ],
   "gifu": [
@@ -3461,8 +3461,8 @@
         "Poliwag"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/f1da1d7cec53987ff936da3fbd11f18f_l.png",
-      "image_local": "images_official/unknown/468.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/468.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Wakuraonsen_Station",
       "nearest_station_distance_km": 1.4304,
@@ -3483,8 +3483,8 @@
         "Greninja"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/5bde37f1ca046581e26582ecfca9bdcd_l.png",
-      "image_local": "images_official/unknown/469.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/469.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Anamizu_Station",
       "nearest_station_distance_km": 17.9145,
@@ -3505,8 +3505,8 @@
         "Sylveon"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/13e5c3a4028ded1bfa96f4b816bfe631_l.png",
-      "image_local": "images_official/unknown/470.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/470.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Iida_Station_(Ishikawa)",
       "nearest_station_distance_km": 5.0267,
@@ -3527,8 +3527,8 @@
         "Gorebyss"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/5a893a52dcdef186d0629ca2c52a7546_l.png",
-      "image_local": "images_official/unknown/471.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/471.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Noto-Nakajima_Station",
       "nearest_station_distance_km": 11.869,
@@ -3550,8 +3550,8 @@
         "Minun"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/87a3fd9365e386e00d23128242ee50b4_l.png",
-      "image_local": "images_official/unknown/472.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/472.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Anamizu_Station",
       "nearest_station_distance_km": 0.0413,
@@ -3573,8 +3573,8 @@
         "Lotad"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/e839dd22163b193f2e7d8c3db59ee6ec_l.png",
-      "image_local": "images_official/unknown/473.png",
-      "active": false,
+      "image_local": "images_official/ishikawa/473.png",
+      "active": true,
       "name_ja": null,
       "nearest_station_id": "Hanami_Station",
       "nearest_station_distance_km": 5.6021,
@@ -5383,7 +5383,7 @@
         "Quagsire",
         "Shellos"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Yasuda",
@@ -5428,7 +5428,7 @@
         "Surskit",
         "Masquerain"
       ],
-      "active": false
+      "active":true 
     },
     {
       "name": "Niyodogawa",
