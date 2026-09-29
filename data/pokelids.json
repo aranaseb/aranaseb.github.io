@@ -1855,7 +1855,7 @@
         "Chansey",
         "Indeedee"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Shimogo",
@@ -1879,7 +1879,7 @@
         "Farfetch’d",
         "Chimecho"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Nishiaizu",
@@ -1971,7 +1971,7 @@
         "Happiny",
         "Pansear"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Ono",
@@ -1994,7 +1994,7 @@
         "Gothorita",
         "Hatterene"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Okuma",
@@ -2018,7 +2018,7 @@
         "Bewear",
         "Stufful"
       ],
-      "active":true 
+      "active": true
     }
   ],
   "gifu": [
@@ -3583,6 +3583,28 @@
       "nearest_roadside_station_distance_km": 11.2732,
       "nearest_city": "toyama_city",
       "nearest_city_distance_km": 71.2702
+    },
+    {
+      "id": 475,
+      "name": "Wajima",
+      "lat": 37.295752,
+      "lng": 136.957244,
+      "dms": "37°17'44.7\"N 136°57'26.1\"E",
+      "pokemon_featured": [
+        "Bagon",
+        "Salamence"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/ebbdbee7f35498be1af93b5dc2f8e6c2_l.png",
+      "image_local": "images_official/unknown/475.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Anamizu_Station",
+      "nearest_station_distance_km": 8.8507,
+      "station_type": "roadside",
+      "nearest_roadside_station_id": "ishikawa-noto-satoyama-airport",
+      "nearest_roadside_station_distance_km": 0.0797,
+      "nearest_city": "toyama_city",
+      "nearest_city_distance_km": 70.4894
     }
   ],
   "iwate": [
@@ -4353,6 +4375,29 @@
       "nearest_city": "morioka",
       "nearest_city_distance_km": 56.101,
       "active": false
+    },
+    {
+      "id": 467,
+      "name": "Morioka",
+      "lat": 39.694005,
+      "lng": 141.128421,
+      "dms": "39°41'38.4\"N 141°7'42.3\"E",
+      "pokemon_featured": [
+        "Geodude",
+        "Rockruff",
+        "Lycanroc"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/950280bab6a52375f60a30456007e6e9_l.png",
+      "image_local": "images_official/Iwate/467.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Morioka_Station",
+      "nearest_station_distance_km": 1.0712,
+      "station_type": "walkable",
+      "nearest_roadside_station_id": "iwate-shiwa",
+      "nearest_roadside_station_distance_km": 16.7818,
+      "nearest_city": "morioka",
+      "nearest_city_distance_km": 2.3205
     }
   ],
   "kagawa": [
@@ -5383,7 +5428,7 @@
         "Quagsire",
         "Shellos"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Yasuda",
@@ -5428,7 +5473,7 @@
         "Surskit",
         "Masquerain"
       ],
-      "active":true 
+      "active": true
     },
     {
       "name": "Niyodogawa",
@@ -7124,6 +7169,30 @@
         "Dodrio"
       ],
       "active": true
+    },
+    {
+      "id": 474,
+      "name": "Sendai",
+      "lat": 38.182602,
+      "lng": 140.956528,
+      "dms": "38°10'57.4\"N 140°57'23.5\"E",
+      "pokemon_featured": [
+        "Lapras",
+        "Chinchou",
+        "Wailmer",
+        "Wiglett"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/0dfe96c54ef7f6271d17c9ea3fb43e65_l.png",
+      "image_local": "images_official/Miyagi/474.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Mitazono_Station",
+      "nearest_station_distance_km": 4.2634,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "miyagi-murata",
+      "nearest_roadside_station_distance_km": 22.0965,
+      "nearest_city": "sendai",
+      "nearest_city_distance_km": 12.188
     }
   ],
   "miyazaki": [
@@ -7925,6 +7994,120 @@
         "Eelektrik"
       ],
       "active": true
+    },
+    {
+      "id": 476,
+      "name": "Isahaya",
+      "lat": 32.851951,
+      "lng": 130.042015,
+      "dms": "32°51'7.0\"N 130°2'31.3\"E",
+      "pokemon_featured": [
+        "Ampharos",
+        "Metagross"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/9ad3148fd75c57b00c5e66503d73af38_l.png",
+      "image_local": "images_official/Nagasaki/476.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Isahaya_Station",
+      "nearest_station_distance_km": 0.0584,
+      "station_type": "local",
+      "nearest_roadside_station_id": "nagasaki-nagasaki-kaido-suzuta-toge",
+      "nearest_roadside_station_distance_km": 4.9222,
+      "nearest_city": "nagasaki_city",
+      "nearest_city_distance_km": 19.0718
+    },
+    {
+      "id": 477,
+      "name": "Tsushima",
+      "lat": 34.202685,
+      "lng": 129.289139,
+      "dms": "34°12'9.7\"N 129°17'20.9\"E",
+      "pokemon_featured": [
+        "Ampharos",
+        "Liepard",
+        "Breloom"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/7cab4fbef67520a2aa892e78044ba411_l.png",
+      "image_local": "images_official/Nagasaki/477.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Tabira-Hiradoguchi_Station",
+      "nearest_station_distance_km": 97.2787,
+      "station_type": "super_remote",
+      "nearest_roadside_station_id": "saga-momoyama-tenka-ichi",
+      "nearest_roadside_station_distance_km": 92.3404,
+      "nearest_city": "fukuoka_city",
+      "nearest_city_distance_km": 123.2129
+    },
+    {
+      "id": 478,
+      "name": "Goto",
+      "lat": 32.641898,
+      "lng": 128.847861,
+      "dms": "32°38'30.8\"N 128°50'52.3\"E",
+      "pokemon_featured": [
+        "Ampharos",
+        "Flaaffy",
+        "Mareep"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/1fd094dccc46d6d5a016ab6fc88a5ebf_l.png",
+      "image_local": "images_official/Nagasaki/478.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Michinoo_Station",
+      "nearest_station_distance_km": 95.7288,
+      "station_type": "super_remote",
+      "nearest_roadside_station_id": "nagasaki-kentoshi-furusato-kan",
+      "nearest_roadside_station_distance_km": 18.2234,
+      "nearest_city": "nagasaki_city",
+      "nearest_city_distance_km": 97.1156
+    },
+    {
+      "id": 479,
+      "name": "Saikai",
+      "lat": 33.036768,
+      "lng": 129.637485,
+      "dms": "33°2'12.4\"N 129°38'14.9\"E",
+      "pokemon_featured": [
+        "Ampharos",
+        "Kilowattrel",
+        "Gastrodon"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/4543d040f87f6f6edbc37f69e73abde7_l.png",
+      "image_local": "images_official/Nagasaki/479.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Huis_Ten_Bosch_Station",
+      "nearest_station_distance_km": 16.0338,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "nagasaki-saikai",
+      "nearest_roadside_station_distance_km": 5.4705,
+      "nearest_city": "nagasaki_city",
+      "nearest_city_distance_km": 38.9569
+    },
+    {
+      "id": 480,
+      "name": "Hasami",
+      "lat": 33.141048,
+      "lng": 129.910858,
+      "dms": "33°8'27.8\"N 129°54'39.1\"E",
+      "pokemon_featured": [
+        "Ampharos",
+        "Pinsir",
+        "Scizor"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/273a40e9db77b08bc4a8aadd8d8f5d6d_l.png",
+      "image_local": "images_official/Nagasaki/480.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Arita_Station",
+      "nearest_station_distance_km": 5.4671,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "saga-yamauchi",
+      "nearest_roadside_station_distance_km": 7.0431,
+      "nearest_city": "saga_city",
+      "nearest_city_distance_km": 38.6843
     }
   ],
   "nara": [
@@ -10398,29 +10581,141 @@
       "active": true
     }
   ],
-  "Iwate": [
+  "nagano": [
     {
-      "id": 467,
-      "name": "Morioka",
-      "lat": 39.694005,
-      "lng": 141.128421,
-      "dms": "39°41'38.4\"N 141°7'42.3\"E",
+      "id": 481,
+      "name": "Okaya",
+      "lat": 36.06648,
+      "lng": 138.0511,
+      "dms": "36°3'59.3\"N 138°3'4.0\"E",
       "pokemon_featured": [
-        "Geodude",
-        "Rockruff",
-        "Lycanroc"
+        "Frosmoth",
+        "Snom"
       ],
-      "image_url": "https://local.pokemon.jp/img/p/manhole/950280bab6a52375f60a30456007e6e9_l.png",
-      "image_local": "images_official/Iwate/467.png",
+      "image_url": "https://local.pokemon.jp/img/p/manhole/38dbfc1d6e8a42120c2fd6136f511a97_l.png",
+      "image_local": "images_official/unknown/481.png",
       "active": false,
       "name_ja": null,
-      "nearest_station_id": "Morioka_Station",
-      "nearest_station_distance_km": 1.0712,
+      "nearest_station_id": "Okaya_Station",
+      "nearest_station_distance_km": 1.2297,
       "station_type": "walkable",
-      "nearest_roadside_station_id": "iwate-shiwa",
-      "nearest_roadside_station_distance_km": 16.7818,
-      "nearest_city": "morioka",
-      "nearest_city_distance_km": 2.3205
+      "nearest_roadside_station_id": "nagano-kosaka-ta-park",
+      "nearest_roadside_station_distance_km": 7.1839,
+      "nearest_city": "matsumoto",
+      "nearest_city_distance_km": 20.3878
+    },
+    {
+      "id": 482,
+      "name": "Ina",
+      "lat": 35.882479,
+      "lng": 137.919057,
+      "dms": "35°52'56.9\"N 137°55'8.6\"E",
+      "pokemon_featured": [
+        "Kleavor",
+        "Darmanitan",
+        "Tsareena"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/1cd7407c636a3fdfb846915335153d04_l.png",
+      "image_local": "images_official/unknown/482.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Ina-Kita_Station",
+      "nearest_station_distance_km": 5.7762,
+      "station_type": "remote",
+      "nearest_roadside_station_id": "nagano-oshiba-kogen",
+      "nearest_roadside_station_distance_km": 2.2852,
+      "nearest_city": "matsumoto",
+      "nearest_city_distance_km": 39.8533
+    },
+    {
+      "id": 483,
+      "name": "Omachi",
+      "lat": 36.506032,
+      "lng": 137.859702,
+      "dms": "36°30'21.7\"N 137°51'34.9\"E",
+      "pokemon_featured": [
+        "Dratini",
+        "Bidoof"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/b04877fef931bfc2dd4b85cee9758ede_l.png",
+      "image_local": "images_official/unknown/483.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Shinano-Kizaki_Station",
+      "nearest_station_distance_km": 0.6867,
+      "station_type": "walkable",
+      "nearest_roadside_station_id": "nagano-nagano-shi-ooka-tokusan-center",
+      "nearest_roadside_station_distance_km": 9.0833,
+      "nearest_city": "matsumoto",
+      "nearest_city_distance_km": 31.4175
+    },
+    {
+      "id": 484,
+      "name": "Minamimaki",
+      "lat": 35.955351,
+      "lng": 138.474215,
+      "dms": "35°57'19.3\"N 138°28'27.2\"E",
+      "pokemon_featured": [
+        "Heliolisk",
+        "Helioptile"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/34adefec6db50af8befe1d98435efa6c_l.png",
+      "image_local": "images_official/unknown/484.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Nobeyama_Station",
+      "nearest_station_distance_km": 0.0258,
+      "station_type": "local",
+      "nearest_roadside_station_id": "yamanashi-minami-kiyosato",
+      "nearest_roadside_station_distance_km": 10.8063,
+      "nearest_city": "kofu",
+      "nearest_city_distance_km": 35.6874
+    },
+    {
+      "id": 485,
+      "name": "Kiso",
+      "lat": 35.935271,
+      "lng": 137.784559,
+      "dms": "35°56'7.0\"N 137°47'4.4\"E",
+      "pokemon_featured": [
+        "Pachirisu",
+        "Trevenant",
+        "Rookidee"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/391c9a8f8b3ef650a85d3b05d39e1fd5_l.png",
+      "image_local": "images_official/unknown/485.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Yabuhara_Station",
+      "nearest_station_distance_km": 0.5426,
+      "station_type": "walkable",
+      "nearest_roadside_station_id": "nagano-kisogawa-genryu-no-sato-kisomura-kisogawa-river-source-village-kisomura",
+      "nearest_roadside_station_distance_km": 0.5184,
+      "nearest_city": "matsumoto",
+      "nearest_city_distance_km": 37.6711
+    },
+    {
+      "id": 486,
+      "name": "Yamanouchi",
+      "lat": 36.74156,
+      "lng": 138.41505,
+      "dms": "36°44'29.6\"N 138°24'54.2\"E",
+      "pokemon_featured": [
+        "Mankey",
+        "Galarian Darumaka",
+        "Panpour"
+      ],
+      "image_url": "https://local.pokemon.jp/img/p/manhole/7fe9b42164a7f9fbaeb73ef90a2790ea_l.png",
+      "image_local": "images_official/unknown/486.png",
+      "active": false,
+      "name_ja": null,
+      "nearest_station_id": "Yudanaka_Station",
+      "nearest_station_distance_km": 0.0316,
+      "station_type": "local",
+      "nearest_roadside_station_id": "nagano-hokushinsh-yamanouchi",
+      "nearest_roadside_station_distance_km": 0.9295,
+      "nearest_city": "nagano_city",
+      "nearest_city_distance_km": 23.1423
     }
   ]
 }
