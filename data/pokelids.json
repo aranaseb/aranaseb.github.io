@@ -3595,7 +3595,7 @@
         "Salamence"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/ebbdbee7f35498be1af93b5dc2f8e6c2_l.png",
-      "image_local": "images_official/unknown/475.png",
+      "image_local": "images_official/ishikawa/475.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Anamizu_Station",
@@ -4305,7 +4305,7 @@
       "nearest_roadside_station_distance_km": 6.2053,
       "nearest_city": "morioka",
       "nearest_city_distance_km": 62.8744,
-      "active":true
+      "active": true
     },
     {
       "id": 464,
@@ -4328,7 +4328,7 @@
       "nearest_roadside_station_distance_km": 0.08,
       "nearest_city": "morioka",
       "nearest_city_distance_km": 23.8031,
-      "active":true 
+      "active": true
     },
     {
       "id": 465,
@@ -4374,7 +4374,7 @@
       "nearest_roadside_station_distance_km": 13.1633,
       "nearest_city": "morioka",
       "nearest_city_distance_km": 56.101,
-      "active":true 
+      "active": true
     },
     {
       "id": 467,
@@ -4388,7 +4388,7 @@
         "Lycanroc"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/950280bab6a52375f60a30456007e6e9_l.png",
-      "image_local": "images_official/Iwate/467.png",
+      "image_local": "images_official/iwate/467.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Morioka_Station",
@@ -7183,7 +7183,7 @@
         "Wiglett"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/0dfe96c54ef7f6271d17c9ea3fb43e65_l.png",
-      "image_local": "images_official/Miyagi/474.png",
+      "image_local": "images_official/miyagi/474.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Mitazono_Station",
@@ -8006,7 +8006,7 @@
         "Metagross"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/9ad3148fd75c57b00c5e66503d73af38_l.png",
-      "image_local": "images_official/Nagasaki/476.png",
+      "image_local": "images_official/nagasaki/476.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Isahaya_Station",
@@ -8029,7 +8029,7 @@
         "Breloom"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/7cab4fbef67520a2aa892e78044ba411_l.png",
-      "image_local": "images_official/Nagasaki/477.png",
+      "image_local": "images_official/nagasaki/477.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Tabira-Hiradoguchi_Station",
@@ -8052,7 +8052,7 @@
         "Mareep"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/1fd094dccc46d6d5a016ab6fc88a5ebf_l.png",
-      "image_local": "images_official/Nagasaki/478.png",
+      "image_local": "images_official/nagasaki/478.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Michinoo_Station",
@@ -8075,7 +8075,7 @@
         "Gastrodon"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/4543d040f87f6f6edbc37f69e73abde7_l.png",
-      "image_local": "images_official/Nagasaki/479.png",
+      "image_local": "images_official/nagasaki/479.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Huis_Ten_Bosch_Station",
@@ -8098,7 +8098,7 @@
         "Scizor"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/273a40e9db77b08bc4a8aadd8d8f5d6d_l.png",
-      "image_local": "images_official/Nagasaki/480.png",
+      "image_local": "images_official/nagasaki/480.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Arita_Station",
@@ -10593,7 +10593,7 @@
         "Snom"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/38dbfc1d6e8a42120c2fd6136f511a97_l.png",
-      "image_local": "images_official/unknown/481.png",
+      "image_local": "images_official/nagano/481.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Okaya_Station",
@@ -10616,7 +10616,7 @@
         "Tsareena"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/1cd7407c636a3fdfb846915335153d04_l.png",
-      "image_local": "images_official/unknown/482.png",
+      "image_local": "images_official/nagano/482.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Ina-Kita_Station",
@@ -10638,7 +10638,7 @@
         "Bidoof"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/b04877fef931bfc2dd4b85cee9758ede_l.png",
-      "image_local": "images_official/unknown/483.png",
+      "image_local": "images_official/nagano/483.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Shinano-Kizaki_Station",
@@ -10660,7 +10660,7 @@
         "Helioptile"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/34adefec6db50af8befe1d98435efa6c_l.png",
-      "image_local": "images_official/unknown/484.png",
+      "image_local": "images_official/nagano/484.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Nobeyama_Station",
@@ -10683,7 +10683,7 @@
         "Rookidee"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/391c9a8f8b3ef650a85d3b05d39e1fd5_l.png",
-      "image_local": "images_official/unknown/485.png",
+      "image_local": "images_official/nagano/485.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Yabuhara_Station",
@@ -10706,7 +10706,7 @@
         "Panpour"
       ],
       "image_url": "https://local.pokemon.jp/img/p/manhole/7fe9b42164a7f9fbaeb73ef90a2790ea_l.png",
-      "image_local": "images_official/unknown/486.png",
+      "image_local": "images_official/nagano/486.png",
       "active": true,
       "name_ja": null,
       "nearest_station_id": "Yudanaka_Station",

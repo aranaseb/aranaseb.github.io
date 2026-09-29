@@ -76,6 +76,92 @@ PREFECTURES = [
 
 GMAPS_COORDS = re.compile(r"[?&]q=([-\d.]+),([-\d.]+)")
 
+# Max distance (km) to the nearest already-known lid for the coordinate
+# fallback to be trusted. Beyond this, prefecture resolution fails loudly.
+COORD_FALLBACK_MAX_KM = 50.0
+
+
+def normalize_prefecture(text):
+    """Map scraped prefecture text to a canonical lowercase slug, or None.
+
+    Handles case differences ("Nagasaki" → "nagasaki") and common suffixes
+    ("Nagano Prefecture", "fukui-ken", "osaka-fu", "tokyo-to"). Suffixes are
+    only stripped when hyphen/space-separated, so "kyoto" is never mangled.
+    """
+    if not text:
+        return None
+    slug = text.strip().lower()
+    slug = re.sub(r"[\s\-_]+(prefecture|pref\.?|ken|fu|to|do)$", "", slug)
+    return slug if slug in PREFECTURES else None
+
+
+# GSI (Geospatial Information Authority of Japan) reverse geocoder.
+# Returns a municipality code (muniCd); its first 2 digits are the JIS
+# prefecture code, which maps 1:1 onto PREFECTURES (already in JIS order).
+GSI_REVGEO_URL = (
+    "https://mreversegeocoder.gsi.go.jp/reverse-geocoder/"
+    "LonLatToAddress?lat={lat}&lon={lng}"
+)
+
+
+def gsi_prefecture(lat, lng, session):
+    """Authoritative fallback: prefecture from GSI reverse geocoding, or None."""
+    try:
+        r = session.get(GSI_REVGEO_URL.format(lat=lat, lng=lng), timeout=15)
+        r.raise_for_status()
+        muni_cd = r.json().get("results", {}).get("muniCd", "")
+        code = int(str(muni_cd)[:2])
+        if 1 <= code <= 47:
+            return PREFECTURES[code - 1]
+    except Exception as e:
+        print(f"    [WARN] GSI reverse geocode failed for ({lat}, {lng}): {e}")
+    return None
+
+
+def prefecture_from_coords(lat, lng, data):
+    """Fallback: prefecture of the nearest already-known lid.
+
+    Uses the existing dataset as a spatial index. Only returns a match
+    within COORD_FALLBACK_MAX_KM to avoid cross-border misfiles.
+    """
+    candidates = [
+        (pref, lid["lat"], lid["lng"])
+        for pref, lids in data.items() if pref in PREFECTURES
+        for lid in lids
+        if lid.get("lat") is not None and lid.get("lng") is not None
+    ]
+    if not candidates:
+        return None
+    pref, km = nearest(lat, lng, candidates)
+    return pref if km <= COORD_FALLBACK_MAX_KM else None
+
+
+def resolve_prefecture(raw_text, lat, lng, data, lid_id, session):
+    """Resolve a canonical prefecture slug for a new lid, or None.
+
+    Order: normalize scraped text → GSI reverse geocode → nearest-known-lid
+    offline fallback. Never invents keys: only slugs in PREFECTURES are
+    ever returned.
+    """
+    pref = normalize_prefecture(raw_text)
+    if pref:
+        if raw_text != pref:
+            print(f"  [{lid_id}] Prefecture '{raw_text}' normalized → '{pref}'")
+        return pref
+
+    pref = gsi_prefecture(lat, lng, session)
+    if pref:
+        print(f"  [{lid_id}] Prefecture unresolved from page "
+              f"('{raw_text}') — resolved via GSI reverse geocode → '{pref}'")
+        return pref
+
+    pref = prefecture_from_coords(lat, lng, data)
+    if pref:
+        print(f"  [{lid_id}] Prefecture unresolved from page "
+              f"('{raw_text}') — resolved from nearest known lid → '{pref}'")
+        return pref
+    return None
+
 
 # ── Geometry ───────────────────────────────────────────────────────────────────
 
@@ -190,7 +276,7 @@ def download_image(url, prefecture, lid_id, session):
     return local_path
 
 
-def fetch_lid(lid_id, session, download_images):
+def fetch_lid(lid_id, session):
     r = session.get(DETAIL_URL.format(id=lid_id), timeout=15)
     if r.status_code == 404:
         return None
@@ -208,21 +294,16 @@ def fetch_lid(lid_id, session, download_images):
         print(f"  [{lid_id}] No coords for '{name}' — skipping")
         return None
 
-    prefecture  = extract_prefecture(soup)
-    image_url   = extract_image_url(soup)
-    image_local = (
-        download_image(image_url, prefecture, lid_id, session)
-        if download_images and image_url else None
-    )
-
+    # NOTE: the image is NOT downloaded here. The prefecture must be
+    # resolved to a canonical slug first (see step_scrape), so the image
+    # lands in the correct lowercase folder and image_local stays valid.
     return {
-        "name":        name,
-        "lat":         lat,
-        "lng":         lng,
-        "prefecture":  prefecture,
-        "pokemon":     extract_pokemon(soup),
-        "image_url":   image_url,
-        "image_local": image_local,
+        "name":       name,
+        "lat":        lat,
+        "lng":        lng,
+        "prefecture": extract_prefecture(soup),  # raw page text; normalized later
+        "pokemon":    extract_pokemon(soup),
+        "image_url":  extract_image_url(soup),
     }
 
 
@@ -230,7 +311,7 @@ def known_ids(data):
     return {lid["id"] for lids in data.values() for lid in lids if isinstance(lid.get("id"), int)}
 
 
-def build_new_lid(lid_id, fetched):
+def build_new_lid(lid_id, fetched, image_local):
     lat, lng = fetched["lat"], fetched["lng"]
     return {
         "id":                                   lid_id,
@@ -240,7 +321,7 @@ def build_new_lid(lid_id, fetched):
         "dms":                                  decimal_to_dms(lat, lng),
         "pokemon_featured":                     fetched["pokemon"],
         "image_url":                            fetched["image_url"],
-        "image_local":                          fetched["image_local"],
+        "image_local":                          image_local,
         "active":                               False,
         "name_ja":                              None,
         "nearest_station_id":                   None,
@@ -273,7 +354,7 @@ def step_scrape(data, max_id, download_images, dry_run):
 
             time.sleep(SCRAPE_DELAY)
             try:
-                fetched = fetch_lid(lid_id, session, download_images and not dry_run)
+                fetched = fetch_lid(lid_id, session)
             except requests.RequestException as e:
                 print(f"  [{lid_id}] Request error: {e}")
                 continue
@@ -287,11 +368,25 @@ def step_scrape(data, max_id, download_images, dry_run):
 
             consec     = 0
             new_count += 1
-            pref       = fetched["prefecture"] or "unknown"
+
+            pref = resolve_prefecture(
+                fetched["prefecture"], fetched["lat"], fetched["lng"],
+                data, lid_id, session
+            )
+            if pref is None:
+                pref = "unknown"
+                print(f"  [{lid_id}] *** WARNING: prefecture could not be resolved "
+                      f"(page text: '{fetched['prefecture']}') — filed under "
+                      f"'unknown'. FIX MANUALLY before deploying. ***")
+
             print(f"  [{lid_id}] ✦ NEW  '{fetched['name']}' ({pref})  pokemon={fetched['pokemon']}")
 
             if not dry_run:
-                lid = build_new_lid(lid_id, fetched)
+                image_local = (
+                    download_image(fetched["image_url"], pref, lid_id, session)
+                    if download_images and fetched["image_url"] else None
+                )
+                lid = build_new_lid(lid_id, fetched, image_local)
                 data.setdefault(pref, []).append(lid)
                 new_keys.append((pref, len(data[pref]) - 1))
 
@@ -420,6 +515,12 @@ def load_data(path):
 
 
 def save_data(data, path, dry_run):
+    stray = [k for k in data if k not in PREFECTURES]
+    for key in stray:
+        names = ", ".join(l["name"] for l in data[key])
+        print(f"\n*** WARNING: {len(data[key])} lid(s) under non-canonical key "
+              f"'{key}': {names} — resolve before deploying. ***")
+
     total = sum(len(v) for v in data.values())
     if dry_run:
         print(f"\n[dry-run] Would write {total} lids.")
